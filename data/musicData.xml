@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<data xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+
+    <title type="text">Robingan.org</title>
+    <subtitle type="text">Pure concentrated awesome.</subtitle>
+    <updated>2019-09-10T22:24:32-07:00</updated>
+    <link rel="alternate" type="text/html" href="https://robingan.org" />
+    <id>https://robingan.org</id>
+    <link rel="self" type="application/atom+xml" href="https://robingan.org/data/story.xml" />
+    <author>
+        <name>Robin Gan</name>
+        <uri>https://robingan.org</uri>
+    </author>
+    <!-- Table project -->
+    <table name="music" id="dont_mess_with_rg">
+        <cover>../images/music/dont_mess_withRG.png</cover>
+        <title>Don't mess with Robin Gan</title>
+        <type>Diss Track / Rap / English</type>
+        <isNew>true</isNew>
+        <des>My first autotone rap. It’s not a serious diss. It is just my way to reply message like that.
+            I respect Angela a lot. She supported the first rap I’ve ever made.
+            Actually, nice job at the orientation
+            I love and respect you all from 5805.</des>
+        <mp3>../mp3/dont_mess_with_robin_gan.mp3</mp3>
+        <youtube>https://youtu.be/Ok2OmScbmRc</youtube>
+        <artist>Robin Gan</artist>
+    </table>
+
+    <table name="music" id="diss_track_babaLiuXue">
+        <cover>../images/music/dissLiuXue.png</cover>
+        <title>Diss Track to 带着爸爸去留学</title>
+        <type>Diss Track / Rap / Chinese</type>
+        <isNew>true</isNew>
+        <des>This diss track is to a Chinese TV Show that says wrong stuff about Chinese students
+            who study aboard in the US. Feel my flow :)</des>
+        <mp3>../mp3/diss_track_babaLiuXue.mp3</mp3>
+        <youtube>https://youtu.be/o02zidJa01o</youtube>
+        <artist>Robin Gan</artist>
+    </table>
+</data>

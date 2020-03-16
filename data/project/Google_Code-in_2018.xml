@@ -1,0 +1,274 @@
+<table name="project" id="Google_Code-in_2018">
+        <column name="title">Google Code-in 2018</column>
+        <date>2018.11-2018.12</date>
+        <link>
+            <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://codein.withgoogle.com/organizations/wikimedia">Contest Page</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/robingan7/google-code-in_2018">View Code</a>
+                    </li>
+                     <li>
+                        <a href="https://en.wikipedia.org/wiki/User:Robingan7/sandbox">Output</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                </ul>
+            </li>
+            ]]>
+        </link>
+        <content>
+            <![CDATA[
+            <h3>Overview</h3>
+            <p>This is my first time to participate in <a href="https://codein.withgoogle.com/">Google Code-in</a> Contest. It was pretty good but also challenging since I only learned programming robingan@rcs.edufor five-month. Although I enter a week late because I didn't get the info, I still finished with 15 completed tasks. Most of my tasks are from <a href="https://www.wikimedia.org/">Wikimedia</a>. 
+                I tried <a href="https://www.lua.org/">Lua</a> and <a href="http://lilypond.org/">LilyPond</a>. And I coded some piano pieces with LilyPond, and the piano pieces I made are posted on Wikipedia pages. There are more details below.</p>
+            <h4>Achievement</h4>
+            <ul>
+                <li>15 completed tasks</li>
+                <li>a google code-in t-shirt</li>
+                <li>top 15 in <a href="https://codein.withgoogle.com/organizations/wikimedia">Wikimedia section</a></li>
+            </ul>
+            <h3>
+                Tasks Completed
+            </h3>
+            <h4>Lua 1-6</h4>
+            <p>Lua task one through six are easy beginner tasks which required to write simple algorithms to complete the tasks. 
+                Thus, I will only explain a little bit of the algorithms. 
+            </p>
+            <ul>
+                <li><p><strong>lua1: </strong>a function to print out 'hello world'. However, it did take me a while to set up a wikimedia account to run the program. You need a wiki page to write the functions and a module sandbox to activiate the function</p></li>
+                <li><p><strong>lua2: </strong>Create HI function for printing out a name passing to the function.</p></li>
+                <li><p><strong>lua3: </strong>Create temperature function to convert Celsius to Fahrenheit.</p></li>
+                <li><p><strong>lua4: </strong>Starting from task4, the tasks begins to require the control structures like <code>if, while, repeat, for</code>, but task 4 itself was simply amending their code.  </p></li>
+                <li><p><strong>lua5: </strong>Introduce to lua library and pattern matching, amend code with <code>string.sub(str, index)</code> & <code>string.match(str, pattern)</code> methods.</p></li>
+                <li><p><strong>lua6: </strong>Experience with the lua language library, which involves function of getting <code>langnames(language names)</code> and <code>langcode(language code)</code>. For exmaple, 
+                Chinese's language code is <code>ch</code>, and the library provides callback function to get language name from langauge code. </p></li>
+            </ul>
+            <h4>Lua 7</h4>
+            <p>Problem <a href="https://en.wikipedia.org/wiki/User:RexxS/GCI-Task07">Description</a></p>
+            <blockquote>
+            <p>This task requires you to create your own function which can take text such as may be found in the first column and an optional format parameter. It will output a date either in the requested format or in a format matching that of the text supplied - <a href="https://en.wikipedia.org/wiki/User:RexxS/GCI-Task07">Rexxs</a></p>
+            </blockquote>
+            <p>According to the table below, the input of the function will the <code>Text</code> column, the <code>Format</code> column is a possible input, and finally the <code>Date</code> is the output.</p> 
+            <p>
+                <img src="/images/project/GCI_2018/table.png" alt="GSC_2018"/>
+            </p>
+            <p>You might wonder what the letters in <code>Format</code> column stand for. Here is a quote about it.</p>
+            <blockquote>
+            <p>On the English Wikipedia, we find 5 types of allowed date formats:</p>
+            <ul>
+                <li>"dmy" – e.g. 31 August 2013</li>
+                <li>"mdy" – e.g. August 31, 2013</li>
+                <li>"iso"-style – e.g. 2013-08-27</li>
+                <li>year – e.g. 2013</li>
+                <li>month and year – e.g. August 2013</li>
+            </ul>
+            <p> - <a href="https://en.wikipedia.org/wiki/User:RexxS/GCI-Task07">Rexxs</a> </p></li>
+            </blockquote>
+            <p><strong>Data Structure: </strong>I used table(vector) to store the months names ,months abbreviation and total days in each month. You might notice that I put 0 for February, that's because leap year effect the total days in that month. </p>
+            <figure class="highlight"><pre><code>local months = { "jan", "feb", "mar", "apr", 
+                 "may", "jun", "jul", "aug", 
+                 "sep", "oct", "nov", "dec"}
+local days_in_month = { 31, 0, 31, 30, 31, 30, 
+                        31, 31, 30, 31, 30, 31}
+local months2 = { "Jan", "Feb", "Mar", "Apr", 
+                  "May", "Jun", "Jul", "Aug", 
+                  "Sep", "Oct", "Nov", "Dec"}
+local months4 = { "january" , ... , "december"}</code>
+            </pre>
+            </figure>
+
+            <p>
+                After that, I just wrote lots of
+                <abbr>if else</abbr>
+                statements to handle different date format here is an example code for
+                <abbr>mdy</abbr>
+                format,
+            </p>
+            <figure class="highlight"><pre><code>if(formatdate == "mdy") then 
+    if month_idx[month_edit(month)] == 2 then
+        if day_try(day,
+                   month_idx[month_edit(month)],
+                   year) == "Invalid" then
+            return "invalid entry"
+        else 
+            return  appro..month_edit(month)..
+                    " "..day..","..year..special
+        end
+    else 
+        return appro..month_edit(month).." "
+               ..day..","..year..special 
+    end
+end</code>
+            </pre>
+            </figure>
+            <p>Entire <a href="https://github.com/robingan7/google-code-in_2018/blob/master/lua7.lua">code</a></p>
+            
+            <h4>Lua 8</h4>
+            <p>Problem <a href="https://en.wikipedia.org/wiki/User:RexxS/GCI-Task08">Description</a></p>
+            <p>In this problem, the input are names from different counties, and my code should extract the first name and last 
+                name of the name. Sounds simple, however, different countries has different ways of placing first name and last name 
+                Here are some interesting ones with <strong>partial</strong> code solution,
+            </p>
+            <ul>
+                <li>In a Chinese name, the last name is placed before first name. So it's inverse of English name.</li>
+                <figure class="highlight"><pre><code>strings = {}
+stringMatch = string.gmatch(name, "%C%P%S*")
+for stringss in  stringMatch do
+    strings[#strings + 1] = stringss
+end
+    
+if(formatname == "zh") then 
+    return "Given = "..strings[2]..
+            "&lt;br>Family = "..strings[1] 
+end
+</code>        
+            </pre>
+            </figure>
+
+            <li>Dutch and Spanish names have last names that contain multiple words, such as <code>van den Broek</code> 
+                which is a Dutch last name. Moreover, Spanish usually have two family names, see Spanish naming customs. However, it is also common to only see one family name such as
+            <code>Penélope Cruz</code>
+            <code>Penélope Cruz Sánchez</code>
+            <code>Federico del Sagrado Corazón de Jesús García Lorca</code>. The hardest part is that sometimes I don't know type of name it is thus my 
+            algrithm needs to be able to figure out the name type. 
+            </li>
+            <figure class="highlight"><pre><code>--spanish
+if(formatname == "es") then 
+given = ""
+if(#strings > 2) then 
+for i = 1,#strings - 2 do 
+    given = given.." "..strings[i] end
+    return "Given = "..given..
+            "&lt;br>amily = "
+            ..strings[#strings-1]
+            .." "..strings[#strings]
+</code>        
+            </pre>
+            </figure>
+
+            <figure class="highlight"><pre><code>--dutch
+for i = 1, #strings - 1 do
+    given = given.." "..strings[i] end
+    return "Given = "..given.."&lt;br>
+Family = ".." "..strings[#strings]
+    
+if(formatname == "nl") then 
+    suffix = {" van"," de","van",
+              "de"," von"}
+    breakpoint = 0
+judge = false
+for i = 1,#strings do
+for i2 = 1,#suffix do
+    if(strings[i] == suffix[i2]) then 
+        judge = true breakpoint=i 
+        end 
+    end 
+end
+</code>        
+            </pre>
+            </figure>
+
+            <li>English names sometimes has suffix. </li>
+            <figure class="highlight"><pre><code>if(formatname == "en") then
+    suffix = {" Jr"," Sr"," III"," II"," I"}
+    judge = false
+    for i = 1, #strings do 
+        for i2 = 1, #suffix do
+            if(strings[i] == suffix[i2]) then 
+            judge = true 
+            end 
+        end 
+    end
+given = ""
+
+if(judge == true) then 
+    for i3 = 1,#strings - 2 do
+    given = given.." "..strings[i3] end
+    return  "Given = "..given..
+            "\&lt;br>Family = "..strings[#strings-1]
+else 
+    for i4 = 1,#strings-1 do
+    given=given.." "..strings[i4] end
+    return  "Given = "..given..
+            "&lt;br>Family = "
+            ..strings[#strings]
+    end
+end
+</code>        
+            </pre>
+            </figure>
+            </ul>
+
+            <p>I was the first one to complete this task. I was pushing the mentor making new tasks by finishing this one in <abbr>two</abbr> days. 
+                And here is the entire <a href="https://github.com/robingan7/google-code-in_2018/blob/master/lua8.lua">code</a>.
+            </p>
+
+            <h4>Lua 9</h4>
+            <p>The problem's about using the Wikidata library to create info tables of people who have Wikipedia pages. The input will be an id the of person, and the output 
+                should be a table like this, 
+            </p>
+            <img src="/images/project/GCI_2018/wikidata.png" alt="wikidata" /> 
+
+            <p>
+                Using wikimedia getter method is key of this task as well as using the correct property number for label like
+                <code>Place of birth</code>
+                <code>Occupation</code>
+                <code>Spouse</code>.
+            </p>
+            <figure class="highlight"><pre><code>--get the site links and labels
+
+sitelink = mw.wikibase.getSitelink(input_id)
+label = mw.wikibase.getLabel(input_id)
+</code>        
+            </pre>
+            </figure>
+            <p>Sometimes a person will have mulitple side links for one label. For example, a artist might have 
+            mutliple jobs involving art. To handle this case, I used <code>string.gmatch(str, pattern)</code> and a for loop to iterate all maches string. 
+            </p>
+             <figure class="highlight"><pre><code>strings = {}
+for stringss in string.gmatch(sitelink, "%a+") do
+    strings[#strings + 1] = stringss
+end
+
+links[i] = "[["..sitelink.."|"..strings[1].."]]"
+</code>        
+            </pre>
+            </figure>
+            <p>It's a simpler task compare to 7 and 8. here is the entire <a href="https://github.com/robingan7/google-code-in_2018/blob/master/lua9.lua">code</a>.</p>
+            
+            <h4>LilyPond</h4>
+            <p>LilyPond is the language that Wikipedia uses to create piano sheets(visual and audio) so that users can see the nodes and listen to the piece. I had a hard time 
+                doing it due to the lack of music theory. However, I still completed nine of them and they are one  Wikipedia pages for users to see and listen:
+            </p>
+
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/English_Folk_Song_Suite#March:%20Seventeen%20Come%20Sunday">Seventeen Come Sunday</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/English_Folk_Song_Suite#March:%20Seventeen%20Come%20Sunday">Pretty Caroline</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/User:Robingan7/Sandbox/Music1#Gnomus">Gnomus</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/User:Robingan7/Sandbox/Music2">Il Vecchio Castello</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/User:Robingan7/Sandbox/Music2#Bydlo">Bydlo</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/User:Robingan7/Sandbox/Music2#Green%20Bushes">Green Bushes</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/English_Folk_Song_Suite#My%20Bonny%20Boy">My Bonny Boy</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/English_Folk_Song_Suite#March:%20Folk%20Songs%20from%20Somerset">Blow Away Morning Dew</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/English_Folk_Song_Suite#Instrumentation">High Germany</a></li>
+            </ul>
+
+            ]]>
+        </content>
+    </table>

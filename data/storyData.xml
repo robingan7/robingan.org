@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<data xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+    
+    <title type="text">Robingan.org</title>
+    <subtitle type="text">Pure concentrated awesome.</subtitle>
+    <updated>2019-09-10T22:24:32-07:00</updated>
+    <link rel="alternate" type="text/html" href="https://robingan.org"/>
+    <id>https://robingan.org</id>
+    <link rel="self" type="application/atom+xml" href="https://robingan.org/data/story.xml"/>
+    <author>
+    <name>Robin Gan</name>
+    <uri>https://robingan.org</uri>
+    </author>
+
+    <table name="story">
+        <column name="title">My Childhood</column>
+        <column name="id">1</column>
+        <column name="year">2004-2014</column>
+        <column name="header1">My Childhood</column>
+        <column name="text1">Childhood was very fun for me. I used to ride my bike all day. And I started to play the piano. My elementary school was really close to my home. So I went home every day. The school was super easy. I've played basketball since I was in second grade.</column>
+        <column name="img11">selfe_with_LouDog.jpg</column>
+        <column name="img12">basketball_with_yangdoucheng.png</column>
+        <column name="header2">My Home</column>
+        <column name="text2">I programmed my first robot when I was in fifth grade. But the next time I touch a robot is tenth grade......I lived in an apartment on the thirteenth floor. It has a really good view of the river. All in all, my childhood was really FUN!!!</column>
+        <column name="img21">partment.jpg</column>
+        <column name="img22">family_around_table.jpeg</column>
+
+        <content>
+            <![CDATA[
+                <h3>My Childhood</h3>
+                <div class="timeline_icons" id="icons_2004-2014">
+                    <i class="fas fa-hand-point-down" val="2015"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                <img src="/images/story/2004-2014/selfe_with_LouDog.jpg"/>
+                <img src="/images/story/2004-2014/basketball_with_yangdoucheng.png"/>
+
+                <p>
+                    Childhood was very fun for me. I used to ride my bike all day. And I started to play the piano. My elementary school was really close to my home. So I went home every day. The school was super easy. I've played basketball since I was in second grade.
+                </p>
+                
+                <h3>My Home</h3>
+                <img src="/images/story/2004-2014/partment.jpg"/>
+                <img src="/images/story/2004-2014/family_around_table.jpeg"/>
+
+                <p>
+                    When I was in fifth grade I programmed my first robot. But the next time I touch a robot is tenth grade......I lived in an apartment on the thirteenth floor. It has a really good view of the river. All in all, my childhood was really FUN!!!
+                </p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="story">
+        <column name="title">7th Grade Year</column>
+        <column name="id">2</column>
+        <column name="year">2015</column>
+        <column name="header1">Summer</column>
+        <column name="text1">I_started junior high in 2015. But before, I had a really nice summer camp in the US. I also met my first host family(the Canavans). It's the first I went to an American school. It's also the first I learned about God. It was a really fun experience. But I didn't know any English at that time, so I didn't communicate with people that much. I did improve my English anyway</column>
+        <column name="img11">eating_with_canavas2.jpg</column>
+        <column name="img12">eating_with_canavas.jpg</column>
+        <column name="header2">7th Grade Year</column>
+        <column name="text2">First year of junior high was tough for me. I wasn't ready for it at all. I was ranked as 484th out of 890 students. The thing is that I know is that I will apply an America high and leave. I thought I am going to have two easy years and leave. However, it didn't happen. I was really upset because I got a bad grade and needed to spend extra time in English. But my dream kept me going, so I didn't give up. I ended up getting the top 70 for that year. It was an important year because I actually found the efficient way of studying. And I began to know the purpose of working hard.</column>
+        <column name="img21">pareparing_video.jpeg</column>
+        <column name="img22">my_logo.png</column>
+
+        <content>
+            <![CDATA[
+                <h3>Summer</h3>
+                <div class="timeline_icons" id="icons_2015">
+                    <i class="fas fa-hand-point-up" val="2004-2014"></i>
+                    <i class="fas fa-hand-point-down" val="2016"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                <img src="/images/story/2015/eating_with_canavas2.jpg"/>
+                <img src="/images/story/2015/eating_with_canavas.jpg"/>
+
+                <p>
+                    I_started junior high in 2015. But before, I had a really nice summer camp in the US. I also met my first host family(the Canavans). It's the first I went to an American school. It's also the first I learned about God. It was a really fun experience. But I didn't know any English at that time, so I didn't communicate with people that much. I did improve my English anyway.
+                </p>
+                
+                <h3>7th Grade Year</h3>
+                <img src="/images/story/2015/pareparing_video.jpeg"/>
+                <img src="/images/story/2015/my_logo.png"/>
+                
+                <p>
+                    First year of junior high was tough for me. I wasn't ready for it at all. I was ranked as 484th out of 890 students. The thing is that I know is that I will apply an America high and leave. I thought I am going to have two easy years and leave. However, it didn't happen. I was really upset because I got a bad grade and needed to spend extra time in English. But my dream kept me going, so I didn't give up. I ended up getting the top 70 for that year. It was an important year because I actually found the efficient way of studying. And I began to know the purpose of working hard.
+                </p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="story">
+        <column name="title">8th Grade Year</column>
+        <column name="id">3</column>
+        <column name="year">2016</column>
+        <column name="header1">Summer</column>
+        <column name="text1">Finishing the “catastrophic” first year in junior high, I was excited about the summer of 2016. I brought some math and physics books for next year. I planned to finish those topics during the summer. And I actually did. Moreover, I went to a summer camp in CA where I met another host family(The Rogers). They really nice, and the summer camp was fun. I learned some English. After a month, I went back to China and got ready for the next school year.</column>
+        <column name="img11">eating_with_jeric.jpg</column>
+        <column name="img12">with_rogers.jpeg</column>
+        <column name="header2">8th Grade Year</column>
+        <column name="text2">Second year of junior high is also my last year in China. I was very confident about school because I already went over all the stuff by myself. From that year, I almost learned most of the knowledge by myself because I think independent study is more efficient than teachers. I continued doing that when I studied in the US. I was a legend in my junior high. Because I never paid attention in class, I still improved my grade a lot. I got three times top 20 in that year, I also got an offer from Redwood Christian High School in the bay area. Also, this year I made a great speech on the topic of my hometown. I won a speech contest for that.</column>
+        <column name="img21">eating_hotpot_with_nature.jpg</column>
+        <column name="img22">with_my_cousins.jpeg</column>
+
+        <content>
+            <![CDATA[
+                <h3>Summer</h3>
+                <div class="timeline_icons" id="icons_2016">
+                    <i class="fas fa-hand-point-up" val="2015"></i>
+                    <i class="fas fa-hand-point-down" val="2017"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                <img src="/images/story/2016/eating_with_jeric.jpg"/>
+                <img src="/images/story/2016/with_rogers.jpeg"/>
+
+                <p>
+                    Finishing the “catastrophic” first year in junior high, I was excited about the summer of 2016. I brought some math and physics books for next year. I planned to finish those topics during the summer. And I actually did. Moreover, I went to a summer camp in CA where I met another host family(The Rogers). They really nice, and the summer camp was fun. I learned some English. After a month, I went back to China and got ready for the next school year.
+                </p>
+                
+                <h3>8th Grade Year</h3>
+                <img src="/images/story/2016/eating_hotpot_with_nature.jpg"/>
+                <img src="/images/story/2016/with_my_cousins.jpeg"/>
+                
+                <p>
+                    Second year of junior high is also my last year in China. I was very confident about school because I already went over all the stuff by myself. From that year, I almost learned most of the knowledge by myself because I think independent study is more efficient than teachers. I continued doing that when I studied in the US. I was a legend in my junior high. Because I never paid attention in class, I still improved my grade a lot. I got three times top 20 in that year, I also got an offer from Redwood Christian High School in the bay area. Also, this year I made a great speech on the topic of my hometown. I won a speech contest for that.
+                </p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="story">
+        <column name="title">HS-Freshman Year</column>
+        <column name="id">4</column>
+        <column name="year">2017</column>
+        <column name="header1">Summer</column>
+        <column name="text1">Summer of 2017 is the shortest one. School in China ended in August. I had to be at my new school in August as well. So I only took three weeks off, then I flew to San Francisco. I hang out with my friends several times before leaving.</column>
+        <column name="img11">wanda_square_with_class24.jpg</column>
+        <column name="img12">selfe_taxes.png</column>
+        <column name="header2">Freshman Year</column>
+        <column name="text2">First year in the US, I'm very excited about the new school. It's a very small school. There are only 60 students in my class. But it is a very united campus, I know everyone in my class in one month. I started to run XC and track last year. And the school was much easier than that in China. I began to pick my interests like playing the guitar and the piano. I really like my English teacher, she helped me a lot. Also, I taught myself about AP physics 1 and all the math before calculus. So my weekends were always busy. I'm a big fan of computer science. The school didn't provide any CS classes. So I applied and planned to transfer to Santa Margarita Catholic High School. It was sad to leave another school. I had lots of friends there. </column>
+        <column name="img21">freshmanyear_XC.png</column>
+        <column name="img22">freshman_spirit_dress.png</column>
+
+        <content>
+            <![CDATA[
+                <h3>Summer</h3>
+                <div class="timeline_icons" id="icons_2017">
+                    <i class="fas fa-hand-point-up" val="2016"></i>
+                    <i class="fas fa-hand-point-down" val="2018"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                <img src="/images/story/2017/wanda_square_with_class24.jpg"/>
+                <img src="/images/story/2017/selfe_taxes.png"/>
+
+                <p>
+                    Summer of 2017 is the shortest one. School in China ended in August. I had to be at my new school in August as well. So I only took three weeks off, then I flew to San Francisco. I hang out with my friends several times before leaving.
+                </p>
+                
+                <h3>Freshman Year</h3>
+                <img src="/images/story/2017/freshmanyear_XC.png"/>
+                <img src="/images/story/2017/freshman_spirit_dress.png"/>
+                
+                <p>
+                    First year in the US, I'm very excited about the new school. It's a very small school. There are only 60 students in my class. But it is a very united campus, I know everyone in my class in one month. I started to run XC and track last year. And the school was much easier than that in China. I began to pick my interests like playing the guitar and the piano. I really like my English teacher, she helped me a lot. Also, I taught myself about AP physics 1 and all the math before calculus. So my weekends were always busy. I'm a big fan of computer science. The school didn't provide any CS classes. So I applied and planned to transfer to Santa Margarita Catholic High School. It was sad to leave another school. I had lots of friends there.
+                </p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="story">
+        <column name="title">HS-Sophomore Year</column>
+        <column name="id">5</column>
+        <column name="year">2018</column>
+        <column name="header1">Summer</column>
+        <column name="text1">Learning Java programming is what I did for the whole summer learning Java programming. I only stayed in China for two weeks. I and my parents went to Huang Shan, where is a famous mountain in China. I took intro to programming. It was very hard for me when I just start to learn to program. But after a hard time, I'm even more interested in CS. And that becomes a big part of my life.</column>
+        <column name="img11">hushang_with_myfamily.png</column>
+        <column name="img12">zhangjiajie_with_myfamily.jpeg</column>
+        <column name="header2">Sophomore Year</column>
+        <column name="text2">This school year just began four months ago, after there are lots of happening. I tried to focus. I join the robotics team. Now I'm trying to figure out the code. Also, I made my own club with other students. Now we're having a problem getting people, so we need to figure that out. I made an ACSL(America Computer Science League) team. We're preparing for that. I programmed a website to help students in my school with their lunch schedule(it is really confused in my school). I'm working with the school to let more students more about the website. Moreover, I work with Girl Coder, where I plan to teach middle school girls about coding. But I have a hard time finding a place for that right now. I plan to make a workshop online. It's going to be a busy year for me. But I'm READY!!!</column>
+        <column name="img21">with_blair.jpeg</column>
+        <column name="img22">with_mr_lawrence.jpeg</column>
+
+        <content>
+            <![CDATA[
+                <h3>Summer</h3>
+                <div class="timeline_icons" id="icons_2018">
+                    <i class="fas fa-hand-point-up" val="2017"></i>
+                    <i class="fas fa-hand-point-down" val="2019"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                <img src="/images/story/2018/hushang_with_myfamily.png"/>
+                <img src="/images/story/2018/zhangjiajie_with_myfamily.jpeg"/>
+
+                <p>
+                Learning Java programming is what I did for the whole summer learning Java programming. I only stayed in China for two weeks. I and my parents went to Huang Shan, where is a famous mountain in China. I took intro to programming. It was very hard for me when I just start to learn to program. But after a hard time, I'm even more interested in CS. And that becomes a big part of my life.
+                </p>
+                
+                <h3>Sophomore Year</h3>
+                <img src="/images/story/2018/with_blair.jpeg"/>
+                <img src="/images/story/2018/with_mr_lawrence.jpeg"/>
+                
+                <p>
+                    This school year just began four months ago, after there are lots of happening. I try to focus on. I join the robotics team. Now I'm trying to figure out the code. Also, I made my own club with other students. Now we're having a problem getting people, so we need to figure that out. I made an ACSL(America Computer Science League) team. We're preparing for that. I programmed a website to help students in my school with their lunch schedule(it is really confused in my school). I'm working with the school to let more students more about the website. Moreover, I work with Girl Coder, where I plan to teach middle school girls about coding. But I have a hard time finding a place for that right now. I plan to make a workshop online. It's going to be a busy year for me. But I'm READY!!!
+                </p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="story">
+        <column name="title">Upcoming</column>
+        <column name="id">6</column>
+        <column name="year">2019</column>
+        <column name="header1">upcoming</column>
+        <column name="text1"></column>
+        <column name="img11"> </column>
+        <column name="img12"> </column>
+        <column name="header2"> </column>
+        <column name="text2"></column>
+        <column name="img21"> </column>
+        <column name="img22"> </column>
+
+        <content>
+            <![CDATA[
+                <h3></h3>
+                <div class="timeline_icons" id="icons_2019">
+                    <i class="fas fa-hand-point-up" val="2018"></i>
+                    <i class="fas fa-window-close timeline_icon_close"></i>
+                </div>
+                
+                <p>
+               
+                </p>
+                
+                <h3></h3>
+                <p>
+               
+                </p>
+            ]]>
+        </content>
+    </table>
+</data>

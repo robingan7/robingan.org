@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<data xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+
+    <title type="text">Robingan.org</title>
+    <subtitle type="text">Pure concentrated awesome.</subtitle>
+    <updated>2019-09-10T22:24:32-07:00</updated>
+    <link rel="alternate" type="text/html" href="https://robingan.org" />
+    <id>https://robingan.org</id>
+    <link rel="self" type="application/atom+xml" href="https://robingan.org/data/story.xml" />
+    <author>
+        <name>Robin Gan</name>
+        <uri>https://robingan.org</uri>
+    </author>
+    <!-- Table project 
+    <table name="media" id="Upcoming">
+        <title>Upcoming</title>
+        <date>2019.9.20</date>
+        <date2>2019-9-20</date2>
+        <des>
+            <![CDATA[
+            ]]>
+        </des>
+        <id>1</id>
+        <content>
+            <![CDATA[
+            ]]>
+        </content>
+    </table>
+    -->
+
+    <table name="media" id="First_time_being_a_robot_driver">
+        <title>First time being a robot driver</title>
+        <date>2019.11.8</date>
+        <date2>2019-11-8</date2>
+        <des>
+            <![CDATA[
+            In the <a href="https://www.thebluealliance.com/event/2019cabb">2019 battle at the border</a> FRC off-season event, I drove the robot I programmed for the first time in an actual match. Although I didn't drive well, I still understand how the event work by being a part of the drive team.
+            ]]>
+        </des>
+        <id>12</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>In the <a href="https://www.thebluealliance.com/event/2019cabb">2019 battle at the border</a> FRC off-season event, I drove the robot I programmed for the first time in an actual match. Although I didn't drive well, I still understand how the event work by being a part of the drive team. Here are some videos and pictures from the event.</p>
+            <h3>Media</h3>
+            <p class="mediaWithDes parallelImageRight" desc="With the pit"><img src="/images/media/First_time_being_a_robot_driver/With the pit.JPG" alt="With the pit"/></p>
+            <p class="mediaWithDes parallelImageRight" desc="At the driver station 2 "><img src="/images/media/First_time_being_a_robot_driver/At the driver station.JPG" alt="At the driver station"/></p>
+            <p class="mediaWithDes parallelImageRight" desc="At the driver station"><img src="/images/media/First_time_being_a_robot_driver/At the driver station 2.JPG" alt="At the driver station 2"/></p>
+            <p class="mediaWithDes parallelImageRight" desc="Holding the joystick"><img src="/images/media/First_time_being_a_robot_driver/Holding the joystick.JPG" alt="Holding the joystick"/></p>
+            <p class="mediaWithDes" desc="With the robot"><img src="/images/media/First_time_being_a_robot_driver/With the robot.JPG" alt="With the robot"/></p>
+            <p class="mediaWithDes" desc="With the drive team"><img src="/images/media/First_time_being_a_robot_driver/With the drive team.JPG" alt="With the drive team"/></p>
+            <h3>Conclusion</h3>
+            <p>This is probably the last time I drive the robot in a FRC contest, so I'm very enjoy the experience. Here are some things I learned by being on the drive team, </p>
+            <ul>
+                <li><p>driving the robot is much harder than I thought. </p></li>
+                <li><p>fully understanding the code from last year. </p></li>
+            </ul>
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="All_blogs_on_2019_FRC_season">
+        <title>All blogs on 2019 FRC season</title>
+        <date>2019.11.4</date>
+        <date2>2019-11-4</date2>
+        <des><![CDATA[
+            This blog includes all blogs on <a href="https://www.thebluealliance.com/team/5805/2019">2019 FRC season</a>. Shout out to my team <a href="https://www.smhs.org/academics/departments-and-courses/science/robotics">5805</a>. It's not bad for my first FRC season, thank you all 
+            for answering my questions. 
+            ]]>
+        </des>
+        <id>11</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>I've been writing some blogs for my <a href="https://www.thebluealliance.com/team/5805/2019">2019 FRC season</a>, so I decided to write a blog that includes all links to the other ones. </p>
+            <p>This blog includes all blogs on 2019 FRC season. Shout out to my team <a href="https://www.smhs.org/academics/departments-and-courses/science/robotics">5805</a>. It's not bad for my first FRC season, thank you all 
+            for answering my questions. </p>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="/media/#FRC_OC_Regional_2019">FRC OC Regional 2019</a></li>
+                <li><a href="/media/#FRC_LA_North_Regional_2019">FRC LA North Regional 2019</a></li>
+                <li><a href="/media/#FRC_Houston_Champ_2019">FRC Houston Champ 2019</a></li>
+                <li><a href="/media/#FRC_Season_2019">My first FRC season</a></li>
+                <li><a href="/project/#FRC_2019_Public">Official code explanation</a></li>
+            </ul>
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="Multi-threading_robot_code_works!!">
+        <title>Multi-threading robot code works!!</title>
+        <date>2019.10.23</date>
+        <date2>2019-10-23</date2>
+        <des><![CDATA[
+            This is one of the <a href="https://www.smhs.org/academics/departments-and-courses/science/robotics">robotics</a> projects I've been working on for 3 month. I did research on <a href="https://github.com/Team254/FRC-2019-Public/tree/master/src/main/java/com/team254/frc2019/loops">254 library</a>. And I successfully converted our robot code from last year to this 
+            multi-threading structure. ]]>
+        </des>
+        <id>10</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>This is one of the <a href="https://www.smhs.org/academics/departments-and-courses/science/robotics">robotics</a> projects I've been working on for 3 month. I did research on <a href="https://github.com/Team254/FRC-2019-Public/tree/master/src/main/java/com/team254/frc2019/loops">254 library</a>. And I successfully converted our robot code from last year to this 
+            multi-threading structure.</p>
+
+            <h4>What is multi-threading</h4>
+            <blockquote>
+            <p>In computer architecture, multithreading is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide <strong>multiple threads of execution concurrently</strong>, supported by the operating system. This approach differs from multiprocessing. In a multithreaded application, the threads share the <strong>resources of a single or multiple cores</strong>, which include the computing units, the CPU caches, and the translation lookaside buffer (TLB).
+                (from <a href="https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)">wikipedia</a>)
+            </p>
+            </blockquote>
+            <p>Bascially, it activates the multiple cores in <a href="https://www.ni.com/en-us/support/model.roborio.html">roboRIO</a> so that we can have more efficient updating and writing outputs.</p>
+
+            <h4>How did I start this?</h4>
+            <p>When <a href="/media/#FRC_Houston_Champ_2019">I went Houston Championship</a> in April, 2019, I noticed <a href="https://www.team254.com/">team 254</a> had crazy good autonomous period. So I went to their section on the stand and talked with their lead programmer. It was a helpful conversation, and I started to learn their code on <a href="https://github.com/Team254">github</a>. 
+                Multi-threading structure is just a part of their code. I still need to figure out the autonomous algorithm. 
+            </p>
+
+            <h3>What I achieved so far</h3>
+            <p>I've been pushing updates on this <a href="https://github.com/robingan7/frc5805_2020CodeDemo">repo</a>, which will be our code for next year. Here is what I finished and learned so far, </p>
+            <ul>
+                <li>Working multi-threading system that can do the same thing as the <a href="/project/#FRC_2019_Public">command base</a> structure from last year. </li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VvD2QTrWiYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <li>Action class ready to go(not test yet)</li>
+                <li>Motion Profile ready to go(not test yet)</li>
+            </ul>
+
+            <h3>Why this is crucial?</h4>
+            <ul>
+                <li>Our robot will be getting and writing data faster. </li>
+                <li><strong>Now we have the potential to have the autonomous like 254.</strong></li>
+            </ul>
+            <h4>My biggest goal this year</h4>
+            <p>First fully autonomous robot in FRC history.</p>
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="Rapping_in_a_football_game">
+        <title>Rapping in a football game</title>
+        <date>2019.10.18</date>
+        <date2>2019-10-18</date2>
+        <id>9</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p><img src="/images/media/Rapping_in_a_football_game/hype.png" alt="hype"></p>
+            <p>A video of me rapping in a time out of the football game(<a href="https://www.smhs.org/">SM</a> VS <a href="https://www.materdei.org/">Mater Dei</a>) on <abbr>2019.10.18</abbr>. It was a senior game(last home game) so I was hyped and decided to do a freestyle. 
+            It was the night before my <a href="https://www.thebluealliance.com/event/2019cabb">robotics tournament</a>, which I <a href="/media/#First_time_being_a_robot_driver">drove the robot for the first time</a> in competition. </p>
+            <h4>Punch line</h4>
+            <blockquote>
+                <p>Although we might lose the game, we are still better than Mater Dei. --<a href="/">Robin Gan</a></p>
+            </blockquote>
+            <h3>Enjoy the video</h3>
+            <p>Shout out to the girl who taped the video. And shout out to all the eagles. 
+                <strong>The NEST is the BEST</strong>.
+            </br><small>If you don't want to be in this video, email me at xiangyu.gan@smhsstudents.org. I'm so sorry if that happens and I will edit the video as soon as I can. </small>
+            </p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/uG747BHf6U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <p><strong>Click <a href="https://youtu.be/uG747BHf6U4">here</a> if the embed video doesn't show up.</strong></p>
+
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="My_FIRST_live_rap_performance">
+        <title>My FIRST live rap performance</title>
+        <date>2019.9.27</date>
+        <date2>2019-9-27</date2>
+        <id>8</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>This performance was on <abbr>2019.7.29</abbr>. My performance(<abbr>non-profit</abbr>) during 2019 summer session at <a href="https://www.stanford.edu/">Stanford</a>, it was my first rap live performance so I was very nervous on the stage. However, it was still an awesome experience. Shout out to <a href="https://summer.stanford.edu/">Stanford Summer Session</a> for hosting this event.</p>
+            <p><img src="/images/media/My_FIRST_live_rap_performance/Robin Gan in the house.png" alt="Robin Gan in the house" /></p>
+            <h3>Raps I did</h3>
+            <p>The rap was a <abbr>remix</abbr> of <strong> Call Me Robin(Prod by Young Forever)</strong> and <strong>To16</strong>.</p></br>
+            <h4>Call Me Robin(Prod by Young Forever)</h4>
+            <p>This is the rap that I composed for this event. I'm not a social person, so people hardly know me from conversation with me. However, 
+                the hook <abbr>"Call me, Call me, Call me, Call me, Call me, ROBIN!!"</abbr> made everyone who went to that show remember my name. 
+            </p>
+            <p>My voice and lyrics are not very clear in the video<small>(maybe because I was nervous and didn't rap clearly)</small>. I will make a studio version later, and it will be available <a href="/music">here</a> with more details on this rap. 
+            </p>
+            <p>I combined some fast <a href="https://en.wikipedia.org/wiki/Trap_music">trap</a> flows in the rap, thus, it was a tough show to rap it with limited backup. I could hardly breath on the stage since I was jumping around while rapping this flow. As a result, When I rap the second verse, 
+            I was a little ahead than my backup. </p>
+            <ul>
+                <li>Lyrics by <a href="/">Robin Gan</a></li>
+                <li>beat by <a href="https://www.youtube.com/channel/UCDpcgy02bcqxZMEaQIQw6pQ">Young Foreover</a></li>
+            </ul>
+
+            <h4>to16</h4>
+            <p>The reason why this rap is called <strong>to16</strong> is that I wrote this rap on my 16th birthday. It's a slow old school rap, and it includes my stories when I just came to US and how I got to know Hiphop and started to
+            rap. Like the previous rap, I will make a studio version later. And it will be available <a href="/music">here</a> with more details on this rap.</p>
+            <ul>
+                <li>Lyrics by <a href="/">Robin Gan</a></li>
+                <li>beat: I found this beat long time ago. It said it was a free beat. But I still want to credit the artist. <a href="mailto:xiangyu.gan@robingan.org?Subject=Hello%20Robin">Email me</a> if you recognize the beat and know who the artist is.</li>
+            </ul>
+
+            <h3>Shout out to <a href="https://www.google.com/maps/place/Alondra,+Stanford,+CA+94305/@37.4222837,-122.1734053,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbad38659b687:0xa47ad49b5f939dab!8m2!3d37.4222795!4d-122.171222">Alondra Housing</a> for giving me this paper award</h3>
+            <p><img src="/images/media/My_FIRST_live_rap_performance/paper award.png" alt="paper award" /></p>
+            
+            <h3>Enjoy the video</h3>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4mHlbR48uZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <p><strong>Click <a href="https://www.youtube.com/watch?v=4mHlbR48uZw&feature=youtu.be">here</a> if the embed video doesn't show up.</strong></p>
+
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="FRC_Houston_Champ_2019">
+        <title>FRC Houston Champ 2019</title>
+        <date>2019.9.26</date>
+        <date2>2019-9-26</date2>
+        <id>7</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>Although we didn't get any awards, it was still fun in Houston. I met lots of good teams around the world. Shout out to <a href="https://www.team254.com/">254</a> for explaining their code for me. </p>
+            <p>My roles in this regional were</p>
+            <ul>
+                <li>Working on the electronics</li>
+                <li>Scouting</li>
+                <li>Learning</li>
+            </ul>
+            <h4>Achievement</h4>
+            <ul>
+                <li>Poster signed by <a href="https://www.linkedin.com/in/blair-hundertmark-64421511/">Blair</a></li>
+            </ul>
+            <h3>Media</br><small>that has <a href="/">Robin</a></small></h3>
+            <p>All images<span><a href="https://www.icloud.com/sharedalbum/#B0p5oqs3qH7VvEX">by Angela</a></span> and videos<span><a href="https://www.youtube.com/watch?v=qL1M6FNSRWc&list=PLQRNcG6B1Zs8Mqzx6zXnnfC9aY6ETZfV4">From Robin's channel</a></span> <span><a href="https://www.youtube.com/channel/UCf8b5AVtJesifLn3sXM9svA">5805's channel</a></span>.</p>
+            <p class="mediaWithDes" desc="Team Picture"><img src="/images/media/FRC_Houston_Championship_2019/Team Picture.jpg" alt="Team Picture2"/></p>
+            <p class="mediaWithDes" desc="Team Picture2"><img src="/images/media/FRC_Houston_Championship_2019/Team Picture2.jpg" alt="Team Picture2"/></p>
+            <p class="mediaWithDes" desc="Team Picture3"><img src="/images/media/FRC_Houston_Championship_2019/Team Picture3.jpg" alt="Team Picture2"/></p>
+            <p class="mediaWithDes" desc="Setting on a big chair"><img src="/images/media/FRC_Houston_Championship_2019/Setting on a big chair.jpg" alt="Setting on a big chair"/></p>
+            <p class="mediaWithDes" desc="Picture with Blair"><img src="/images/media/FRC_Houston_Championship_2019/Picture with Blair.jpeg" alt="Picture with Blair"/></p>
+            <p><strong>Click <a href="https://www.youtube.com/watch?v=g2IFLeUJTuc&list=PLQRNcG6B1Zs8RqA0DTvsUzJtS34vUTOR6">here</a> if the embed videos don't show up.</strong></p>
+            
+            <h3>Shout out to Angela for taking the photos</h3>
+                    
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="FRC_LA_North_Regional_2019">
+        <title>FRC LA North Regional 2019</title>
+        <date>2019.9.25</date>
+        <date2>2019-9-25</date2>
+        <id>6</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>It was a very realxing regional because we already advanced to <a href="https://www.firstchampionship.org/houston">Houston Championship</a> in <a href="/media/#FRC_OC_Regional_2019">OC Regional 2019</a>. <strong>I was part of the pit crew in this regional</strong>, so I had more tasks to work on. </p>
+            <p>My roles in this regional were</p>
+            <ul>
+                <li>Working on the electronics</li>
+                <li>Mounting the lime light camera</li>
+                <li>Scouting</li>
+                <li>Rapping and dancing on the stands</li>
+                <li>Cheering for my team</li>
+            </ul>
+            <h4>Achievement</h4>
+            <ul>
+                <li>Regional Quarter Finalist</li>
+            </ul>
+            <h4>Playoff bracket and our alliance partners</h4>
+            <div class="tableContainer">
+                <table class="bracket">
+                        <tbody>
+                            <tr>
+                            <td class="leftAlliance " rowspan="1">
+                                <div class="alliance_number">1.</div>
+                                    <a href="https://www.thebluealliance.com/team/6560/2019" title="6560">6560</a><br>
+                                    <a href="https://www.thebluealliance.com/team/5818/2019" title="5818">5818</a><br>
+                                    <a href="https://www.thebluealliance.com/team/2429/2019" title="2429">2429</a><br>
+                            </td>
+                            
+                            
+                            <td class="leftAlliance winnerL" rowspan="2">
+                                <a href="https://www.thebluealliance.com/team/2584/2019" title="2584">2584</a><br>
+                                <a href="https://www.thebluealliance.com/team/691/2019" title="691">691</a><br>
+                                <a href="https://www.thebluealliance.com/team/2404/2019" title="2404">2404</a><br>
+                                <a href="https://www.thebluealliance.com/team/7042/2019" title="7042">7042</a><br>
+                            </td>
+                            <td class="secondC" rowspan="4">
+                                <br>
+                                <a href="https://www.thebluealliance.com/team/2584/2019" title="2584">2584</a><br>
+                                <a href="https://www.thebluealliance.com/team/691/2019" title="691">691</a><br>
+                                <a href="https://www.thebluealliance.com/team/2404/2019" title="2404">2404</a><br>
+                                <a href="https://www.thebluealliance.com/team/7042/2019" title="7042">7042</a><br>
+                            </td>
+                            <td class="winnerC" rowspan="4">
+                                <br>
+                                <a href="https://www.thebluealliance.com/team/1868/2019" title="1868">1868</a><br>
+                                <a href="https://www.thebluealliance.com/team/6803/2019" title="6803">6803</a><br>
+                                <a href="https://www.thebluealliance.com/team/2659/2019" title="2659">2659</a><br>
+                            </td>
+                            <td class="rightAlliance winnerR" rowspan="2">
+                                <a href="https://www.thebluealliance.com/team/1868/2019" title="1868">1868</a><br>
+                                <a href="https://www.thebluealliance.com/team/6803/2019" title="6803">6803</a><br>
+                                <a href="https://www.thebluealliance.com/team/2659/2019" title="2659">2659</a><br>
+                            </td>
+                            
+                            <td class="rightAlliance winnerR" rowspan="1">
+                                <div class="alliance_number">3.</div>
+                                <a href="https://www.thebluealliance.com/team/1868/2019" title="1868">1868</a><br>
+                                <a href="https://www.thebluealliance.com/team/6803/2019" title="6803">6803</a><br>
+                                <a href="https://www.thebluealliance.com/team/2659/2019" title="2659">2659</a><br>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td class="leftAlliance winnerL" rowspan="1">
+                                <div class="alliance_number">8.</div>
+                                <a href="https://www.thebluealliance.com/team/2584/2019" title="2584">2584</a><br>
+                                <a href="https://www.thebluealliance.com/team/691/2019" title="691">691</a><br>
+                                <a href="https://www.thebluealliance.com/team/2404/2019" title="2404">2404</a><br>
+                                <a href="https://www.thebluealliance.com/team/7042/2019" title="7042">7042</a><br>
+                            </td>
+                            <td class="rightAlliance " rowspan="1">
+                                <div class="alliance_number">6.</div>
+                                <a href="https://www.thebluealliance.com/team/5089/2019" title="5089">5089</a><br>
+                                <a class="ourTeam" href="https://www.thebluealliance.com/team/5805/2019" title="5805">5805</a><br>
+                                <a href="https://www.thebluealliance.com/team/1661/2019" title="1661">1661</a><br>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td class="leftAlliance winnerL" rowspan="1">
+                                <div class="alliance_number">4.</div>
+                                <a href="https://www.thebluealliance.com/team/7645/2019" title="7645">7645</a><br>
+                                <a href="https://www.thebluealliance.com/team/207/2019" title="207">207</a><br>
+                                <a href="https://www.thebluealliance.com/team/3512/2019" title="3512">3512</a><br>
+                            </td>
+                            
+                            <td class="leftAlliance " rowspan="2">
+                                <a href="https://www.thebluealliance.com/team/7645/2019" title="7645">7645</a><br>
+                                <a href="https://www.thebluealliance.com/team/207/2019" title="207">207</a><br>
+                                <a href="https://www.thebluealliance.com/team/3512/2019" title="3512">3512</a><br>
+                            </td>
+                            <td class="rightAlliance " rowspan="2">
+                                <a href="https://www.thebluealliance.com/team/6060/2019" title="6060">6060</a><br>
+                                <a href="https://www.thebluealliance.com/team/599/2019" title="599">599</a><br>
+                                <a href="https://www.thebluealliance.com/team/5453/2019" title="5453">5453</a><br>
+                            </td>
+                            <td class="rightAlliance " rowspan="1">
+                                <div class="alliance_number">2.</div>
+                                <a href="https://www.thebluealliance.com/team/696/2019" title="696">696</a><br>
+                                <a href="https://www.thebluealliance.com/team/3863/2019" title="3863">3863</a><br>
+                                <a href="https://www.thebluealliance.com/team/3925/2019" title="3925">3925</a><br>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td class="leftAlliance " rowspan="1">
+                                <div class="alliance_number">5.</div>
+                                <a href="https://www.thebluealliance.com/team/4/2019" title="4">4</a><br>
+                                <a href="https://www.thebluealliance.com/team/1159/2019" title="1159">1159</a><br>
+                                <a href="https://www.thebluealliance.com/team/5285/2019" title="5285">5285</a><br>
+                            </td>
+                            <td class="rightAlliance winnerR" rowspan="1">
+                                <div class="alliance_number">7.</div>
+                                <a href="https://www.thebluealliance.com/team/6060/2019" title="6060">6060</a><br>
+                                <a href="https://www.thebluealliance.com/team/599/2019" title="599">599</a><br>
+                                <a href="https://www.thebluealliance.com/team/5453/2019" title="5453">5453</a><br>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Media</br><small>that has <a href="/">Robin</a></small></h3>
+                    <p>All images<span><a href="https://www.icloud.com/sharedalbum/#B0p5oqs3qH7VvEX">by Angela</a></span> and videos<span><a href="https://www.youtube.com/watch?v=qL1M6FNSRWc&list=PLQRNcG6B1Zs8Mqzx6zXnnfC9aY6ETZfV4">From Robin's channel</a></span> <span><a href="https://www.youtube.com/channel/UCf8b5AVtJesifLn3sXM9svA">5805's channel</a></span>.</p>
+                    <p class="mediaWithDes" desc="Mounting lime light"><img src="/images/media/FRC_LA_North_Regional_2019/Mounting lime light.jpg" alt="Mounting lime light"/></p>
+                    <p class="mediaWithDes" desc="Working in the pit in LA North"><img src="/images/media/FRC_LA_North_Regional_2019/Working in the pit in LA North.jpg" alt="Working in the pit in LA North"/></p>
+                    <p class="mediaWithDes" desc="Shaking the banner"><img src="/images/media/FRC_LA_North_Regional_2019/Shaking the banner.jpg" alt="Shaking the banner"/></p>
+                    <p class="mediaWithDes" desc="Screaming"><img src="/images/media/FRC_LA_North_Regional_2019/Screaming.jpg" alt="Screaming"/></p>
+                    <p class="mediaWithDes" desc="Dancing on the stands"><iframe width="560" height="315" src="https://www.youtube.com/embed/g2IFLeUJTuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <p class="mediaWithDes" desc="Blue alliance!!"><iframe width="560" height="315" src="https://www.youtube.com/embed/g2IFLeUJTuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <p class="mediaWithDes" desc="Mounting the lime light"><iframe width="560" height="315" src="https://www.youtube.com/embed/Fw4Oa6Tr428" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+                    <p><strong>Click <a href="https://www.youtube.com/watch?v=g2IFLeUJTuc&list=PLQRNcG6B1Zs8RqA0DTvsUzJtS34vUTOR6">here</a> if the embed videos don't show up.</strong></p>
+                    <h3>Shout out to Angela for taking the photos</h3>
+
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="FRC_OC_Regional_2019">
+        <title>FRC OC Regional 2019</title>
+        <date>2019.9.24</date>
+        <date2>2019-9-24</date2>
+        <id>5</id>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>This is the first FRC events I went. Here is the <a href="https://www.thebluealliance.com/event/2019caoc">link</a> of this event.</p>
+
+            <p>My roles in this regional were</p>
+            <ul>
+                <li>Scouting</li>
+                <li>Rapping and dancing on the stands</li>
+                <li>Cheering for my team</li>
+            </ul>
+            <h4>Achievement</h4>
+            <ul>
+                <li>Regional Finalist</li>
+                <li>Wildcard to <a href="https://www.firstchampionship.org/houston">Houston Championship</a></li>
+            </ul>
+
+            <h4>Playoff bracket and our alliance partners</h4>
+            <div class="tableContainer">
+                <table class="bracket">
+                        <tbody>
+                            <tr>
+                                <td class="leftAlliance winnerL" rowspan="1">
+                                    <div class="alliance_number">1.</div>
+                                        <a href="https://www.thebluealliance.com/team/330/2019" title="330">330</a><br>
+                                        <a href="https://www.thebluealliance.com/team/973/2019" title="973">973</a><br>
+                                        <a href="https://www.thebluealliance.com/team/597/2019" title="597">597</a><br>
+                                </td>
+                                
+                                <td class="leftAlliance winnerL" rowspan="2">
+                                    <a href="https://www.thebluealliance.com/team/330/2019" title="330">330</a><br>
+                                    <a href="https://www.thebluealliance.com/team/973/2019" title="973">973</a><br>
+                                    <a href="https://www.thebluealliance.com/team/597/2019" title="597">597</a><br>
+                                </td>
+                                
+                                <td class="winnerC" rowspan="4">
+                                    <br>
+                                    <a href="https://www.thebluealliance.com/team/330/2019" title="330">330</a><br>
+                                    <a href="https://www.thebluealliance.com/team/973/2019" title="973">973</a><br>
+                                    <a href="https://www.thebluealliance.com/team/597/2019" title="597">597</a><br>
+                                </td>
+                                <td class="secondC" rowspan="4">
+                                    <br>
+                                    <a href="https://www.thebluealliance.com/team/4079/2019" title="4079">4079</a><br>
+                                    <a href="https://www.thebluealliance.com/team/4276/2019" title="4276">4276</a><br>
+                                    <a class="ourTeam" href="https://www.thebluealliance.com/team/5805/2019" title="5805">5805</a><br>
+                                </td>
+                                
+                                <td class="rightAlliance " rowspan="2">
+                                    <a href="https://www.thebluealliance.com/team/294/2019" title="294">294</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3309/2019" title="3309">3309</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3250/2019" title="3250">3250</a><br>
+                                </td>
+                                
+                                <td class="rightAlliance winnerR" rowspan="1">
+                                    <div class="alliance_number">3.</div>
+                                    <a href="https://www.thebluealliance.com/team/294/2019" title="294">294</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3309/2019" title="3309">3309</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3250/2019" title="3250">3250</a><br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="leftAlliance " rowspan="1">
+                                    <div class="alliance_number">8.</div>
+                                    <a href="https://www.thebluealliance.com/team/5500/2019" title="5500">5500</a><br>
+                                    <a href="https://www.thebluealliance.com/team/4913/2019" title="4913">4913</a><br>
+                                    <a href="https://www.thebluealliance.com/team/1160/2019" title="1160">1160</a><br>
+                                </td>
+                                <td class="rightAlliance " rowspan="1">
+                                    <div class="alliance_number">6.</div>
+                                    <a href="https://www.thebluealliance.com/team/5669/2019" title="5669">5669</a><br>
+                                    <a href="https://www.thebluealliance.com/team/4201/2019" title="4201">4201</a><br>
+                                    <a href="https://www.thebluealliance.com/team/7157/2019" title="7157">7157</a><br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="leftAlliance winnerL" rowspan="1">
+                                    <div class="alliance_number">4.</div>
+                                    <a href="https://www.thebluealliance.com/team/4481/2019" title="4481">4481</a><br>
+                                    <a href="https://www.thebluealliance.com/team/5802/2019" title="5802">5802</a><br>
+                                    <a href="https://www.thebluealliance.com/team/5012/2019" title="5012">5012</a><br>
+                                </td>
+                                
+                                <td class="leftAlliance " rowspan="2">
+                                    <a href="https://www.thebluealliance.com/team/4481/2019" title="4481">4481</a><br>
+                                    <a href="https://www.thebluealliance.com/team/5802/2019" title="5802">5802</a><br>
+                                    <a href="https://www.thebluealliance.com/team/5012/2019" title="5012">5012</a><br>
+                                </td>
+                                <td class="rightAlliance winnerR" rowspan="2">
+                                    <a href="https://www.thebluealliance.com/team/4079/2019" title="4079">4079</a><br>
+                                    <a href="https://www.thebluealliance.com/team/4276/2019" title="4276">4276</a><br>
+                                    <a class="ourTeam" href="https://www.thebluealliance.com/team/5805/2019" title="5805">5805</a><br>
+                                </td>
+                                
+                                <td class="rightAlliance winnerR" rowspan="1">
+                                    <div class="alliance_number">2.</div>
+                                    <a href="https://www.thebluealliance.com/team/4079/2019" title="4079">4079</a><br>
+                                    <a href="https://www.thebluealliance.com/team/4276/2019" title="4276">4276</a><br>
+                                    <a class="ourTeam" href="https://www.thebluealliance.com/team/5805/2019" title="5805">5805</a><br>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="leftAlliance " rowspan="1">
+                                    <div class="alliance_number">5.</div>
+                                    <a href="https://www.thebluealliance.com/team/7447/2019" title="7447">7447</a><br>
+                                    <a href="https://www.thebluealliance.com/team/6072/2019" title="6072">6072</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3952/2019" title="3952">3952</a><br>
+                                </td>
+
+                                <td class="rightAlliance " rowspan="1">
+                                    <div class="alliance_number">7.</div>
+                                    <a href="https://www.thebluealliance.com/team/1515/2019" title="1515">1515</a><br>
+                                    <a href="https://www.thebluealliance.com/team/1836/2019" title="1836">1836</a><br>
+                                    <a href="https://www.thebluealliance.com/team/3859/2019" title="3859">3859</a><br>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Media</br><small>that has <a href="/">Robin</a></small></h3>
+                    <p>All images<span><a href="https://www.icloud.com/sharedalbum/#B0p5oqs3qH7VvEX">by Angela</a></span> and videos<span><a href="https://www.youtube.com/watch?v=qL1M6FNSRWc&list=PLQRNcG6B1Zs8Mqzx6zXnnfC9aY6ETZfV4">From Robin's channel</a></span> <span><a href="https://www.youtube.com/channel/UCf8b5AVtJesifLn3sXM9svA">5805's channel</a></span>.</p>
+
+                    <h4>Before the regional</h4>
+                    <p class="mediaWithDes" desc="Modifying the code"><img src="/images/media/FRC_OC_Regional_2019/Modifying the code.jpg" alt="Modifying the code"/></p>
+                    <p class="mediaWithDes" desc="Happy Programming"><img src="/images/media/FRC_OC_Regional_2019/Happy Programming.jpg" alt="Happy Programming"/></p>
+                    <p class="mediaWithDes" desc="Helping another team with programming"><img src="/images/media/FRC_OC_Regional_2019/Helping another team with programming.jpg" alt="Helping another team with programming"/></p>
+                    <p class="mediaWithDes" desc="Testing the robot with Andrew"><img src="/images/media/FRC_OC_Regional_2019/Testing the robot with Andrew.jpg" alt="Testing the robot with Andrew"/></p>
+                    <p class="mediaWithDes" desc="Bagging the robot"><iframe width="560" height="315" src="https://www.youtube.com/embed/E1ZGzOFIBoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <h4>In the pit</h4>
+                    <p class="mediaWithDes" desc="Tuning PID"><img src="/images/media/FRC_OC_Regional_2019/Tuning PID.jpg" alt="Tuning PID"/></p>
+                    <p class="mediaWithDes" desc="Watching the robot like a pro"><img src="/images/media/FRC_OC_Regional_2019/Watching the robot like a pro.jpg" alt="Watching the robot like a pro"/></p>
+                    <p class="mediaWithDes" desc="Trying to be cool"><img src="/images/media/FRC_OC_Regional_2019/Trying to be cool.jpg" alt="Trying to be cool"/></p>
+                    <p class="mediaWithDes" desc="Working in the pit"><img src="/images/media/FRC_OC_Regional_2019/Working in the pit.jpg" alt="Working in the pit"/></p>
+                    <p class="mediaWithDes" desc="Checking the robot before a match"><img src="/images/media/FRC_OC_Regional_2019/Checking the robot before a match.jpg" alt="Checking the robot before a match"/></p>
+                    <p class="mediaWithDes" desc="We gonna go!!"><iframe width="560" height="315" src="https://www.youtube.com/embed/8dgxiytTbkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h4>In the field</h4>
+                    <p class="mediaWithDes" desc="The MC in the regional"><img src="/images/media/FRC_OC_Regional_2019/The MC in the regional.jpg" alt="The MC in the regional"/></p>
+                    <p class="mediaWithDes" desc="Finished rapping"><img src="/images/media/FRC_OC_Regional_2019/Finished rapping.jpg" alt="Finished rapping"/></p>
+                    <p class="mediaWithDes" desc="Dancing on the stands"><img src="/images/media/FRC_OC_Regional_2019/Dancing on the stands.jpg" alt="Dancing on the stands"/></p>
+                    <p class="mediaWithDes" desc="Flag"><img src="/images/media/FRC_OC_Regional_2019/Flag.jpg" alt="Flag"/></p>
+                    <p>That's pretty much what I did. I was not part of the pit crew and driver team yet.</p>
+                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/SQdP3kMAby0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                    <h4>After the regional</br><small>showing off our awards :)</small></h4>
+                    <p class="mediaWithDes" desc="Showing off medals"><img src="/images/media/FRC_OC_Regional_2019/Showing off medals.jpg" alt="Showing off medals"/></p>
+                    <p class="mediaWithDes" desc="We got a trophy"><img src="/images/media/FRC_OC_Regional_2019/We got a trophy.jpg" alt="We got a trophy"/></p>
+                    <p class="mediaWithDes" desc="The finalists"><img src="/images/media/FRC_OC_Regional_2019/The finalists.jpg" alt="The finalists"/></p>
+                    <p class="mediaWithDes" desc="Picture with alliance partner"><img src="/images/media/FRC_OC_Regional_2019/Picture with alliance partner.jpg" alt="Picture with alliance partner"/></p>
+                    <p><strong>Click <a href="https://www.youtube.com/watch?v=g2IFLeUJTuc&list=PLQRNcG6B1Zs8RqA0DTvsUzJtS34vUTOR6">here</a> if the embed videos don't show up.</strong></p>
+                    
+                    <h3>Shout out to Angela for taking the photos</h3>
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="Why_do_scouting_apps_matter?">
+        <title>Why do scouting apps matter?</title>
+        <date>2019.9.23</date>
+        <date2>2019-9-23</date2>
+        <id>4</id>
+        <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>I'm talking about the significance of scouting apps and websites in teams of <a href="https://www.firstinspires.org/robotics/frc">First Robotics Competition</a>.</p>
+            <p>First, let me intro the official definition of <strong>scout</strong>,</p>
+            <blockquote>
+            <p>1: to explore an area to obtain information (as about an enemy).<br/>2. a: to make a search.<br/>&nbsp;&nbsp;&nbsp;&nbsp;b: to work as a talent scout.
+            </br> -- <a href="https://www.merriam-webster.com/dictionary/scouts">Merriam Webster</a></p>
+            </blockquote>
+            <p>In <a href="https://www.firstinspires.org/robotics/frc">First Robotics Competition</a>, scouting plays an important role in <a href="http://clickfrc.org/competition/at-the-event/alliance-selection/">alliance selection</a>, where top 8 teams(ranked by their <abbr>ranking points</abbr> earned in <abbr>qualification matches</abbr>) choose two alliance partners to join their alliance to compete in playoff matches. 
+            Here is an  <a href="http://clickfrc.org/competition/at-the-event/alliance-selection/">article</a> that has more details on this.</p>
+
+            <h3>What are scouts' tasks in a FRC event?<br/><small>by event timeline</small></h3>
+            <ul>
+                <li><strong>Day 1:</strong> all teams are setting up their pits for their robots. After this process is done, the scouts will start <abbr>the pit scout</abbr>. This kind of scouting includes 
+                    <ul>
+                        <li> going to other team's pits and greeting the students there,</li>
+                        <li> asking questions about their robot abilities(for <a href="https://www.youtube.com/watch?v=Mew6G_og-PI">2019 game</a>, an example can be <abbr>what level can you robot climb?</abbr>) </li>
+                        <li> and their strategy for matches,</li>
+                        <li> and team backup support(like <abbr>how many batteries do you have</abbr>?)</li>
+                    </ul>
+                </li>
+
+                <li><strong>Day 2:</strong> this day usually contains most of the qualification matches which teams randomly partner up to form alliances. Teams can still do pit scout on this day. But the most important 
+                task for scouts on this day is taking data from the robots' performances while watching the qualification matches. And this is the part that scouting app will help a lot. I will explain this later in this blog. 
+                One scout usually looks at <abbr>1</abbr> robot per match. For <a href="https://www.youtube.com/watch?v=Mew6G_og-PI">2019 game</a>, scouts can keep tracking data like, 
+                <ul>
+                    <li>how many cargos did this robot scored?</li>
+                    <li>how many hatches did this robot scored?</li>
+                    <li>what level did this robot climb in the end game?</li>
+                </ul>
+                </li>
+
+                <li><strong>Day 3:</strong> this is the day that <a href="http://clickfrc.org/competition/at-the-event/alliance-selection/">alliance selection</a> happens. The teams that are in position to pick will use their data from scouts to make 
+                decision. This process is very important for an alliance's success. </li>
+            </ul>
+            <h3>Scouting technology</h3>
+            <p>By asking question and observing how other teams scout from last year, I found out that most teams are using <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">excel</a>, 
+            <a href="https://www.google.com/forms/about/">Google Form</a> and <a href="http://team358.org/history/2012/workfiles/">physical paper(scouting sheets)</a>. </p>
+            <p><img src="/images/media/Why_do_scouting_apps_matter/scout_sheet.png" alt="scout_sheet" /></p>
+
+            <p>Those methods for storing data work, but it takes foreover for the scout team to collect, analyze the data. I've seen teams flipping through a stack of scout sheets to put data in 
+                <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">excel</a>. Then, they use <a href="https://en.wikipedia.org/wiki/Microsoft_Excel">excel</a> to rank and do other analyzations to the data.   
+            </p>
+
+            <p>A <abbr>good</abbr> scouting app or website will have a customized user interface so that the one thing the scouts need to do is to put data in the app, and the app will do all the analyzation works. 
+            Moreover, since the <abbr>forms</abbr> will be customized for competition, it will be much <abbr>easier</abbr> for scouts to enter data. Thus, those apps and websites are perfect for both <abbr>pit & match</abbr> scouting.</p>
+
+            <h4>Scouting website we(frc5805) use</h4>
+            <ul>
+                <li><p><strong>This year<span>2019</span>:</strong> <a href="https://frc-scope.com">Scope</a> by <a href="/">me</a>. It's the first online Scouting App For All FRC Teams, also the <strong>most convenient and functional scouting website in FRC.</strong> Here is a detailed <a href="/project/#frc-scope.com">project description</a>.</p></li> 
+                <li><p><strong>Last year<span>2018</span>:</strong> <a href="https://frcscouting.000webhostapp.com">Big Yoshi Scout</a> by <a href="/">me</a>. It's the mother of <a href="/project/#frc-scope.com">Scope</a>. It has scouting forms that are specific for FRC competition 2019. It is easy to use and can analyze data, rank teams, make charts from data user scout. It saved lots of time from putting data in excel then sorting data. It worked very well in 2019 season in my team. Here is a detailed <a href="/project/#frcscouting.ga">project description</a>.</p></li> 
+            </ul>
+            <h4>More resources on FRC scouting</h4>
+            <ul>
+                <li><a href="https://www.ndsubisonrobotics.org/uploads/5/9/8/8/59888285/frc_scouting_2fstrategy.pdf">Scouting Strategy</a> by <a href="https://www.thebluealliance.comhttps://www.thebluealliance.com/team/4607">frc4607</a>.</li>
+                <li><a href="http://team358.org/files/scouting/">Scouting Builds Winning Alliances and Winning Strategies</a> by <a href="https://www.thebluealliance.comhttps://www.thebluealliance.com/team/358">frc358</a>.</li>
+            </ul>
+                
+        ]]>
+        </content>
+    </table>
+    
+    <table name="media" id="Found_a_membean_bug">
+        <title>Found a membean bug</title>
+        <date>2019.9.22</date>
+        <date2>2019-9-22</date2>
+        <id>3</id>
+        <content>
+            <![CDATA[
+             <h3>Intro</h3>
+            <p><a href="https://membean.com">Membean</a> is the website that my <a href="https://www.smhs.org/">school</a> uses for students to learn vocabulary. It counts 15% as my English grade. This part includes sessions where students spend at least an hour per week answering questions and quiz which is generated by membean based on the vocab you've learned. 
+            Recently I found a potential bug in the website and wrote code that completed questions for me. The details are as follow.</p>
+            <h3>How I started this</h3>
+            <p>There was one night, I accidentally search <code>membean hack</code> on youtube. In the <a href="https://www.youtube.com/watch?v=9nWrstVqaiM">video</a>, 
+            the person finds the pass button by removing the stylesheet of membean session page. So I was inspired by this
+            , and planned to write a code to automatically answer questions correctly. </p>
+​
+            <h3>Algorithm</h3>
+            <p>According to the video, the person simply clicks the <strong>pass</strong> button to get the next question. So
+            I simply used <code>.click( )</code> method to replace clicking it manually. Here is an example,</p>
+            <figure class="highlight"><pre><code>answerBtn.click();
+
+document.getElementById('next-btn').click();</code> </pre> </figure>
+            <p>In membean session, there are two type of questions. One of them is multiple choice question. The website will take the user 
+            to the next question if the answer is correct.</p> 
+            <p><img src="/images/media/Found_a_membean_bug/multipleChoice.png" alt="multipleChoice" /></p>
+​
+            <p>If the answer is wrong, the website will take the user to a review question, where the user needs to choose the right definition the word that the user did wrong. And this type also occurs when there is a new word for the user to learn. Moreover, the user has as many chances to get the type of question right. After the user chooses the right choice. They need to click a <strong>NEXT</strong> 
+            button to view the next question.</p>
+            <p><img src="/images/media/Found_a_membean_bug/reviewQuestion.png" alt="reviewQuestion" /></p>
+​
+            <h4>Solution<span>I'm not showing entire code due to security issue</span></h4>
+            <ul>
+                <li class="li-pre"><p>Checking question type</p></li>
+                <figure class="highlight"><pre><code>var isFinsh = document.getElementById('interstitial');
+
+if (isFinsh == null) {
+    var formName = document.getElementsByTagName('form')[1];
+​
+    if (formName.name = "Next") {
+
+    }else if (formName.name == "Pass") {
+
+    }
+} else {
+
+}</code> </pre> </figure>   
+                <li class="li-pre"><p>Answering Multiple Choice</p></li>
+                <figure class="highlight"><pre><code>document.getElementById('pass').click();</code> </pre> </figure>   
+
+                <li class="li-pre"><p>Answering Review Question</p></li>
+                <figure class="highlight"><pre><code>answerBtn.click();
+
+document.getElementById('next-btn').click();</code> </pre> </figure>   
+
+                <li class="li-pre"><p>Finsh when the alert shows up</p></li>
+                <figure class="highlight"><pre><code>document.getElementById('Click_me_to_stop').click();</code> </pre> </figure>   
+            </ul>
+
+            <h3>Does it work?</h3>
+            <h4>Yes</h4>
+            <p>It did do questions for me. </p>
+            <h4>& No</h4>
+            <ul>
+                <li>it showed <abbr>cheating</abbr> on my teacher's account.</li>
+                <li>And I got <abbr>40</abbr> new words while testing this code, which will be more work when studying for vocab quiz.</li>
+            </ul>
+
+            <h3>Result</h3>
+            <p>In the next day, I emailed membean about this bug. And they replied to me that they will do the same test and encourage me
+                keep programming &#128513;
+            </p>
+            <p>Shout out to this awesome company! </p>
+            <p><img src="/images/media/Found_a_membean_bug/email.png" alt="email" /></p>
+
+            ]]>
+        </content>
+    </table>
+    ​
+    <table name="media" id="FRC_Season_2019">
+        <title>FRC Season 2019</title>
+        <date>2019.9.21</date>
+        <date2>2019-9-21</date2>
+        <id>2</id>
+        <content>
+            <![CDATA[
+                <h3>Intro</h3>
+                <p>I joined <a href="https://smblyrequired.com/">SMbly Required</a> in 2018, which was my Sophomore year in <a href="https://www.smhs.org/">HS</a>. I had a very fun building and competition season. Now
+                this is a recap of what I did in my first FRC season. Here are some blogs for some specific tournaments, </p>
+                <ul>
+                    <li><a href="/media/#FRC_OC_Regional_2019">2019 OC Regional</a></li>
+                    <li><a href="/media/#FRC_LA_North_Regional_2019">2019 LA North Regional</a></li>
+                    <li><a href="/media/#FRC_Houston_Champ_2019">2019 Houston Championship</a></li>
+                </ul>
+
+                <h3>Pre-season<span>Sep 2018 - Dec 2018</span></h3>
+                <p>Before building season, I was basically learning the whole time when I was at the meeting. I joined team in August with this email</p>
+                <p><img src="/images/media/FRC_Season_2019/email.png" alt="email"/></p>
+                <p>Then after school, I went to the classroom and met <a href="https://github.com/andrewd30">Andrew</a>--the only programmer was on the team.
+                I was very sure I will be doing programming. So he showed me the <a href="https://github.com/robingan7/FRC-2018-Public">code</a> from last year.
+                I was surprised how different it was from the <a href="https://apcentral.collegeboard.org/courses/ap-computer-science-a/course">Java</a> I known. I spent most of my time learning Java libraries like 
+                <a href="https://first.wpi.edu/FRC/roborio/release/docs/java/">WPILIB</a> & <a href="https://phoenix-documentation.readthedocs.io/en/latest/index.html">
+                ETRE</a> to be ready for building season.</p>
+
+                <h3>2019 Season<span>Jan 2019 - Apr 2019</span></h3>
+                <h4>Highlight Of Our <a href="https://smblyrequired.com">Design</a></h4>
+                <ul>
+                    <li><strong>The Double Chain System: </strong>it keeps our manipulator horizontal with the 
+                    ground in different positions of our arm. This design save lots of time in programming. Shout
+                    out to <a href="https://github.com/andrewd30">Andrew</a> and Aidan</li>
+
+                    <li><strong>Line Light Aligning: </strong>it was our first experience with <a href="https://limelightvision.io/">lime light</a> camera, which save lots of time to 
+                    build our own vision system. Also, thanks to my team's rich enough to get one. I worked on the <a href="https://github.com/robingan7/FRC-2019-Public/blob/master/src/main/java/frc/robot/commands/VisionDrive.java">code</a>
+                     and made a working vision tracking drivebase in the second week as shown in this 
+                    <a href="https://www.youtube.com/watch?v=qL1M6FNSRWc">video</a>,
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qL1M6FNSRWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+
+                    <li>
+                        <strong>Held Button Control: </strong>during match, our operator is able to switch six different positions with four buttons on the joystick. 
+                        <img src="/images/media/FRC_Season_2019/Testing the robot with Andrew.jpg" alt="Testing the robot with Andrew"/>
+                    </li>
+
+                    <li>
+                        <strong>LED Driver Signal: </strong>By using <a href="https://www.arduino.cc/">Arduino</a>, I was able to control LED's color based on the robot states to drivers
+                        signal during match. For example, the LED will turn red if the arm is moving so that the driver knows the state of robot. However, we didn't have enough space
+                        on our <a href="https://www.andymark.com/products/voltage-regulator-module">Voltage Regulator Module</a> to wire this Arduino, so we ended up not using it, but I 
+                        still keep the <a href="https://github.com/robingan7/FRC-2019-Public/blob/master/src/main/java/frc/robot/subsystems/Arduino.java">code</a> 
+                        and a <a href="https://www.youtube.com/watch?v=kvAwRCbZrN4">video</a> of this.
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kvAwRCbZrN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    </li>
+
+                    <li>
+                        I explained more specifically on highlights of the code in this <a href="/project/#FRC5805_2019">project</a>.
+                    </li>
+                </ul>
+
+                <h4 class="sectionBreaker">Things We Can Improve</h4>
+                <ul>
+                    <li>I'm not satisfied with the coding style.</li>
+                    <li>Autonomous is not working.</li>
+                    <li>The robot design can fit the lime light more. The arm this year sometimes blocks lime light view. Also, because
+                     the arm, the lime light camera can't be mounted in the center.</li>
+                </ul>
+
+                <h4 class="sectionBreaker">The Season Recap Video<span>Videos & Photos by <a href="https://twitter.com/AngelaZ44694683">Angela Zhang</a> - Editing by <a href="/">Robin Gan</a></span><span><a href="https://www.youtube.com/watch?v=DSitcrhtsj8">link</a></span></h4>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/DSitcrhtsj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                <h3>What I did on for off season<span>May 2019 - Aug 2019</span></h3>
+                <ul>
+                    <li>working on the new cycled base <a href="https://github.com/robingan7/frc5805_2020CodeDemo">code structure</a></li>
+                    <li><a href="https://frc-scope.com">scope</a> -- a scouting app for all <abbr>FRC</abbr> teams</li>
+                    <li><a href="http://5805docs.robingan.org">5805docs</a> -- <a href="https://www.thebluealliance.comhttps://www.thebluealliance.com/team/5805">frc5805</a> documentation page that includes most resources and links in FRC programming.</li>
+                </ul>
+
+                <p>I'm so excited for the 2020 season. <a href="https://smblyrequired.com/">5805</a> the new champion! Let's go!!!!</p>
+                <blockquote>
+                    <p>I sacrifice everything for Houston world champion. My goal is carrying the team to get a Houston Champion banner. I'm ready. Let's go 5805 the new champion! Flag先立这了
+                    -- <a href="/">Robin Gan</a></p>
+                    <img src="/images/media/FRC_Season_2019/teamMessage.png" alt="teamMessage"/>
+                </blockquote>
+            ]]>
+        </content>
+    </table>
+
+    <table name="media" id="First_Blog...">
+        <title>First Blog...</title>
+        <date>2019.9.20</date>
+        <date2>2019-9-20</date2>
+        <id>1</id>
+        <content>
+            <![CDATA[
+            <h3>Hello...</h3>
+            <p>Hi. I'm Robin. This is my first blog. I'm very excited to present you this website. I coded it from scratch and used some design from <a href="https://codepen.io/"> codepen</a>. I coded the first version of robingan.org(<a href="https://robinwebsite7.000webhostapp.com/">robingan.ga</a>) in November of <abbr>2018</abbr>. At that time, I only learned about programming for <abbr>4</abbr> months, so I was completely new to web programming. I looked up lots of videos on<a href="https://www.youtube.com/user/TheCharmefis"> youtube</a> and realized how easy it is to code a website. And I was very passionate about making my personal web page. </p>
+            <h4>Time Line of robingan.org</h4>
+            <ul>
+                <li><strong>2018.11: </strong>start to work on this website(called robingan.ga at that time).</li>
+                <li><strong>2018.12: </strong>main layout was done.<img src="/images/media/First_Blog.../mainlayout.png"/ alt="mainlayout"/></li>
+                <li><strong>2019.5: </strong>add php and sorting function on project page</li>
+                <li><strong>2019.7: </strong>add grid layout and sql for storing story and project page data.</li>
+                <li><strong>2019.8: </strong>realize the old one look bad and start working on this new version.</li>
+                <li><strong>2019.9: </strong><a href="/">robingan.org</a> the new version is done.<img src="/images/media/First_Blog.../robingan.org.png"/ alt="robingan.org"/></li>
+                <li><strong>2019.10: </strong>most blogs and projects content were put in.</li>
+            </ul>
+
+            <h3>Enjoy your journey here...</h3>
+            ]]>
+        </content>
+    </table>
+</data>

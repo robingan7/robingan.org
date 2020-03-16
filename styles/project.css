@@ -1,0 +1,268 @@
+.badgescard,
+.firstinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    margin-top:10px;
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    z-index: 5;
+}
+.card-container {
+    position: relative;
+    animation: animatop 0.3s ease-in-out forwards;
+    display: grid;
+    border: 2px solid black;
+    transform: skew(6deg);
+    z-index: 5;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--mainWhite);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    float: right;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 300px;
+    background: #606364;
+    position: absolute;
+    animation: rotatemagic 0.75s cubic-bezier(0.425, 1.04, 0.47, 1.105) 0.1s both;
+}
+
+.badgescard {
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: var(--mainWhite);
+    width: 80%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 4;
+    left: 10px;
+    bottom: 10px;
+    animation: animainfos 0.5s ease-in-out 0.1s forwards;
+}
+
+.badgescard span {
+    font-size: 34px;
+    margin-left:8px;
+    margin-right:8px;
+    opacity: 1;
+    transform: translateY(5px);
+    color:black;
+    cursor: pointer;
+}
+.badgescard span:hover {
+    color:var(--mainGold);
+}
+.firstinfo {
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+}
+
+.firstinfo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    filter: brightness(65%);
+}
+.card-container:hover{
+    transform: skew(0deg) scale(1.05);
+}
+.card-container:hover img{
+    filter: brightness(100%);
+}
+.firstinfo .profileinfo {
+    padding: 0px 20px;
+}
+
+.firstinfo .profileinfo h2 {
+    font-size: 26px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left:-15px;
+}
+
+.firstinfo .profileinfo h2:hover {
+    text-decoration: underline;
+}
+
+.firstinfo .profileinfo h3 {
+    font-size: 17px;
+    color: var(--mainGold);
+    font-style: italic;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top:0px;
+    margin-left:-10px;
+}
+.firstinfo .profileinfo p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size:15px;
+    margin-left:-10px;
+}
+.firstinfo .profileinfo p.bio {
+    padding: 10px 0px;
+    color: #5A5A5A;
+    font-style: initial;
+    line-height: 0.95;
+}
+
+/*arrow to project*/
+.card .arrow-icon {
+    position: absolute;
+    top: 3px;
+    right:15px;
+    transition:var(--transitionTime) ease;
+    transition: transform var(--transitionTime) ease;
+    transition: transform var(--transitionTime) ease, -webkit-transform var(--transitionTime) ease;
+    vertical-align: middle;
+    z-index:3;
+}
+.card:hover .arrow-icon {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+}
+
+.card .arrow-icon--circle {
+    transition: stroke-dashoffset var(--transitionTime) ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+
+.card:hover .arrow-icon--circle {
+    stroke-dashoffset: 0;
+}
+
+/*class for scroll effect*/
+
+.h1Fixed{
+    position:fixed;
+    margin-top:5px!important;
+    margin-left:5px;
+}
+
+.ulFixed{
+    position:fixed;
+    margin-top:65px!important;
+    margin-left:5px;
+    z-index:6;
+}
+
+.ulFixed li ul li{
+    display:none!important;
+}
+
+.ulFixed li:hover ul li{
+    display: block!important;
+}
+
+@keyframes animatop {
+    0% {
+        opacity: 0;
+        left: -500px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+@keyframes animainfos {
+    0% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: -42px;
+    }
+}
+
+@keyframes rotatemagic {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+        top: -24px;
+        left: -253px;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-30deg);
+        top: -24px;
+        left: -78px;
+    }
+}
+
+@media(max-width:400px){
+    .card-container {
+        transform: skew(3deg);
+    }
+    #content{
+        grid-template-columns: 1fr;
+    }
+    .badgescard{
+        overflow-x: hidden;
+    }
+
+    .firstinfo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .firstinfo .profileinfo {
+        padding: 0px 20px;
+    }
+
+    .firstinfo .profileinfo h2 {
+        font-size: 23.8px;
+    }
+
+    .firstinfo .profileinfo h3 {
+        font-size: 19.2px;
+    }
+
+    .firstinfo .profileinfo p {
+        font-size: 13px;
+    }
+
+    .firstinfo .profileinfo p.bio {
+        padding: 0px 0px;
+    }
+    .card:after {
+        width: 150px;
+        height: 300px;
+    }
+}
+@media(max-width:300px){
+    .card{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+    .card::-webkit-scrollbar {
+        width: 0px;
+    }
+    .badgescard{
+        width:70%;
+    }
+}

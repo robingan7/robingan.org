@@ -1,0 +1,98 @@
+<h3>Intro</h3>
+<p>This is the first version of the lunch website. In my <a href="https://www.smhs.org/">high school</a>, the lunch
+    schedule is confused especially for freshmen. So I created this website to help new students to learn my school's
+    block schedule.</p>
+
+<h4>Scenario: my school schedule<br /><small>how complex it is</small></h4>
+
+<ul>
+    <li><strong>15 different <a
+                href="https://smhsorg.finalsite.com/uploaded/2019-2020_Calendar/2019-2020_SMCHS_Bell_Schedule.pdf?1560464424884">bell
+                schdules</a></strong> including special schedules.</li>
+    <li><strong>Rotating class periods:</strong> We take <abbr>7</abbr> classes, but one day only has time for
+        <abbr>6</abbr> or <abbr>5</abbr> classes. So the next day starts with the class that is after the last class of
+        the previous day. </li>
+    <li><strong>First & Second Lunch:</strong> My school divides students into 2 lunches based on thier buildings of the
+        third class of the day. Since our rotating schedule, the third class is changing. </li>
+</ul>
+
+<p>According to my teacher, they always have students going to the wrong lunch which causes an after school detention to
+    the student. To solve this problem is my goal for this website. </p>
+
+<h3>Frontend</h3>
+<p>By watching lots of videos and login templates, I coded this login page, which is not very bad :) The user page,
+    update page and sign up page follow this design style. Here are some images of those pages. </p>
+<img class="parallelImageRight parallelImageLeft" src="/images/project/testsmlunch.cf/signup_page.png"
+    alt="signup_page" />
+
+<img class="parallelImageRight" src="/images/project/testsmlunch.cf/update_page.png" alt="update_page" />
+
+<img class="parallelImageRight" src="/images/project/testsmlunch.cf/user_page.png" alt="user_page" />
+<img class="parallelImageRight parallelImageLeft" src="/images/project/testsmlunch.cf/update_page.png"
+    alt="update_page" />
+
+<h3 class="sectionBreaker">Backend</h3>
+<p>It was a chanllenging part because it's my first time doing backend. In another word, I learned <abbr>php</abbr> and
+    <abbr>mysql</abbr> by doing this project. I was very excited when the data got put into the mysql database by my php
+    code.
+    I was also luckily that <a href="https://www.000webhost.com/">000webhost</a> provides free mysql database service so
+    I was able to host the webiste with no cost. </p>
+<h4>Algorithm</h4>
+<p>This algorithm explains how the lunch's determined by code. This task is done by <code>checklunch($room)</code>
+    method, </p>
+<figure class="highlight">
+    <pre><code>function checklunch($room){
+    if($room=='B'||$room=='b'||$room=='C'||$room=='c'||$room=='S'||$room=='s'){
+      return 'First Lunch';
+    } else if($room=='A'||$room=='a'||$room=='T'||$room=='t'||$room=='R'||$room=='r'||$room=='G'||$room=='g'){
+      return 'Second Lunch';
+    } else{
+      return 'Building does not exist';
+    }
+}
+</code>
+            </pre>
+</figure>
+
+<p>The third period classes of the week is put in manually by me. This is a huge inconvenience of this website, and you
+    will see how I fixed this in the <a href="/project/#smlunch.com">second version</a>. Here is code that I
+    need to change every week. </p>
+<figure class="highlight">
+    <pre><code>$lunches = array('one','two','three','four','five');
+$one_or_tow = array();
+for($y = 0; $y <=4 ; $y++){
+  $num = $lunches[$y];
+  $one_or_tow[]= checklunch($periods[0][$num]);
+}
+</code>
+            </pre>
+</figure>
+
+<p>After these process, the code will <code>echo</code> the HTML elements with either first or second lunch for each day
+    of the week.</p>
+<figure class="highlight">
+    <pre><code>echo 'Hello '.$row['name'].' from ';
+
+echo ' your friend Robin Gan';
+
+echo '&lt;p class="lunch">Monday&lt;/p>'.$one_or_tow[0];
+echo '&lt;p class="lunch">Tuesday&lt;/p>'.$one_or_tow[1];
+echo '&lt;p class="lunch">Wednesday&lt;/p>'.$one_or_tow[2];
+echo '&lt;p class="lunch">Thursday&lt;/p>'.$one_or_tow[3];
+</code>
+            </pre>
+</figure>
+
+<h3>Summary</h3>
+<h4>Did it solve the problem?</h4>
+<p>No, the login and sign up process was confusing to use because I didn't know much about the backend. Also, the
+    update(third period classes) process is inefficient and can easily forget by the person
+    who's doing this task. And the result could be serious, so I didn't introduce this to the school. Instead, I asked
+    my classmates to test the website, and I
+    got 60+ users and some good comments. ;)
+</p>
+
+<h4>Positive impact on me</h4>
+<p>All in all, I did make a good start on my backend journey. This skill leads to some successful websites like <a
+        href="/project/#frcscouting.ga" onclick="project_nav(this.innerText)">frcscouting.ga</a> and <a
+        href="/project/#scope.com">scope.com</a></p>

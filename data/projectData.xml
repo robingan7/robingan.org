@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<data xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+
+    <title type="text">Robingan.org</title>
+    <subtitle type="text">Pure concentrated awesome.</subtitle>
+    <updated>2019-09-10T22:24:32-07:00</updated>
+    <link rel="alternate" type="text/html" href="https://robingan.org" />
+    <id>https://robingan.org</id>
+    <link rel="self" type="application/atom+xml" href="https://robingan.org/data/story.xml" />
+    <author>
+        <name>Robin Gan</name>
+        <uri>https://robingan.org</uri>
+    </author>
+    <!-- Table project 
+    <table name="project" id="testsmlunch.cf">
+        <column name="title">testsmlunch.cf</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-javascript_badge"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <link>
+            <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/testsmlunch.cf/">View Code</a>
+                    </li>
+                    <li>
+                        <a href="http://testsmlunch.cf">Website</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/gjMudPHcKqs">Video</a>
+                    </li>
+                </ul>
+            </li>
+            ]]>
+        </link>
+
+        <date>2018.11</date>
+        <column name="des">a lunch web for students</column>
+        <column name="img">testsmlunch.cf.png</column>
+        <column name="type">Website</column>
+        <column name="time">2018</column>
+        <column name="id">1</column>
+
+        <content>
+            <![CDATA[
+            ]]>
+        </content>
+    </table>
+    -->
+    <table name="project" id="dropnotes.ga">
+        <column name="title">dropnotes.ga</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-javascript_badge"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2019.9</date>
+        <column name="des">a website for students to drop notes and media for me</column>
+        <column name="img">dropnotes.ga.png</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">9</column>
+    </table>
+
+    <table name="project" id="FRC_2019_Public">
+        <column name="title">FRC 2019 Public</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-java"></span>
+            ]]>
+        </column>
+        <date>2018.12-2019.3</date>
+        <column name="des">FRC 5805 official code for 2019 season</column>
+        <column name="img">FRC_2019_Public.jpg</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">8</column>
+    </table>
+
+    <table name="project" id="frcscouting.ga">
+        <column name="title">frcscouting.ga</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2018.12-2019.2</date>
+        <column name="des">Website for FRC scouts</column>
+        <column name="img">frcscouting.ga.png</column>
+        <column name="type">Robotics</column>
+        <column name="time">2019</column>
+        <column name="id">7</column>
+    </table>
+
+    <table name="project" id="testsmlunch.cf">
+        <column name="title">testsmlunch.cf</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-javascript_badge"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2018.11</date>
+        <column name="des">a lunch web for students</column>
+        <column name="img">testsmlunch.cf.png</column>
+        <column name="type">Website</column>
+        <column name="time">2018</column>
+        <column name="id">1</column>
+    </table>
+
+    <table name="project" id="robingan.ga">
+        <column name="title">robingan.ga</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-javascript_badge"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="fab fa-youtube"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2018.11</date>
+        <column name="intro">When I taught myself HTML and CSS, I can't wait to create my personal web page. This website is programmed by myself, it took lots of time. I will update this website very often.</column>
+        <column name="des">First website I made</column>
+        <column name="img">robingan.ga.png</column>
+        <column name="type">Website</column>
+        <column name="time">2018</column>
+        <column name="id">2</column>
+    </table>
+
+    <table name="project" id="ACSL_Team">
+        <column name="title">ACSL Team</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-python"></span>
+                <span class="devicons devicons-java"></span>
+            ]]>
+        </column>
+        <date>2018.11</date>
+        <column name="des">Shout out to Alex &amp; Yuhan</column>
+        <column name="img">ACSL_Team.png</column>
+        <column name="type">Club</column>
+        <column name="time">2018</column>
+        <column name="id">3</column>
+    </table>
+
+    <table name="project" id="Python_Space_Invader">
+        <column name="title">Python Space Invader</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-python"></span>
+            ]]>
+        </column>
+        <date>2018.9</date>
+        <column name="des">A fun python game</column>
+        <column name="img">Python_Space_Invader.png</column>
+        <column name="type">Club</column>
+        <column name="time">2018</column>
+        <column name="id">4</column>
+    </table>
+
+    <table name="project" id="Google_Code-in_2018">
+        <column name="title">Google Code-in 2018</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-python"></span>        
+                <span class="fab fa-wikipedia-w"></span>
+                <span class="fas fa-music"></span>
+                <span class="devicons devicons-github_badge"></span>
+            ]]>
+        </column>
+        <date>2018.11-2018.12</date>
+        <column name="des">First CS contest</column>
+        <column name="img">Google_Code-in.png</column>
+        <column name="video_link"></column>
+        <column name="type">Club</column>
+        <column name="time">2018</column>
+        <column name="id">5</column>
+    </table>
+
+    <table name="project" id="Google_Science_Fair_2018">
+        <column name="title">Google Science Fair 2018</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-python"></span>
+                <span class="devicons devicons-raspberry_pi"></span>
+            ]]>
+        </column>
+        <date>2018.11-2018.12</date>
+        <column name="des">AI Trash Sorter</column>
+        <column name="img">Google_Science_Fair.png</column>
+        <column name="type">Club</column>
+        <column name="time">2018</column>
+        <column name="id">6</column>
+    </table>
+</data>

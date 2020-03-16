@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+:root {
+    --transitionTime: 0.18s;
+
+    --darkBackgroundGray: #92999d;
+    --liGray:#b1b1b1;
+    --lightGray:#d3cfcc;
+
+    --white_used_in_btnHover:#E5E6F1;
+    --mainWhite:white;
+
+    --mainGold: #caac3d;
+    --darkGoldDesLink: #a48207;
+    --darkGoldDesLinkHover: #514107;
+}
+body {
+    background-color:var(--darkBackgroundGray); /*var(--darkBackgroundGray);*/
+    overflow-x: hidden;
+}
+
+* {
+    -webkit-overflow-scrolling: touch;
+    transition:var(--transitionTime);
+    /*font-family: monospace,"Lucida Grande",sans-serif;*/
+    font-family:'Jura',monospace,sans-serif;
+}
+
+a:-webkit-any-link {
+    color: transparent;
+}
+
+a {
+    color: transparent;
+}
+
+p{
+    line-height: 1.55;
+}
+
+strong, b{
+    color:rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.icons{
+    font-size:2.3px;
+}
+/*
+::-webkit-scrollbar {
+    width: 0px;
+}*/

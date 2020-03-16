@@ -1,0 +1,116 @@
+/*header*/
+.wrapper {
+    width: 200px;
+    margin: 0 auto;
+    height: 130px;
+    z-index: 2;
+}
+
+.wrapper h1 {
+    cursor: pointer;
+    text-transform: uppercase;
+    transform: skew(10deg) rotate(-10deg);
+    font-size: 56px;
+    top: 23px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    font-weight: 900;
+    color: var(--mainGold);
+    text-shadow: 1px 4px 6px var(--mainWhite), 0 0 0 #0736a4, 1px 4px 6px var(--mainWhite);
+    white-space: nowrap;
+    line-height:1.5;
+}
+
+.wrapper h1::before {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: -5px;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    color: var(--mainWhite);
+    transform: translate(6px, 0) skew(-13deg) scale(1, 1.2);
+    z-index: 2;
+    text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h1:after {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: var(--lightGray);
+    transform: translate(0, -1px) skew(13deg) scale(1, 0.8);
+}
+
+.indexFolded::before{
+    transform: translate(0, 0) skew(0deg) scale(1, 1.2)!important;
+
+}
+
+.indexFolded::after{
+    transform: translate(0, -1px) skew(0deg) scale(1, 0.9)!important; 
+    color:var(--mainWhite)!important;
+}
+/*content*/
+#content{
+    position: absolute;
+    width:900px;
+    top:150px;
+    left:calc((100% - 900px) / 2);
+    z-index:5;
+    background-color: var(--mainWhite);
+    border-radius: 5px;
+}
+
+#left {
+    float: left;
+    width: 60%;
+    height:100%;
+}
+
+#right {
+    float: right;
+    width: 38%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+#content h3{
+    border-bottom: 2px solid black;
+}
+
+small{
+    font-size:15px;
+}
+@media (max-width:900px) {
+    #content{
+        left:10px;
+        width:calc(100% - 20px);
+    }
+}
+@media(max-width:800px){
+    #left, #right {
+        float: none;
+        width: 100%;
+    }
+}
+@media (max-width:439px) {
+    .wrapper h1 {
+        font-size: 15.2vw;
+    }
+
+    .wrapper h1::before {
+        transform: translate(1.7vw, 0.08vw) skew(-13deg) scale(1, 1.2);
+    }
+    #content{
+        top:calc(34.5vw + 10px);
+    }
+}

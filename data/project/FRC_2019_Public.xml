@@ -1,0 +1,162 @@
+<table name="project" id="FRC_2019_Public">
+        <column name="title">FRC 2019 Public</column>
+        <date>2018.12-2019.3</date>
+        <link>
+            <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/FRC-2019-Public">View Code</a>
+                    </li>
+                    <li>
+                        <a href="/media/#FRC_Season_2019">Season Recap</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/andrewd30">Andrew Devine</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    <li>
+                        <a href="https://www.thebluealliance.com/team/5805/2019">Match Videos</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=DSitcrhtsj8">Recap Video</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=g2IFLeUJTuc&list=PLQRNcG6B1Zs8RqA0DTvsUzJtS34vUTOR6">2019 Clips</a>
+                    </li>
+                </ul>
+            </li>
+            ]]>
+        </link>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>Me and Andrew created this project for 2019 FRC season. For more information on the season, check out this <a href="/media/#">blog</a>. This page will 
+            focus on the some algorithms for 2019 robot. </p>
+            <p>General info, </p>
+            <ul>
+                <li>Langauge: <a href="https://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a></li>
+                <li>Type: <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/l/599732-what-is-command-based-programming">command base</a></li>
+            </ul>
+
+            <h3>Highlights</h3>
+            <h4>Limelight auto steering</h4>
+            <p>In <a href="https://www.youtube.com/watch?v=Mew6G_og-PI&t=1s">2019's FRC game</a>, there are reflective tapes on the hatch feeder, cargoship and rocket as shown below. And 
+            they are there for teams to use camera to vision track them. </p>
+            <p><img src="/images/project/FRC_2019_Public/vision_tape.png" alt="vision_tape"/></p>
+
+            <p>Luckily, our team is rich enough to purchase <a href="https://limelightvision.io/">limelight</a> camera, <abbr>a vision tracking product designed for <a href="https://www.firstinspires.org/robotics/frc">FRC</a></abbr>. 
+            It saves lots of time from making one from scratch, thus I can focus more on programming. I coded a working drive base with auto steering in two weeks, </p>
+            <p><img src="/images/project/FRC_2019_Public/auto_steering.gif" alt="auto_steering"/></p>
+            <p>In the <code><a href="https://github.com/robingan7/FRC-2019-Public/blob/master/src/main/java/frc/robot/commands/VisionTurn.java">VisionTurn</a></code>, I use <code>tx</code>, the <strong>horizontal error</strong> from center of target, as shown in this beautiful hand writing, as an input PID value to reach the error
+             to complete the auto steering. </p>
+            <p><img src="/images/project/FRC_2019_Public/tx.png" alt="tx"/></p>
+            <p>Here is an explanation with code, </p>
+<figure class="highlight"><pre><code>//VisionTurn command class - partial code
+public class VisionTurn extends PIDCommand {
+    public VisionTurn() {
+        super("VisionTurn", 0.23, 0.0001, 0.0);//PID tuning
+
+        //27: maximum value for tx
+        //-27: minimum value for tx
+        setInputRange(-27.0, 27.0);
+    }
+
+    //this method get tx value from limelight camera
+    protected double returnPIDInput() {
+        return Robot.limelight2.getX();
+    }
+
+    //this method sends the value to the drive base to move it
+    protected void usePIDOutput(double output) {
+        Robot.drivebase.visionDrive(Robot.joy.getRawAxis(1), output); //(output)
+    }
+}
+</code>
+            </pre>
+            </figure>
+            <p>In real match, the robot can align with the reflective tapes on the feeder and rocket automatically as shown in these two videos, </p>
+            <p><img src="/images/project/FRC_2019_Public/feeder.gif" alt="feeder"/></p>
+            <p><img src="/images/project/FRC_2019_Public/rocket.gif" alt="rocket"/></p>
+
+            <h4>Auto wrist-turning</h4>
+            <p>As one of the design highlights, our robot can score on both sides so that we don't need to turn the robot a lot. And our superstructure includes an arm and a wrist. Our arm and wrist are controlled by <a href="https://phoenix-documentation.readthedocs.io/en/latest/ch16_ClosedLoop.html#motion-magic-position-velocity-current-closed-loop-closed-loop">MotionMagic</a> close-loop control. 
+            Our goal was that whenever the arm is in one of the three front positions <small><abbr>front level 1, 2 and 3</abbr></small>, the wrist should automatically faces front and vice versa. This is what it acts like, </p>
+            <p><img src="/images/project/FRC_2019_Public/arm and wrist.gif" alt="arm and wrist"/></p>
+
+            <p>To achieve this, first we wrote a <code>willBeForward( )</code> method, which tells the wrist if the arm's going to be in a front or a back position. If the arm's position value is going to be greater than the vertex, we know that the wrist needs to face back. 
+                Here is the implementation, </p>
+<figure class="highlight"><pre><code>//This is in Manipulator.java
+public boolean willBeForward(){
+    //if position's greater than the vertex
+    if(goal > vertex_from_lvl1){ 
+      return false;
+    }else {
+      return true;
+    }
+}    
+</code>
+            </pre>
+            </figure>   
+            <p>In <a href="https://github.com/robingan7/FRC-2019-Public/blob/master/src/main/java/frc/robot/subsystems/Manipulator.java">Manipulator.java</a> file, we made the wrist to check periodically with this method to determine which side to face. </p>
+
+<figure class="highlight"><pre><code>//This is in Manipulator.java
+
+//using the willBeForward() method to 
+//determine which side to face
+
+public void moveManipulator() {
+    if(Robot.lift.willBeForward()) {
+      goal = facefront;
+    } else {
+      goal = faceback;
+    }
+}
+  
+//calling this periodically
+public void periodic(){    
+    //check if we are in close-loop 
+    //or open-loop control
+    if(Math.abs(Robot.joy2.getRawAxis(1)) > 0.1 
+        && Robot.joy2.getRawButton(10)) {
+        /* some code for open loop */
+    } else {      
+        moveManipulator();
+        tiltMotor.set(ControlMode.MotionMagic, 
+                        goal);      
+    } 
+}
+</code>
+            </pre>
+            </figure>   
+            <h3>Things we should improve</h3>    
+            <ul>
+                <li>I'm not satisfied with the coding style.</li>
+                <li>Autonomous is not working.</li>
+                <li>The robot design can fit the lime light more. The arm this year sometimes blocks lime light view. Also, because
+                the arm, the lime light camera can't be mounted in the center.</li>
+            </ul>  
+            <h3>Goal for next year</h3>
+            <ul>
+                <li>The first fully autonomous robot in FRC history. </li>
+                <li>Some programming awards in regionals and championship. </li>
+                <li>Code for 2020 season, it will be available <a href="/project/#FRC_Public_2020">here</a>.</li>
+            </ul>
+
+            <p>View the entire code <a href="https://github.com/robingan7/FRC-2019-Public">repo</a>. </p>
+        ]]>
+    </content>
+</table>

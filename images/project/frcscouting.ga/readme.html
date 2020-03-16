@@ -1,0 +1,345 @@
+<h3>Intro</h3>
+<p>Strongly recommend reading this <a href="/media/#Why_do_scouting_apps_matter?">blog</a>, where I talk about how
+    scouting works in <a href="https://www.firstinspires.org/robotics/frc">FRC(First Robotics Competition)</a> events
+    and the significance of a working scouting website or app for a team. </p>
+<p>It's the mother of <a href="/project/#frc-scope.com">Scope</a>. It has scouting forms that are specific for FRC
+    competition <strong>2019</strong>. It is easy to use and can analyze data, rank teams, make charts from data user
+    scout. It saved lots of time from putting data in excel then sorting data. It worked very well in 2019 season in my
+    <a href="https://smblyrequired.com">team</a>.</p>
+<h4>How did I start</h4>
+<p>There was one night, my robotics mentors were talking about how nice it will be if we had a scouting app last year. I
+    heard their talking so I jumped in and said I will make one. So that became my new project. I made it from scratch
+    using multiple languages. It took me 4 months to finish it since I was the only web developer on the team.</p>
+<p>The domain <strong>frcscouting.ga</strong> was expired December 8, 2019. So the website is on its original domain -
+    <strong><a href="https://frcscouting.000webhostapp.com">https://frcscouting.000webhostapp.com</a></strong>.</p>
+<h3>Frontend</h3>
+<h4>Toggle pages website</h4>
+<p>I was planning to do a <a href="https://en.wikipedia.org/wiki/Single-page_application">single page website</a>.
+    However, <strong>I think I comprehended the concept wrong.</strong> The website turned out to be an interface with
+    some toggle <abbr>div</abbr>, which worked fine but you can't call it a single-page website. The code looks like
+    this,</p>
+<figure class="highlight">
+    <pre><code>function toggleEdit(cls) {
+    let ele = document.getElementById(cls);
+    ele.classList.toggle('active');
+}
+
+function toggleChoose(cls) {
+    let ele = document.getElementById(cls);
+    ele.classList.toggle('active');
+}
+
+function toggleChart(cls) {
+    let ele = document.getElementById(cls);
+    ele.classList.toggle('active');
+}
+</code>
+            </pre>
+</figure>
+
+<h4>The 4 sections</h4>
+<p>There are 4 parts in frontend design,</p>
+<ul>
+    <li>
+        <p><strong>Teams:</strong> compare teams data in tables and graphs. For genrating graphs out of the data, I
+            tried <a href="https://www.chartjs.org/">chart.js</a> API which worked very well. <strong>All the tables in
+                this projects is coded from scratch</strong>, I wish I used more API that would save me tons of time of
+            binding data into compatible <abbr>HTML</abbr>. </p>
+        <img class="parallelImageRight parallelImageLeft" src="/images/project/frcscouting.ga/chart.gif"
+            alt="compare" />
+        <img class="parallelImageRight " src="/images/project/frcscouting.ga/compare.gif" alt="chart" />
+    </li>
+    <li>
+        <p><strong>Explore:</strong> this page is where scouts view ranking and most of the data from scouting in
+            events. The users are able to switch between <abbr>by Matchs</abbr> and <abbr>by Teams</abbr> by clicking
+            the buttons. It also got tables with fixed <abbr>Team Number</abbr> column. Although
+            the color is a little bit odd, it is easy to read. The embed <a href="https://www.thebluealliance.com/">Blue
+                Alliance</a> page saved scouts time from switching between tabs. </p>
+        <img src="/images/project/frcscouting.ga/explore.gif" alt="explore" />
+    </li>
+
+    <li>
+        <p><strong>Update info:</strong></p> When you click on <abbr>Update Info</abbr>, a small window asking for
+        <code>Edit Code</code> should pop up. The password is <code>3</code>, and the verifying is done by
+        <abbr>javascript</abbr> so you can find out the password if you inspect the web page.
+        I made it this way because I really didn't know that users can view all the HTML, CSS and JS code. &#128517;</p>
+        <img src="/images/project/frcscouting.ga/password.png" alt="password" />
+        <p>Once you submit the correct password, it should take you to this page below. The two blue buttons are used
+            for adding data. And all the green buttons are data added and can be edited by scouts. </p>
+        <img src="/images/project/frcscouting.ga/update_info.png" alt="update_info" />
+
+        <p><code>Add New Match</code> & <code>Add Team</code> contains two forms I designed for <abbr>pit
+                scouting</abbr> & <abbr>match scouting</abbr>. They're the most important part of this website becasue
+            they're where scouts entered
+            all the data.</p>
+        <img class="parallelImageRight" src="/images/project/frcscouting.ga/teamForm.gif" alt="teamForm" />
+        <img class="parallelImageRight parallelImageLeft" src="/images/project/frcscouting.ga/matchForm.gif"
+            alt="matchForm" />
+        <p>Scouts from my team really like the rocket and cargoship in the match form because they were very easy to use
+            and recognize.</p>
+    </li>
+    <li>
+        <p><strong>About us:</strong> just a link to our team <a href="https://smblyrequired.com/">website</a>.</p>
+    </li>
+
+</ul>
+
+<h3>Backend</h3>
+<p>It is the second website I made that requires <abbr>backend</abbr>. Like the frontend in <a
+        href="/project/#robingan.ga">robingan.ga</a>, I wasted lots of time writing inefficient and messy code. Luckily,
+    they worked but it is impossible for other people
+    to maintain the website. But I learned from my mistakes, and all the problems are fixed in the new version -- <a
+        href="/project/#frc-scope.com">frc-scope.com</a></p>
+
+<h4>Highlight</h4>
+<p>Second time worked with <abbr>MYSQL</abbr> database & <abbr>PHP</abbr>. This website contains a lot of regular
+    inserting, adding and editing data. I won't talk about these parts, instead, I will focus on
+    <strong>chart.js</strong> API and <strong>mulit-columns sorting</strong>, which
+    are two interesting topics for this project.</p>
+
+<h4>Chart.js API</h4>
+<p>As you see in <abbr>fronend</abbr> part of this article, the website can graphing the data(such as total cargo point)
+    of <abbr>a specific ability</abbr> of <abbr>a specific data(such as total cargo point)</abbr> in a <abbr>a specific
+        event</abbr>. This neat graph API is called <a href="https://www.chartjs.org/">chart.js</a>.
+</p>
+
+<p><strong>First,</strong> I put <code>event listener</code> on each <abbr>select bar</abbr> to send value to
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/6aced12a6bc93109d2a8f9805c08d3841f5431a3/pass_load_part.js#L30">load_graph(teamNumber, region, data)</a></code>
+    method,</p>
+<figure class="highlight">
+    <pre><code>//team number 
+$('#chteamnumber').change(function () {
+    var con1 = $('#chteamnumber').val();
+    var con2 = $('#chregion').val();
+    var con3 = $('#chfeature').val();
+    load_graph(con1, con2, con3);
+});
+
+//region
+$('#chregion').change(function () {
+    var con1 = $('#chteamnumber').val();
+    var con2 = $('#chregion').val();
+    var con3 = $('#chfeature').val();
+    load_graph(con1, con2, con3);
+});
+
+//data type such as total cargo point
+$('#chfeature').change(function () {
+    var con1 = $('#chteamnumber').val();
+    var con2 = $('#chregion').val();
+    var con3 = $('#chfeature').val();
+    load_graph(con1, con2, con3);
+});
+</code>
+            </pre>
+</figure>
+
+<p><strong>Second</strong>,
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/6aced12a6bc93109d2a8f9805c08d3841f5431a3/pass_load_part.js#L30">load_graph(teamNumber, region, data)</a></code>
+    method sends data to
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/master/graph.php">graph.php</a></code>, which
+    queries data from mysql database, with <a href="https://en.wikipedia.org/wiki/Ajax_%28programming%29">ajax</a>.
+    After it gets responses from database, it displays the graphs on the screen.</p>
+<figure class="highlight">
+    <pre><code>function load_graph(teamNumber, region, data) {
+    $.ajax({
+        url: "graph.php",
+        method: "POST",
+        data: {
+            teamNumber: teamNumber,
+            region: region,
+            data: data
+        },
+        success: function (data) {
+            $('#graphresult').html(data);
+        }
+    });
+}
+</code>
+            </pre>
+</figure>
+
+<p><strong>Finally</strong>,
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/master/graph.php">graph.php</a></code> queries from
+    databae and converts the data into <abbr>JSON</abbr> that <a href="https://www.chartjs.org/">chart.js</a> can read.
+    It responses to
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/6aced12a6bc93109d2a8f9805c08d3841f5431a3/pass_load_part.js#L30">load_graph(teamNumber, region, data)</a></code>
+    method
+    as soon as it gets the result. </p>
+<figure class="highlight">
+    <pre><code>//query data from database
+$query = /* sql query statement */;
+$result = mysqli_query($conn, $query);
+$result2 = mysqli_query($conn, $query);
+
+while ($row = mysqli_fetch_array($result)) {
+    $data1 = $data1 . '"'. $row[$con3].'",';
+}
+
+while ($row2 = mysqli_fetch_array($result2)) {
+    $data2 = $data2 . '"Match '. 
+             $row2["matchnumber"].'",';
+}
+
+//convert data in chart.js format
+$data1 = trim($data1, ",");   
+$data2 = trim($data2, ",");
+ 
+$output='
+&lt;div class="chart-container" style="">    
+&lt;canvas id="myChart">&lt;/canvas>
+&lt;/div>
+&lt;script src="Chart.min.js">&lt;/script>
+&lt;script>
+
+//myChart is a DOM element
+var ctx = myChart.getContext("2d");
+var myChart = new Chart(ctx, {
+    type: "line",
+    data: {
+        labels: ['.$data2.'],
+        datasets: [{
+            label: "'.$con1." ".$con2." "
+                    .$con3.'",
+            data: ['.$data1.'],
+            backgroundColor:  "black",
+            borderColor:"black",
+            borderWidth: 2,
+            pointBackgroundColor:"yellow"
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+&lt;/script>';
+}
+
+//response to load_graph method
+echo $output;
+}
+</code>
+            </pre>
+</figure>
+<h4>Mulit-columns Sorting</h4>
+<p>In explore page, you might notice there're three selects bars on top. They're for mulitple sorting, which gives more
+    options on ranking and evaluating team data.</p>
+<p>Here
+    is how it works. The first select bar on the left is first priority data(I called it <abbr>conditon1</abbr>), the
+    rest of two become second proioity and third proioity data.
+    When you select the first bar, the data you want will move to the first column. In this pattern, <abbr>second
+        data</abbr> will move the second column, and <abbr>third data</abbr> will move to the thrid column. Like this,
+</p>
+
+<p><img src="/images/project/frcscouting.ga/mutliple_column.gif" alt="mutliple_column" /></p>
+
+<p>The way of sending requests to database is same as <abbr>chart.js</abbr> implementation, which includes using
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/6aced12a6bc93109d2a8f9805c08d3841f5431a3/explorepage.inc.php#L19">load_rank(con1,con2,con3)</a></code>.
+    So I will only explain
+    the PHP part --
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/master/loadrank.php">loadrank.php</a></code>. </p>
+
+<p>This is query command to the database,</p>
+<figure class="highlight">
+    <pre><code>//SQL query command
+$query = "SELECT * FROM teams ORDER BY `teams`.`$condition1` DESC, `$condition2` DESC, `$condition3` DESC;";
+</code>
+            </pre>
+</figure>
+
+<p>But of the the speical cases is that the user might not choose three data, sometimes they only choose the first two
+    or the last two. So the code need to be able to handle this case. I was kind of smart that I created a
+    <code>nothing</code>
+    column in my database table. Every row has the same value in that column so that it doesn't do anything in ranking.
+    The code becomes this,</p>
+<figure class="highlight">
+    <pre><code>//SQL query command
+if($con1 == ""){
+    $con1 = "nothing";
+}
+if($con2 == ""){
+    $con2 = "nothing";
+}
+if($con3 == ""){
+    $con3 = "nothing";
+}
+$query = /* sql query statement */;
+</code>
+            </pre>
+</figure>
+
+<p>After that, I used a <code>for loop</code> to generate <abbr>HTML</abbr> with data, which is also the result to
+    <code><a href="https://github.com/robingan7/frcscouting.ga/blob/6aced12a6bc93109d2a8f9805c08d3841f5431a3/explorepage.inc.php#L19">load_rank(con1,con2,con3)</a></code>.
+</p>
+<figure class="highlight">
+    <pre><code>$output .= '&lt;/tr>';
+$fetchArray = mysqli_fetch_array($result);
+while($rows = $fetchArray){
+    $output .= '&lt;tr>';
+    foreach ($final as $col_name){
+        if($col_name == "teamnumber"){
+            $output .= '&lt;th class="lock">'.
+                        $rows[$col_name].
+                        '&lt;/th>';
+            $tnum = $rows[$col_name];
+            $sq = /* sql query statement */;
+            $qry = mysqli_query($conn, $sq);
+            $ros = mysqli_num_rows($qry);
+        }else{
+            $totalNum = $rows[$col_name];
+            $in = $totalNum / $ros;
+            $output .= '&lt;th class="normal">'.
+                        $in.'&lt;/th>';
+        }
+    }
+$output .= '&lt;/tr>';
+}
+echo $output;
+</code>
+            </pre>
+</figure>
+
+<h3>Things I will(have to) improve next time</h3>
+<ul>
+    <li>This project contains too much <strong>duplicated code</strong>, even after I cleaned up the code twice last
+        year.</li>
+    <li>The coding style is super messy. </li>
+    <li>There is no directory in this project(all the files are in the same folder as <code>index.php</code>.), which
+        gives me a hard time every time I want to find a file. </li>
+    <li>Overused <code>echo</code> in <abbr>PHP</abbr>, data binding should be neater. </li>
+</ul>
+
+<h3>Further Work</h3>
+<h4>Tutorial Videos</h4>
+<ul>
+    <li>Team Page
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7D9xPCLRoq0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+
+    <li>
+        Explore Page
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/77sFbRvCJ3A" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+
+    <li>
+        Update Info Page
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RZJNbo-2GM4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+</ul>
+
+<h4>Xcode Version(Apple APP)</h4>
+<p>Here is the <a href="https://github.com/robingan7/frcscouting.ga-Xcode">code</a>. Xcode version of frcscouting.ga,
+    basically displaying sub page of the website version in each tab. I didn't publish it because I didn't want to pay
+    $100 developer fee. </p>
+<p><img src="/images/project/frcscouting.ga/mobile version.png" alt="mobile version" /></p>
+<h4><a href="/project/#frc-scope.com">frc-scope.com</a></h4>
+<p>Second verison of this project, it will be a professional website for all FRC teams. Be ready.....</p>

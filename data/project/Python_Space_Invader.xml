@@ -1,0 +1,80 @@
+<table name="project" id="Python_Space_Invader">
+        <column name="title">Python Space Invader</column>
+        <date>2018.9</date>
+        <link>
+            <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/AP-CS/blob/master/pythongame.py">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=crV6T3piwHQ">Tutorial</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/5xxgIjL0A8s">Video</a>
+                    </li>
+                </ul>
+            </li>
+            ]]>
+        </link>
+        <content>
+            <![CDATA[
+            <h3>Intro</h3>
+            <p>This is a game I programmed in November 2018. I used the <a href="https://docs.python.org/2/library/turtle.html">turtle</a> library in python. It is like a <a href="https://en.wikipedia.org/wiki/Space_Invaders">space invaders</a> game. It only took me a week to make. My friends enjoy playing the game. 
+            It is a simple program that can be run on any of tablets that has <a href="https://jupyter.org/">jupyter notebook</a>.</p>
+
+            <h3>How to run it</h3>
+            <ul>
+                <li><p>copy the <a href="https://github.com/robingan7/AP-CS/blob/master/pythongame.py">code</a></p></li>
+                <li><p>paste it in one of the python files in your jupyter notebook </p>
+                <img src="/images/project/Python_Space_Invader/jupyter.png" alt="jupyter" /></li>
+                <li>Run the code and you should see this
+                <img src="/images/project/Python_Space_Invader/game_in.png" alt="game_in" /></li>
+                </li>
+            </ul>   
+            <h3>Game Manual</h3>
+            <ul>
+            <li>You goal is to prevent the "invaders" from attacking your spaceship. You can kill one of them if your bullet hit one invader, and 
+                you get <abbr>10</abbr> points after. 
+            </li>    
+            <li>When you hit one "invader", a <abbr>new one</abbr> will generate in a random place on the upper screen, and all the invaders also will 
+                move faster. You goal is to get as many as points as possible.
+            </li>
+            <li>
+                <code>&#11013;</code> <code>&#10145;</code> on keyboard are for moving the spaceship left and right. 
+            </li>
+
+            <li>
+                <code>space</code> is for shooting bullets, and <code>A</code> is for shooting super bullets. 
+            </li>
+
+            <li>Super bullet is bigger and can hit targets easier. You get one every <abbr>30</abbr> points you score.</li>
+
+            </ul>
+            <h3>Graphics</h3>
+            <p><strong>Spaceship: </strong>I drew this on <a href="https://en.wikipedia.org/wiki/Microsoft_Paint">paint</a></p>
+            <img src="/images/project/Python_Space_Invader/spaceship.gif" alt="spaceship" />
+            <p><strong>Invader: </strong>used my friend <a href="http://alexlynd.com/">Alex</a>'s avatar
+            <img class="smallMedia" src="/images/project/Python_Space_Invader/alex.gif" alt="alex" />.</p>
+            <p>Here is the video about the game, </p>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/5xxgIjL0A8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            ]]>
+        </content>
+    </table>

@@ -1,0 +1,9 @@
+.indexFolded::before{
+    transform: translate(0, 0) skew(0deg) scale(1, 1.2)!important;
+
+}
+
+.indexFolded::after{
+    transform: translate(0, 0) skew(0deg) scale(1, 0.9)!important; 
+    color:var(--mainWhite)!important;
+}
