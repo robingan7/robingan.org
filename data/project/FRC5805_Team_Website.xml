@@ -1,0 +1,69 @@
+<table name="project" id="FRC5805_Team_Website">
+    <column name="title">FRC5805 Team Website</column>
+    <date>2020.4</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/team5805.com">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="http://team5805.robingan.org/">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                     <li>
+                        <a href="http://alexlynd.com/">Alex Lynd</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                   
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Overview</h3>
+            <p>It's just a simple team website my friend Alex and I made during <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> lockdown because 
+                we were bored. I used <a href="https://developers.google.com/youtube/iframe_api_reference">YouTube API</a> to embed the video as backgorund so it looks cool on the <a href="http://team5805.robingan.org/">front page</a>. 
+            </p>
+<figure class="highlight"><pre><code>function onYouTubeIframeAPIReady() {
+    if (window.innerWidth >= 650) {
+        player = new YT.Player('player', {
+            height: '315',
+            width: '560',
+            videoId: videoUrl,
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+}
+</code>
+            </pre>
+            </figure>
+
+            <img src="/images/project/FRC5805_Team_Website/web1.png" alt="web1">
+            <img src="/images/project/FRC5805_Team_Website/web2.png" alt="web2">
+            <img src="/images/project/FRC5805_Team_Website/web3.png" alt="web3">
+            <img src="/images/project/FRC5805_Team_Website/web4.png" alt="web4">
+            <img src="/images/project/FRC5805_Team_Website/web5.png" alt="web5">
+
+            ]]>
+    </content>
+</table>

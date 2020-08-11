@@ -69,6 +69,179 @@
         </content>
     </table>
     -->
+    <table name="project" id="Pylar">
+        <column name="title">Pylar</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.6</date>
+        <column name="des">an AI project for trash composting</column>
+        <column name="img">Pylar.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">20</column>
+    </table>
+
+    <table name="project" id="Analysis_on_predicting_COVID-19_cases">
+        <column name="title">Analysis on predicting COVID-19 cases</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.6</date>
+        <column name="des">an AI project for trash composting</column>
+        <column name="img">Analysis_on_predicting_COVID-19_cases.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">19</column>
+    </table>
+
+    <table name="project" id="coronaware.net">
+        <column name="title">coronaware.net</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.5</date>
+        <column name="des">a website for viewing cases and trends of coronavirus in Orange County with AI Prediction</column>
+        <column name="img">coronaware.net.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">18</column>
+    </table>
+
+    <table name="project" id="FRC5805_Team_Website">
+        <column name="title">FRC5805 Team Website</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.4</date>
+        <column name="des">a nice design website for my high school robotics</column>
+        <column name="img">FRC5805_Team_Website.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">17</column>
+    </table>
+
+    <table name="project" id="5805docs">
+        <column name="title">5805docs</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.2</date>
+        <column name="des">helps FRC robotics programmers to find documentations and resources</column>
+        <column name="img">5805docs.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">16</column>
+    </table>
+
+    <table name="project" id="Cheesy_Path_2020_Version">
+        <column name="title">Cheesy Path 2020 Version</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+            ]]>
+        </column>
+        <date>2020.1</date>
+        <column name="des">a modified version of FRC254's Cheezy Path for 2020 game</column>
+        <column name="img">Cheesy_Path_2020_Version.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">15</column>
+    </table>
+
+    <table name="project" id="FRC_2020_Public">
+        <column name="title">FRC 2020 Public</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-java"></span>
+            ]]>
+        </column>
+        <date>2019.12-2020.3</date>
+        <column name="des">FRC 5805 official code for 2020 season</column>
+        <column name="img">FRC_2020_Public.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">14</column>
+    </table>
+
+    <table name="project" id="Google_Code-in_2019_Evalai">
+        <column name="title">Google Code-in 2019 Evalai</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-angular"></span>
+                <span class="devicons devicons-html5"></span>
+            ]]>
+        </column>
+        <date>2019.12</date>
+        <column name="des">contribution to CloudCV's AI contests hosting website</column>
+        <column name="img">Google_Code-in_2019_Evalai.png</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">13</column>
+    </table>
+
+    <table name="project" id="course-planner.com">
+        <column name="title">course-planner.com</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-react"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-nodejs"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-mongodb"></span>
+            ]]>
+        </column>
+        <date>2019.11</date>
+        <column name="des">a website for teachers to plan their teaching schedule</column>
+        <column name="img">course-planner.com.png</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">12</column>
+    </table>
+
+    <table name="project" id="seeyourschedule.com">
+        <column name="title">seeyourschedule.com</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-angular"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2019.10</date>
+        <column name="des">a website for students to check the block schedule</column>
+        <column name="img">seeyourschedule.com.png</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">11</column>
+    </table>
+
     <table name="project" id="dropnotes.ga">
         <column name="title">dropnotes.ga</column>
         <column name="li1">
@@ -84,6 +257,26 @@
         <date>2019.9</date>
         <column name="des">a website for students to drop notes and media for me</column>
         <column name="img">dropnotes.ga.png</column>
+        <column name="type">Website</column>
+        <column name="time">2019</column>
+        <column name="id">10</column>
+    </table>
+
+    <table name="project" id="Scope">
+        <column name="title">Scope</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-angular"></span>
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-php"></span>
+                <span class="devicons devicons-css3_full"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-mysql"></span>
+            ]]>
+        </column>
+        <date>2019.4-2019.9</date>
+        <column name="des">a website for frc teams to scout easier</column>
+        <column name="img">Scope.png</column>
         <column name="type">Website</column>
         <column name="time">2019</column>
         <column name="id">9</column>

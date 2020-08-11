@@ -1,0 +1,79 @@
+<table name="project" id="coronaware.net">
+    <column name="title">coronaware.net</column>
+    <date>2020.5</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/coronaware.net">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="https://coronaware.net/old">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                    <li>
+                        <a href="http://alexlynd.com/">Alex Lynd</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/luke_soliman">Luke Soliman</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Overview</h3>
+            <p>This website was made for viewing cases and trends of coronavirus in Orange County, CA with graphs, table and AI Prediction. 
+                My friend Alex was in charge of the <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end">frontend</a>. I did more <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end">backend programming</a>.
+                Luke updated the website everyday with data from <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc">OC health</a>. 
+            </p>
+            <img src="/images/project/coronaware.net/web1.png" alt="web1">
+            <img src="/images/project/coronaware.net/web2.png" alt="web2">
+            <img src="/images/project/coronaware.net/web3.png" alt="web3">
+
+            <h3>AI Prediction</h3>
+            <p>I used <a href="https://brain.js.org">brain.js</a> to build <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Network</a> model to predict total cases every week. 
+            </p>
+<figure class="highlight"><pre><code>function printAIResult() {
+    /*
+    var net1 = new brain.recurrent.RNNTimeStep();
+    var net2 = new brain.recurrent.LSTMTimeStep();
+    var net3 = new brain.recurrent.GRUTimeStep();
+    */
+    const net = new brain.recurrent.GRUTimeStep()
+    let training = [];
+
+    for(let ele of cases) {
+        training.push(ele.cases.total_cases[0]);
+    }
+    net.train([training]);
+
+    console.log(net.forecast(training, 7));
+}
+</code>
+            </pre>
+            </figure>
+            <img src="/images/project/coronaware.net/ai.png" alt="ai">
+
+
+            ]]>
+    </content>
+</table>

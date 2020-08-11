@@ -1,0 +1,42 @@
+<table name="project" id="Pylar">
+    <column name="title">Pylar</column>
+    <date>2020.6</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="http://alexlynd.com">Alex Lynd</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/car_in_a__">Carina Bachmann</a>
+                    </li>
+
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Upcoming</h3>
+            <p>The project is an AI powered composting machine. This is my group project for a 2021 science fair. We're still working on this. Stay tuned!!</p>
+            ]]>
+    </content>
+</table>

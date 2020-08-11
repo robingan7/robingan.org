@@ -1,0 +1,140 @@
+<table name="project" id="Scope">
+    <column name="title">Scope</column>
+    <date>2019.4-2019.9</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="http://u880691907-robingan-org.hostingerapp.com">Website</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/robingan7/Scope">View Code</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/lCXy4XA_t8Q">Video</a>
+                    </li>
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>Strongly recommend reading this <a href="/media/#Why_do_scouting_apps_matter?">blog</a>, where I talk about how scouting works in <a href="https://www.firstinspires.org/robotics/frc">FRC(First Robotics Competition)</a> events and the significance of a working scouting website or app for a team. </p>
+
+            <p>This is the biggest project I worked in high school, and it's the most worthyless for how much time I spent on 
+                it. It didn't turn out to work well but I did learn from the mistake. 
+            </p>
+
+            <h4>How did I start</h4>
+            <p>After I made <a href="/project/#frcscouting.ga">frcscouting.ga</a>, I was interesting in 
+                making websites and decided to learn <a href="https://angular.io/">Angular</a> to make the best scouting apps ever for all 
+                <a href="https://www.firstinspires.org/robotics/frc">FRC</a> teams. So I hoped that I could make a impact in the community. 
+            </p>
+
+
+            <h3>Features</h3>
+            <h4>Scouts & Managers Role</h4>
+            <p>None of the scouting apps I know have this feature. One of the most convenient features of this website is that it has the Scouts & Managers roles, where
+                the managers can assign tasks to scouts. The managers can also view the progress of each scout. And each 
+                teams can only have one manager to make the process easier to organize.  
+            </p>
+            <p><img src="/images/project/Scope/managerandscout.png" alt="managerandscout"/></p>
+
+            <h4>Task section</h4>
+            <p>Here are the things the users can do in the task section,</p>
+            <ul>
+                <li>
+                    <p><strong>Set and change events(manager only):</strong> 
+                    the users can set and change the <a href="https://frc-events.firstinspires.org/">FRC events</a> they are currently competing at. 
+                By doing this, the website can provide the teams and matches data at that events for enabling convenient features in other sections. Thanks to <a href="https://www.thebluealliance.com/apidocs/v3">thebluealliance api</a>, 
+                I was able to access to all the events information.</p> 
+                <p><img src="/images/project/Scope/setevent.png" alt="setevent"/></p>
+
+                </li>
+
+                <li>
+                    <p><strong>View and start current tasks:</strong> for scout who has tasks assigned to them. They can view and start tasks in this section. </p>
+                    <p><img src="/images/project/Scope/matchtasks.png" alt="matchtasks"/></p>
+                    <p><img src="/images/project/Scope/pittasks.png" alt="pittasks"/></p>
+                </li>
+
+                <li>
+                    <p><strong>Created and edit(manager only) form:</strong> the manager can edit pit and match scouting form, which is changing 
+                    the aspects they want their scout to look for during scouting. They can also edit the customized questions for his or her team. 
+                    </p>
+                    <p><img src="/images/project/Scope/editform.png" alt="editform"/></p>
+                </li>
+            </ul>
+
+            <h4>Manage section(manager only)</h4>
+            <p>The manager can add, edit and delete his or her scouts' tasks in this section. </p>
+            <p><img src="/images/project/Scope/addtasks.png" alt="addtasks"/></p>
+            <p><img src="/images/project/Scope/edittasks.png" alt="edittasks"/></p>
+            <p><img src="/images/project/Scope/managermodal.png" alt="managermodal"/></p>
+
+            <h4>History section</h4>
+            <p>Under this tab, the users can view and edit all the matches they scout. For manager, he or she can 
+                view and edit all the matches from his or her scouts. 
+            </p>
+            <p><img src="/images/project/Scope/history.png" alt="history"/></p>
+            <p><img src="/images/project/Scope/historypit.png" alt="historypit"/></p>
+
+            <h4>Data section</h4>
+            <p>In this section, the users can view and rank teams from the data they scout with 100+ of filters. They can also save the team they like 
+                for alliance selection. 
+            </p>
+            <p><img src="/images/project/Scope/data.png" alt="data"/></p>
+
+            <h4>Teamlist section</h4>
+            <p>In this section, the users can rank the teams they liked for final adjustment or better decisions in alliance selection. They can also cross off the teams that are 
+                already picked. 
+            </p>
+            <p><img src="/images/project/Scope/teamliked.png" alt="teamliked"/></p>
+
+            <h3>Bluealliance API</h3>
+            <p>I used <a href="https://www.thebluealliance.com/apidocs/v3">thebluealliance api</a> a lot for this project. For examples, </p>
+            <ul>
+                <li><p>In the task section, if the user click "add pit scout", the team numbers in their event will automatically show up. </p>
+                <p><img src="/images/project/Scope/api1.png" alt="api1"/></p>
+                </li>
+
+                <li>
+                    <p>When the managers are adding tasks for the scout, the website can tell them the max qualication match number they can put in for that event. </p>
+                    <p><img src="/images/project/Scope/api2.png" alt="api2"/></p>
+                </li>
+
+                <li>
+                    <p>When the scout open his or her task, the number of the team they need to scout will automatically show up based on the position their manager choose.</p>
+                    <p><img src="/images/project/Scope/api3.png" alt="api3"/></p>
+
+                </li>
+            </ul>
+
+            <h3>Mistake I made</h3>
+            <p>After hours and hours of effort, this website's never used. Here are some mistakes that causes this:</p>
+            <ul>
+                <li><strong>Impossible to update:</strong> when I coded this, I did NOT think about how I will update 
+                this website for next year. At the time when I need, I found out how messy the code was and made the website impossible to update to 2020 game.</li>
+                <li><strong>Security issue:</strong> I did NOT realize that the passwords needed to be encrypted. So I don't want to let other people use this website.</li>
+                <li>I can't code big project like this all by myself. It's not a good idea. </li>
+            </ul>
+            ]]>
+    </content>
+</table>

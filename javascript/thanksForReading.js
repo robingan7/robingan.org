@@ -6,21 +6,21 @@ var thanksForReadingParts = {
                     <a class="rcc_link" href="/data/projectData.xml"><i class="fas fa-rss"></i></a>
                 </h4>
                 <p>
-                    <a class="thanksForReadingFormat-img" href="https://twitter.com/XiangyuGan">
+                    <a class="thanksForReadingFormat-img" href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">
                         <img src="/images/coo.png" alt="avator" width="250px">
                     </a>
                 </p>
     `,
     part2:`
-            <p>I'm <a href="/">Xiangyu(Robin) Gan</a>, a high school junior in California, US, a programmer, a robotics library author, and a cool rap author.</p>
+            <p>I'm <a href="/">Xiangyu(Robin) Gan</a>, a high school senior in California, US, a programmer, a robotics library author, and a cool rapper.</p>
             <p>I've learned programming for one year. I coded websites, contest algorithms, FRC robot and AI. All my code is freely accessible on <a href="https://github.com/robingan7">GitHub</a>. 
-            Please let <a href="mailto:xiangyu.gan@robingan.org">me</a> know if there's anything I can improve. </p>
+            Please let <a href="mailto:robinganmusic@gmail.com">me</a> know if there's anything I can improve. </p>
 
-            <p>I made school-related apps like <a href="https://seeyourschedule.com">See Your Schedule</a>, an online <a href="https://frc-scope.com">scouting app</a> for all FRC teams, a robotics beginner library <a href="http://cybersmbly.robingan.org">cybersmbly</a>
+            <p>I made school-related apps like <a href="https://seeyourschedule.com">See Your Schedule</a>, an online <a href="http://u880691907-robingan-org.hostingerapp.com/">scouting app</a> for all FRC teams, a robotics beginner library <a href="http://cybersmbly.robingan.org">cybersmbly</a>
             ,a cycle-based robotics autonomous project and a <a href="http://5805docs.robingan.org">reference site</a> for 5805.</p>
 
             <p>I also have a <a href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">youtube channel</a>, where I post robotics and rap videos.
-                You can listen to my rap on my <a href="/music">music page</a>. I can freestyle in different languages, which I'm proud of myself ;). I love to perform my music for my teams, family ,and friends.  
+                You can listen to my rap on my <a href="/music">music page</a>. 
             </p>
 
     `,
@@ -38,4 +38,4 @@ var thanksForReadingParts = {
 }
 var thanksForReadingBlock = thanksForReadingParts.part1 + thanksForReadingParts.part2 + thanksForReadingParts.part3;
 
-var headerOG = `I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages.`;
+var headerOG = `I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages.`;

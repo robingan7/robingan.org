@@ -1,0 +1,73 @@
+<table name="project" id="Google_Code-in_2019_Evalai">
+    <column name="title">Google Code-in 2019 EvalAI</column>
+    <date>2019.12</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/EvalAI-ngx/pull/1/files">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="https://evalai.cloudcv.org">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=rWiycwJIXh4">Video</a>
+                    </li>
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>This is my second year participating in <a href="https://codein.withgoogle.com/archive/">Google Code-in</a>. I didn't have much time so I didn't complete as many tasks as I did in <a href="/project/#Google_Science_Fair_2018">2018</a>. 
+            The only tasks I did was some contributions to <a href="https://cloudcv.org/">CloudCV</a>'s <a href="https://evalai.cloudcv.org/">EvalAI project</a>.</p>
+
+            <h3>Overview</h3>
+            <h4>What is EvalAI</h4>
+            <blockquote>
+            <p>EvalAI is an open-source web platform for organizing and participating in challenges to push the state of the art on AI tasks. -<a href="https://en.wikipedia.org/wiki/User:RexxS/GCI-Task07">EvalAI</a></p>
+            </blockquote>
+
+            <h4>Tasks I did</h4>
+            <p>One of the tasks I did was checking if the input <a href="https://en.wikipedia.org/wiki/URL">URL</a> from user is valid by using <a href="https://en.wikipedia.org/wiki/Regular_expression">REGEX matching</a>. 
+            </p>
+<figure class="highlight"><pre><code>function isValid_URL(str) {
+  var pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
+  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|'+ // domain name
+  '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+  '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+  '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+  '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+  return pattern.test(str);
+} //by Zemljoradnik
+</code>
+            </pre>
+            </figure>
+            <p><img src="/images/project/course-planner.com/codechange.png" alt="codechange" /></p>
+
+            <h4>Achievement</h4>
+            <p>I did win a t-shirt and a sticker.</p>
+            <p><img src="/images/project/course-planner.com/sticker.png" alt="sticker" /></p>
+            <h3>A sad news</h3>
+            <p>After the 2019 season, Google Code-in was not coming back for 2020 season because they can't find enough companies to make tasks. </p>
+            ]]>
+    </content>
+</table>

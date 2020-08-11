@@ -1,7 +1,7 @@
 var globalXAM, globalSelectPage;
-
+var version = '5'
 function loadProject() {
-    fetch('/data/projectData.xml').then((res) => {
+    fetch('/data/projectData.xml?stopcaching' + version).then((res) => {
         res.text().then((xml) => {
             let parser = new DOMParser();
             globalXAM = parser.parseFromString(xml, 'text/xml');
@@ -70,7 +70,7 @@ function resetTitleAndDescription(){
 }
 function loadProjectDes(id){
     try{
-        fetch('/data/project/' + id + '.xml').then((res) => {
+        fetch('/data/project/' + id + '.xml?version' + version).then((res) => {
             res.text().then((xml) => {
                 let parser = new DOMParser();
                 let xmlRes = parser.parseFromString(xml, 'text/xml');

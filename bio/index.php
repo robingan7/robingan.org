@@ -15,8 +15,8 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <title>Bio|Robin Gan--甘翔羽 &raquo; Robingan.org</title>
     <meta charset="UTF-8"/>
     <meta property="og:title" content="Bio|Robin Gan--甘翔羽 &raquo; Robingan.org" />
-    <meta name="description" content="Robin Gan's Bio --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages."/>
-    <meta property="og:description" content="Robin Gan's Bio --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages."/>
+    <meta name="description" content="Robin Gan's Bio --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
+    <meta property="og:description" content="Robin Gan's Bio --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
     <?php include( $_SERVER['DOCUMENT_ROOT'] . '/component/headerInfo.php' ); ?>
     <link rel="stylesheet" href="/styles/main.css"/>
     <link rel="stylesheet" href="/styles/titleFoldedAnimation.css"/>
@@ -42,33 +42,33 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
   <h3>A little bit of myself...</h3>
 
   <p>
-    <a class="thanksForReadingFormat-img" href="https://twitter.com/XiangyuGan">
+    <a class="thanksForReadingFormat-img" href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">
       <img src="/images/bio/selfe_with_LouDog.jpg" alt="avator" width="250px"/>
     </a>
   </p>
 
-  <p>I'm <a href="/">Xiangyu (Robin) Gan</a>, a high school junior in California, US, a programmer, a robotics library author, and a cool rap author.
+  <p>I'm <a href="/">Xiangyu (Robin) Gan</a>, a high school senior in California, US, a programmer, a robotics library author, and a cool rapper.
   </p>
 
-  <p>I've learned programming for 1 year. I coded websites, contest algorithms, FRC robot and AI. All my code is freely accessible on <a href="https://github.com/robingan7">GitHub</a>. Please let <a href="mailto:xiangyu.gan@robingan.org">me</a> know if there's anything I can improve.
+  <p>I've learned programming for 1 year. I coded websites, contest algorithms, FRC robot and AI. All my code is freely accessible on <a href="https://github.com/robingan7">GitHub</a>. Please let <a href="mailto:robinganmusic@gmail.com">me</a> know if there's anything I can improve.
   </p>
 
-  <p>I made school-related app like <a href="https://seeyourschedule.com">See Your Schedule</a>, a online <a href="https://frc-scope.com">scouting app</a> for all FRC teams,  a robotics beginner library <a href="http://cybersmbly.robingan.org">cybersmbly</a>
-  ,a cycle-based robotics autonomous project and a <a href="http://5805docs.robingan.org/#programming">reference site</a> for 5805.
+  <p>I made school-related app like <a href="https://seeyourschedule.com">See Your Schedule</a>, a <a href="https://courseplanner-com.herokuapp.com">course planner </a> that helps teachers in my school plan their teaching schedule easier, a <a href="https://coronaware.net/old">website</a> for people in Orange County to view covid-19 cases,  a robotics beginner library <a href="http://cybersmbly.robingan.org">cybersmbly</a>
+  , one of the best FRC 2020 season autonomous <a href="https://www.youtube.com/watch?v=ReYujJ4UYuQ">code</a> for 5805.
   </p>
 
   <p>
-    <a class="thanksForReadingFormat-img" href="https://twitter.com/XiangyuGan">
+    <a class="thanksForReadingFormat-img" href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">
       <img src="/images/coo.png" alt="avator" width="250px"/>
     </a>
   </p>
 
   <p>
-    Here are other sites and write algorithms I built, a <a href="/project/#Google_Science_Fair_2018">AI Trash Sorter</a> using CNN to sort by scanning images, <a href="http://dailypython.ml/">daily python</a> that taught basic python concepts, <a href="http://5805docs.robingan.org">FRC reference site</a> that helps robotics programmers to find documentations and resources.  
+    Here are other sites and write algorithms I built, a <a href="/project/#Google_Science_Fair_2018">AI Trash Sorter</a> using CNN to sort by scanning images, <a href="http://5805docs.robingan.org">FRC reference site</a> that helps FRC robotics programmers to find documentations and resources.  
   </p>
 
   <p>I also have a <a href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">youtube channel</a>, where I post robotics and rap videos.
-  You can listen to my rap on my <a href="/music">music page</a>. I can freestyle in different languages, which I'm proud of myself ;). I love to perform my music for my teams, family and friends.  
+  You can listen to my rap on my <a href="/music">music page</a>. 
   </p>
 
   <p>

@@ -1,0 +1,94 @@
+<table name="project" id="Analysis_on_predicting_COVID-19_cases">
+    <column name="title">Analysis on predicting COVID-19 cases</column>
+    <date>2020.6</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li><a href="https://github.com/robingan7/Analysis-on-predicting-COVID-19-cases/blob/master/final%20project.ipynb">Code</a></li>
+                    <li>
+                        <a href="https://docs.google.com/presentation/d/1CmEmyTTcQWOoKHe__kMMSP7wuoT-d7OXuVr9XzpFcHw/edit?usp=sharing">Original Slides</a>
+                    </li>
+
+                    <li><a href="https://github.com/CSSEGISandData/COVID-19">Dataset</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>In this research, I used the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> time-series datasets from <a href="https://systems.jhu.edu/">CSSE</a> to find out
+            if there is a correlation between the date of breakout and the total number of cases
+            and if we can use machine learning to predict cases for future days. I used linear
+            regression to model the relationship and found out that there is a correlation in
+            these two aspects and AI did perform well on the number of cases in future days</p>
+            <h4>How did I start</h4>
+            <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> is impacting the world drastically and we are surprised how quickly it
+            can spread globally. Different countries are experiencing different extend of the
+            growing rate of the cases, and I’m curious to see if there’s any pattern between
+            days of outbreak and the number of total cases. If there are, we can build an AI
+            predictor to foresee the cases so that we’re more prepared for the next virus that
+            is similar to <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a>. And if people can input the number of total cases in the
+            early days in the epidemic then they get the prediction of the future months, they
+            can have a better understanding of what will happen so that we can be more
+            prepared in the next epidemic</p>
+            <h3>Overview</h3>
+            <h4>Dataset</h4>
+            <p>The dataset is by <a href="https://systems.jhu.edu/">CSSE</a> from <a href="https://www.jhu.edu/">John Hopkins University</a>. It contains the number of
+            total COVID cases from 1/22/2020 to today of hundreds of areas around the world.
+            It is 233 rows and 166 column CSV</p>
+            <h4>Data Preparation and Cleaning</h4>
+            <p>The different areas can have a different scale of cases due to various social
+            conditions and populations. But my focus is on the growth rate and trends. When I
+            train the linear regression on raw data, I received a <a href="https://en.wikipedia.org/wiki/Mean_squared_error#:~:text=In%20statistics%2C%20the%20mean%20squared,values%20and%20the%20actual%20value.">mean square error</a> of over
+            10,000, which is extremely high compared to the scale of data. Then I decided to
+            scale the cases of each area from 0 to 100. After that, the <a href="https://en.wikipedia.org/wiki/Mean_squared_error#:~:text=In%20statistics%2C%20the%20mean%20squared,values%20and%20the%20actual%20value.">mean square error</a>
+            dropped to 11, which I’m satisfied with. Also, China is the origin so its growth came
+            earlier than anywhere else so I filtered out the rows of China for easier data
+            preparation.</p>
+        <h4>Research Questions</h4>
+        <ul>
+            <li>Is there any linear relationship between days of outbreak and the number of total cases?</li>
+            <li>How well can machine learning predict total cases of future days?</li>
+        </ul>
+        <h4>Methods</h4>
+        <p>I plotted line graphs to see if there’s any potential of the correlation between days
+of outbreak and the number of total cases. And I used linear regression to build a
+machine learning model.</p>
+            <h4>Finding</h4>
+        <p>I used matplotlib library to plot the scaled total cases of three different countries along with the dates(outbreak days). I saw the similar trends from three graphs, which makes linear regression 
+            possible to solve the prediction problem. Moreover, there’s pattern between the two aspects in this research. </p>
+            <p><img src="/images/project/Analysis_on_predicting_COVID-19_cases/graph1.png" alt="graph1" /></p>
+            <p><img src="/images/project/Analysis_on_predicting_COVID-19_cases/graph2.png" alt="graph2" /></p>
+            <p><img src="/images/project/Analysis_on_predicting_COVID-19_cases/graph3.png" alt="graph3" /></p>
+        <p>In the end, the linear regression gives a <a href="https://en.wikipedia.org/wiki/Mean_squared_error#:~:text=In%20statistics%2C%20the%20mean%20squared,values%20and%20the%20actual%20value.">mean square error</a> of 5.38e^-12 on prediction the most recent 10 days of total cases. 
+            It demonstrates that machine learning is very good at solving problems like this.</p>
+        <p><img src="/images/project/Analysis_on_predicting_COVID-19_cases/code.png" alt="code" /></p>
+        <h4>Limitations</h4>
+        <p>One of the limitations is that the different virus has a different level of spreading rate and incubation period. Thus, this model is only for viruses that are very closed to <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a>.</p>
+        <h3>Conclusions</h3>
+        <ul>
+            <li>There are similar trends and the linear relationship of the growing total cases after breakout according to the graphs of different countries. </li>
+            <li>Machine learning is helpful to this type of problem and yielded a low error in the end. </li>
+        </ul>
+        <h4>Acknowledgements</h4>
+        <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> datasets from <a href="https://systems.jhu.edu/">CSSE</a> by <a href="https://www.jhu.edu/">John Hopkins University</a>. </p>
+            ]]>
+    </content>
+</table>

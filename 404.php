@@ -15,8 +15,8 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <title>404|Robin Gan--甘翔羽 &raquo; Robingan.org</title>
     <meta property="og:title" content="404|Robin Gan--甘翔羽 &raquo; Robingan.org" />
     <meta charset="UTF-8"/>
-    <meta name="description" content="Page not found --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages."/>
-    <meta property="og:description" content="Page not found --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages."/>
+    <meta name="description" content="Page not found --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
+    <meta property="og:description" content="Page not found --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
     <?php include 'component/headerInfo.php'?>
     <link rel="stylesheet" href="/styles/main.css"/>
     <link rel="stylesheet" href="/styles/404.css"/>

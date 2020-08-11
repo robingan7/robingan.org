@@ -6,7 +6,7 @@ scouting works in [FRC(First Robotics
 Competition)](https://www.firstinspires.org/robotics/frc) events and the
 significance of a working scouting website or app for a team.
 
-It's the mother of [Scope](/project/#frc-scope.com). It has scouting
+It's the mother of [Scope](/project/#Scope). It has scouting
 forms that are specific for FRC competition **2019**. It is easy to use
 and can analyze data, rank teams, make charts from data user scout. It
 saved lots of time from putting data in excel then sorting data. It
@@ -110,7 +110,7 @@ in [robingan.ga](/project/#robingan.ga), I wasted lots of time writing
 inefficient and messy code. Luckily, they worked but it is impossible
 for other people to maintain the website. But I learned from my
 mistakes, and all the problems are fixed in the new version --
-[frc-scope.com](/project/#frc-scope.com)
+[frc-scope.com](/project/#Scope)
 
 #### Highlight
 
@@ -346,7 +346,7 @@ to pay \$100 developer fee.
 
 ![mobile version](https://robingan.org/images/project/frcscouting.ga/mobile%20version.png)
 
-#### [frc-scope.com](/project/#frc-scope.com)
+#### [frc-scope.com](/project/#Scope)
 
 Second verison of this project, it will be a professional website for
 all FRC teams. Be ready.....

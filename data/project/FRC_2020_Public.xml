@@ -1,0 +1,47 @@
+<table name="project" id="FRC_2020_Public">
+    <column name="title">FRC 2020 Public</column>
+    <date>2019.12-2020.3</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/FRC-2020-Public">View Code</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>I will talk about my <a href="https://www.firstinspires.org/robotics/frc">FRC</a> 2020 season robotics code in this blog. 
+            I was the only programmer in that season. </p>
+            <h3>Highlight</h3>
+            <h4>Field-Relative Turret</h4>
+            <p>By using the <a href="https://www5.epsondevice.com/en/information/technical_info/gyro/#:~:text=Gyro%20sensors%2C%20also%20known%20as,EPSON%20Gyro%20products">gyro sensor</a>, the turret is able to maintain its position no matter what degree the robot turns as show on the video.  </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ANrAKqESiKs?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Autonomous</h4>
+            <p>I learned the <a href="https://www.mathworks.com/help/robotics/ug/pure-pursuit-controller.html#:~:text=Pure%20pursuit%20is%20a%20path,in%20front%20of%20the%20robot.&text=The%20algorithm%20then%20moves%20the,last%20point%20of%20the%20path.">pure pursuit algorithm</a> from a <a href="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf">paper</a> by <a href="https://www.cmu.edu">Carnegie Mellon University</a> 
+                and made an accurate path following autonomous as shown in the video. </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qOLjLaQlRws?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ReYujJ4UYuQ?start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            ]]>
+    </content>
+</table>

@@ -1,0 +1,109 @@
+<table name="project" id="seeyourschedule.com">
+    <column name="title">SYS</column>
+    <date>2019.10</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/seeyourschedule.com">View Code</a>
+                    </li>
+                    <li>
+                        <a href="https://seeyourschedule.com">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                    <li>
+                        <a href="http://alexlynd.com/">Alex Lynd</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yuhan525/">Yuhan Chen</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>This is one of the successful project I did in <a href="https://www.smhs.org/">high school</a>. This website helps new 
+            students to learn my school's blocks schedules which is kind of confusing sometimes. And 2019-2020 school year's schedule was 
+            even more confusing because we were trying new block schedule upon the old block schedule. Moreover, because of the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> 
+            lockdown situation, my school added new online class schedules. But the website handled them all due to the data parsing format I made. </p>
+            <h4>How did I start</h4>
+            <p>This is the upgraded version of <a href="/project/#testsmlunch.cf">testsmlunch.cf</a>. You can read the "How did I start" part in that blog. </p>
+
+            <h3>User Interface</h3>
+            <p>I used <a href="https://getbootstrap.com/">bootstrap</a> for most of the frondend elements, so the page looks very clean and simple. The home page is just showing 
+            the block types, starting time and period of that day. </p>
+            <p><img src="/images/project/seeyourschedule.com/frontend.png" alt="frontend" /></p>
+
+            <h4>After logging in</h4>
+            <p>The users can also create accounts for more personal features. They will need to put in the buildings of all their classes. Then the website will show them how much time 
+                left of their current class on real time and which lunch they will have for the day. 
+            </p>
+            <p><img src="/images/project/seeyourschedule.com/class.png" alt="class" /></p>
+            <p><img src="/images/project/seeyourschedule.com/realtime.png" alt="realtime" /></p>
+
+            <p>With the manual-current modes switcher on the <abbr>upper right-hand corner</abbr>, the users can see the schedule for any of the school day in the year. </p>
+
+            <h4>The this-week tab</h4>
+            <p><abbr>This-week</abbr> tab enables the feature of previewing the schedule for the current week or any week the users select. </p>
+            <p><img src="/images/project/seeyourschedule.com/thisweek.png" alt="thisweek" /></p>
+
+            <h3>Data parsing</h3>
+            <p>It took me one day to update 2019 schedule to 2020 schedule. I'm able to this because I designed a nice data 
+                parsing format for the website. 
+            </p>
+           
+            <p><strong>Get data from my school website:</strong> my school usually sends everyone a <a href="https://smhsorg.finalsite.com/uploaded/2020-2021_Calendar_Items_from_Student_Services/2020-2021_Block_Schedule_Master_as_of_7-27-20.pdf?1595885747224">master calendar</a> 
+            in summer. And my friend <a href="http://alexlynd.com">Alex Lynd</a> wrote a <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">python</a> code to parse the info to a <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> filewith dates and corresponding block types.</p>
+
+<figure class="highlight"><pre><code>{
+    "2019-8-12":"0812Sp1",
+    "2019-8-13":"0813Sp1",
+    "2019-8-14":"R6",
+    "2019-8-15":"Ms5",
+    "2019-8-16":"RE2",
+    "2019-8-17":"Off",
+    "2019-8-18":"Off",
+    "2019-8-19":"R7",
+    "2019-8-20":"S6"
+}
+</code>
+            </pre>
+            </figure>
+            <p>I made the JSON objects for each block schedule. </p>
+<figure class="highlight"><pre><code>"Ms":{
+    "Block 1":"8:00-8:55",
+    "Block 2 ":"9:00-10:05",
+    "Block 3":"10:15-11:10",
+    "First Lunch":"11:10-11:40/Block 4/11:15-12:10",
+    "Block 4":"11:45-12:40/Second Lunch/12:10-12:40",
+    "Block 5":"12:45-13:40",
+    "Block 6/Rally/Assembly":"13:45-14:40",
+    "Period 8":"14:45-16:00"
+}
+</code>
+            </pre>
+            </figure>
+
+            <p>Moreover, I used <a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp">local storage</a> to save the long JSON file containing schedule data for the whole school year, which 
+            makes the website load much faster. </p>
+            ]]>
+    </content>
+</table>

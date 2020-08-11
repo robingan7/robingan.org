@@ -15,8 +15,8 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <title>HOME|Robin Gan--甘翔羽 &raquo; Robingan.org</title>
     <meta charset="UTF-8"/>
     <meta property="og:title" content="HOME|Robin Gan--甘翔羽 &raquo; Robingan.org" />
-    <meta name="description" content="Robin Gan's home--甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages."/>
-    <meta property="og:description" content="Robin Gan's home--甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rap author, and love to freestyle in different languages." />
+    <meta name="description" content="Robin Gan's home--甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
+    <meta property="og:description" content="Robin Gan's home--甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages." />
     <?php include 'component/headerInfo.php'?>
     <link rel="stylesheet" href="styles/main.css"/>
     <link rel="stylesheet" href="styles/index.css"/>
@@ -27,12 +27,22 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <script src="javascript/index.js" defer></script>
     <script src="javascript/indexToggle.js" defer></script>
     <script src="javascript/indexResize.js" defer></script>
-    <script data-ad-client="ca-pub-8604882353540201" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!--<script data-ad-client="ca-pub-8604882353540201" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162844023-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162844023-1');
+    </script>
+
   </head>
 <body>
     <div id="chassis">
         <div class="icons">
-            <a href="mailto:xiangyu.gan@robingan.org?Subject=Hello%20Robin">
+            <a href="mailto:robinganmusic@gmail.com?Subject=Hello%20Robin">
                 <i class="fas fa-envelope-open"></i>
             </a>   
             <a href="https://twitter.com/XiangyuGan">
@@ -104,7 +114,7 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
             <div id="container-blog-bio">
                 <ul id="blog-image">
                     <li>
-                        <a id="imageCon" href="https://twitter.com/XiangyuGan">
+                        <a id="imageCon" href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">
                             <img id="imageCon-image" src="images/coo.png" alt="title" style="width:160px;"/>
                         </a>
                     </li>

@@ -1,0 +1,46 @@
+<table name="project" id="5805docs">
+    <column name="title">5805docs</column>
+    <date>2020.2</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/5805docs">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="http://5805docs.robingan.org">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                   
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Overview</h3>
+            <p>This is a website I built to store links of tutorials, documentations and links for <a href="http://team5805.robingan.org/">my robotics team</a> so 
+                that the programmers don not need to spend time searching for these links. There are also some tutorials I made for the new programmers. </p>
+            <img src="/images/project/5805docs/web1.png" alt="web1">
+            <img src="/images/project/5805docs/web2.png" alt="web1">
+            <img src="/images/project/5805docs/web3.png" alt="web1">
+
+            ]]>
+    </content>
+</table>

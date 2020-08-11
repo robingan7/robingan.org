@@ -1,7 +1,8 @@
 //document.getElementById('content')
 var globalXAM;
+var version = '5';
 function loadProject() {
-    fetch('/data/projectData.xml').then((res) => {
+    fetch('/data/projectData.xml?version='+version).then((res) => {
         res.text().then((xml) => {
             let parser = new DOMParser();
             globalXAM = parser.parseFromString(xml, 'text/xml');
@@ -38,7 +39,7 @@ function loadProject() {
 }
 
 function loadMedia() {
-    fetch('/data/mediaData.xml').then((res) => {
+    fetch('/data/mediaData.xml?version=' + version).then((res) => {
         res.text().then((xml) => {
             let parser = new DOMParser();
             globalXAM = parser.parseFromString(xml, 'text/xml');

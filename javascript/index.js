@@ -12,7 +12,7 @@ $(document).ready(function () {
 });
 
 var globalXAM;
-
+var version = '5';
 function shortenTitle(title_){
     if (title_.length > 10){
         return title_.substring(0, 9) + "..."
@@ -20,7 +20,7 @@ function shortenTitle(title_){
     return title_;
 }
 function loadProject() {
-    fetch('data/projectData.xml').then((res) => {
+    fetch('data/projectData.xml?version='+version).then((res) => {
         res.text().then((xml) => {
             let parser = new DOMParser();
             globalXAM = parser.parseFromString(xml, 'text/xml');
@@ -58,7 +58,7 @@ function loadProject() {
 }
 
 function loadMedia() {
-    fetch('data/mediaData.xml').then((res) => {
+    fetch('data/mediaData.xml?version=' + version).then((res) => {
         res.text().then((xml) => {
             let parser = new DOMParser();
             globalXAM = parser.parseFromString(xml, 'text/xml');

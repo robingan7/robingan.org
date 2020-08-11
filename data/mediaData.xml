@@ -192,7 +192,7 @@
             rap. Like the previous rap, I will make a studio version later. And it will be available <a href="/music">here</a> with more details on this rap.</p>
             <ul>
                 <li>Lyrics by <a href="/">Robin Gan</a></li>
-                <li>beat: I found this beat long time ago. It said it was a free beat. But I still want to credit the artist. <a href="mailto:xiangyu.gan@robingan.org?Subject=Hello%20Robin">Email me</a> if you recognize the beat and know who the artist is.</li>
+                <li>beat: I found this beat long time ago. It said it was a free beat. But I still want to credit the artist. <a href="mailto:robinganmusic@gmail.com?Subject=Hello%20Robin">Email me</a> if you recognize the beat and know who the artist is.</li>
             </ul>
 
             <h3>Shout out to <a href="https://www.google.com/maps/place/Alondra,+Stanford,+CA+94305/@37.4222837,-122.1734053,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbad38659b687:0xa47ad49b5f939dab!8m2!3d37.4222795!4d-122.171222">Alondra Housing</a> for giving me this paper award</h3>
@@ -601,8 +601,8 @@
 
             <h4>Scouting website we(frc5805) use</h4>
             <ul>
-                <li><p><strong>This year<span>2019</span>:</strong> <a href="https://frc-scope.com">Scope</a> by <a href="/">me</a>. It's the first online Scouting App For All FRC Teams, also the <strong>most convenient and functional scouting website in FRC.</strong> Here is a detailed <a href="/project/#frc-scope.com">project description</a>.</p></li> 
-                <li><p><strong>Last year<span>2018</span>:</strong> <a href="https://frcscouting.000webhostapp.com">Big Yoshi Scout</a> by <a href="/">me</a>. It's the mother of <a href="/project/#frc-scope.com">Scope</a>. It has scouting forms that are specific for FRC competition 2019. It is easy to use and can analyze data, rank teams, make charts from data user scout. It saved lots of time from putting data in excel then sorting data. It worked very well in 2019 season in my team. Here is a detailed <a href="/project/#frcscouting.ga">project description</a>.</p></li> 
+                <li><p><strong>This year<span>2019</span>:</strong> <a href="http://u880691907-robingan-org.hostingerapp.com/">Scope</a> by <a href="/">me</a>. It's the first online Scouting App For All FRC Teams, also the <strong>most convenient and functional scouting website in FRC.</strong> Here is a detailed <a href="/project/#Scope">project description</a>.</p></li> 
+                <li><p><strong>Last year<span>2018</span>:</strong> <a href="https://frcscouting.000webhostapp.com">Big Yoshi Scout</a> by <a href="/">me</a>. It's the mother of <a href="/project/#Scope">Scope</a>. It has scouting forms that are specific for FRC competition 2019. It is easy to use and can analyze data, rank teams, make charts from data user scout. It saved lots of time from putting data in excel then sorting data. It worked very well in 2019 season in my team. Here is a detailed <a href="/project/#frcscouting.ga">project description</a>.</p></li> 
             </ul>
             <h4>More resources on FRC scouting</h4>
             <ul>
@@ -763,7 +763,7 @@ document.getElementById('next-btn').click();</code> </pre> </figure>
                 <h3>What I did on for off season<span>May 2019 - Aug 2019</span></h3>
                 <ul>
                     <li>working on the new cycled base <a href="https://github.com/robingan7/frc5805_2020CodeDemo">code structure</a></li>
-                    <li><a href="https://frc-scope.com">scope</a> -- a scouting app for all <abbr>FRC</abbr> teams</li>
+                    <li><a href="http://u880691907-robingan-org.hostingerapp.com/">scope</a> -- a scouting app for all <abbr>FRC</abbr> teams</li>
                     <li><a href="http://5805docs.robingan.org">5805docs</a> -- <a href="https://www.thebluealliance.comhttps://www.thebluealliance.com/team/5805">frc5805</a> documentation page that includes most resources and links in FRC programming.</li>
                 </ul>
 

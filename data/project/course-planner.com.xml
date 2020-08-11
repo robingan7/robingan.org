@@ -1,0 +1,149 @@
+<table name="project" id="course-planner.com">
+    <column name="title">course planner</column>
+    <date>2019.11</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/robingan7/course-planner.com">View Code</a>
+                    </li>
+
+                    <li>
+                        <a href="https://courseplanner-com.herokuapp.com">Website</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yuhan525">Yuhan Chen</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>Intro</h3>
+            <p>
+                It's a website that helps teachers plan their teaching schedule faster and better. When I made this 
+                website, I was also trying out new langauge, database, and js framework I've never used before such as 
+                <a href="https://reactjs.org/">react</a>, <a href="https://www.mongodb.com/">mongodb</a> and <a href="https://nodejs.org/">nodejs</a>. I learned them by watching some youtube video. 
+            </p>
+            <h4>How did I start</h4>
+            <p>My physics teacher told me that they used to have classes planning website that binds with the textbooks. However, 
+                the app was stopped for some reasons, so he asked me if I can make a website with similar functions. Then I started making this. 
+            </p>
+
+            <h3>Overview</h3>
+            <h4>Google Login</h4>
+            <p>This was the first I dealed with <a href="https://developers.google.com/identity/sign-in/web/sign-in">google login api</a>, which allows users to sign up and login with 
+            their google accounts. </p>
+            <p><img src="/images/project/course-planner.com/googlelogin.png" alt="googlelogin" /></p>
+
+            <h4>Scheduler API</h4>
+            <p>This was first time when I realized how convenient <a href="https://en.wikipedia.org/wiki/Application_programming_interface">APIs</a> are and how much time they can save for me. For this project, 
+                I used <a href="https://devexpress.github.io/devextreme-reactive/react/scheduler/">React Scheduler</a> api for displaying the caldenar and rendering 
+                data to the caldenar. 
+            </p>
+            <p><img src="/images/project/course-planner.com/calendar.png" alt="calendar" /></p>
+
+            <h4>Importing textbook</h4>
+            <p>The leading feature of this website is that the teachers can import schedule by selecting the textbooks their are using. 
+                To accomplish this feature, my friend <a href="https://www.instagram.com/yuhan525/">Yuhan</a> and I manually put in the textbook data into a <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> file, 
+                which looks like this. 
+            </p>
+<figure class="highlight"><pre><code>"Physics": [
+    {
+        "chapterName": "Ch.1 Science of Physics",
+        "subChapter": [
+            {
+                "chapterName": "1.0 Chapter Intro",
+                "basic": 1,
+                "general": 1,
+                "advanced": 0,
+                "heavy_lab": 1
+            },
+            {
+                "chapterName": "1.1 What is Physics?",
+                "basic": 1,
+                "general": 1,
+                "advanced": 1,
+                "heavy_lab": 1
+            },
+            {
+                "chapterName": "1.2 Measurements in Experiments",
+                "basic": 3,
+                "general": 2,
+                "advanced": 2,
+                "heavy_lab": 2
+            }
+        ]
+    }
+]        
+</code>
+            </pre>
+            </figure>
+            <p><img src="/images/project/course-planner.com/textbook.png" alt="textbook" /></p>
+            <h4>Auto-adjust</h4>
+            <p>The auto-adjust feature makes it possible for teacher to move back one class, and then all the classes 
+                behind that class will all remove back. The algorithm can <abbr>recursively</abbr> get the next valid data for each plan
+                 with the code below.  
+            </p>
+<figure class="highlight"><pre><code>getValidDay(date, editSchedule, period, resultList) {
+    if (!this.isONAnOffDay(date, editSchedule, period, resultList)) {
+        return new Date(date);
+    }
+    let nextDay = getNextDay(new Date(date));
+    return this.getValidDay(
+        getCurrentDate(nextDay) + "T" + DEFAULT_STARTTIME,
+        editSchedule, period, resultList);
+}
+</code>
+            </pre>
+            </figure>
+            <h4>Combine with school schedule</h4>
+            <p>I also used the schedule data from <a href="https://github.com/robingan7/course-planner.com/blob/master/client/src/data/schedules/smchs.js">seeyourschedule.com</a>. So the algorithm won't 
+            put plans on weekends, and the days that doesn't have the class the teacher selects(for my high school, we don't have all the classes everyday). </p>
+<figure class="highlight"><pre><code>export const BLOCKS =
+{
+    "block": {
+        "2019-8-12": "0812Sp1",
+        "2019-8-13": "0813Sp1",
+        "2019-8-14": "R6",
+        "2019-8-15": "Ms5",
+        "2019-8-16": "RE2",
+        "2019-8-17": "Off",
+        "2019-8-18": "Off",
+        "2019-8-19": "R7",
+        "2019-8-20": "S6",
+        "2019-8-21": "S4",
+        "2019-8-22": "S2",
+        "2019-8-23": "Off",
+        "2019-8-24": "Off",
+        "2019-8-25": "Off"
+    }
+}    
+</code>
+            </pre>
+            </figure>
+            <h4>The manage page</h4>
+            <p>This is the page where teachers can import, edit, add and delete their classes schedule, choose their school blocks, textbooks and periods. </p>
+            <p><img src="/images/project/course-planner.com/manage.png" alt="manage" /></p>
+
+            ]]>
+    </content>
+</table>
