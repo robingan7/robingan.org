@@ -79,7 +79,7 @@
             ]]>
         </column>
         <date>2020.6</date>
-        <column name="des">an AI project for trash composting</column>
+        <column name="des">Co-founded this AI project for trash composting</column>
         <column name="img">Pylar.png</column>
         <column name="type">Website</column>
         <column name="time">2020</column>
@@ -96,7 +96,7 @@
             ]]>
         </column>
         <date>2020.6</date>
-        <column name="des">an AI project for trash composting</column>
+        <column name="des">build graphs and model to compare and predict cases growth trends of different countries</column>
         <column name="img">Analysis_on_predicting_COVID-19_cases.png</column>
         <column name="type">Website</column>
         <column name="time">2020</column>
@@ -130,7 +130,7 @@
             ]]>
         </column>
         <date>2020.4</date>
-        <column name="des">a nice design website for my high school robotics</column>
+        <column name="des">a nice design website for my high school robotics team</column>
         <column name="img">FRC5805_Team_Website.png</column>
         <column name="type">Website</column>
         <column name="time">2020</column>
@@ -179,7 +179,7 @@
                 <span class="devicons devicons-java"></span>
             ]]>
         </column>
-        <date>2019.12-2020.3</date>
+        <date>2019.12-2020.3</date>`
         <column name="des">FRC 5805 official code for 2020 season</column>
         <column name="img">FRC_2020_Public.png</column>
         <column name="type">Website</column>
