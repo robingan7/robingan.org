@@ -1,0 +1,146 @@
+<table name="project" id="robingan.org">
+    <column name="title">robingan.org</column>
+    <date>2020.6</date>
+    <link>
+        <![CDATA[
+            <li>
+                <a>Link</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Website</a>
+                    </li>
+                     <li>
+                        <a href="https://github.com/robingan7/robingan.org">Code</a>
+                    </li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a>Team</a>
+                <ul>
+                    <li>
+                        <a href="https://robingan.org">Robin Gan</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Gallery</a>
+                <ul>
+                    
+                </ul>
+            </li>
+            ]]>
+    </link>
+    <content>
+        <![CDATA[
+            <h3>robingan.ga(first version of robingan.org)</h3>
+            <p>When I taught myself HTML and CSS, I can't wait to create my personal web page. I made this website from scratch in November 2018, and it's been updated for <abbr>1</abbr> year. Now it's replaced by <a href="/">robingan.org</a></p>
+            <h3>Project Highlights</h3>
+            <h4>The hobbies roller</h4>
+            <p><img src="/images/project/robingan.ga/hobby_roller.gif" alt="hobby_roller"/></p>
+            <p>You might notice that the words are changing after <abbr>"I love"</abbr>. It's done by putting different delays of the same animation on the six hobbies. 
+                The code below show this method,
+            </p>
+            <figure class="highlight"><pre><code>.chword span {
+    animation: words 18s 0s linear infinite;
+}  
+
+.chword span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.chword span:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.chword span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.chword span:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.chword span:nth-child(5) {
+    animation-delay: 12s;
+}
+</code>
+            </pre>
+            </figure>
+
+            <h4>PHP Data Binding</h4>
+            <p>Although it is not a smart choice using PHP for data binding(should be javascript or xml). But I still want to mention this 
+                because it was the first time I realize the website needs to have the ability to iterate the projects and stories grids by itself. 
+                <strong>Before I learned this, the all the grids of projects and story were in <abbr>absolute</abbr> position.</strong> I wasted lots of time tuning all the values. Sounds silly, but <strong>I did learn from my mistakes</strong>, so <a href="/">robingan.org</a> has a very neat data storage. 
+                Here is a <abbr>partial</abbr> code of this from <a href="https://robinwebsite7.000webhostapp.com/project.php">robingan.ga/project.php</a>,
+            </p>
+            <figure class="highlight"><pre><code>include 'php/database.php';
+
+$sql="SELECT * FROM `project` ORDER BY `project`.`id` DESC";
+$result = mysqli_query($conn,$sql);
+$output = "";
+
+while($rows = mysqli_fetch_array($result)){
+    $output .= $rows['website_content'];
+}
+</code>
+            </pre>
+            </figure>
+
+            <p>However, <abbr>PHP</abbr> is still not the best for storing static data like project and story info because requests to database will reduce the website loading speed, and this effects the next feature.</p>
+
+            <h4>Searching & Sorting Project Grids</h4>
+            <p>After adding the previous feature, I decided to add a searching ans sorting functions on <a href="https://robinwebsite7.000webhostapp.com/project.php">project</a> page in case that there will be more projects adding later (but that didn't happen).</p> 
+            <p>It is done by <a href="https://en.wikipedia.org/wiki/Ajax_%28programming%29">ajax</a> which I leanrned while working on <a href="/project/#frcscouting.ga">frcscouting.ga</a>. The greatest advantage is that it allows the website 
+            to update values with responses from database without refreshing the page. Moreover, I added type and other property  in the database in order to sort projects. Example code, </p>
+            <figure class="highlight"><pre><code>function sort_project(con1,con2) {
+    $.ajax({
+        url: "php/sort.php",
+        method: "POST",
+        data: { 
+          con1: con1,
+          con2: con2
+        },
+        success: function (data) {
+            $('#projects').html(data);
+        }
+    });
+}
+</code>
+            </pre>
+            </figure>
+            <p>As I mentioned, PHP is not a smart choice. As a result, the sorting and searching hardly worked on mobile devices, where I took almost <abbr>20</abbr> seconds to load. The cheap & free 
+                <a href="https://www.000webhost.com/">000webhost</a> server I used is also a factor causing slow speed. </p>
+
+            <h3>Summary</h3>
+            <p>It was a good for me start making websites. I did spend some time that it was kind of <abbr>wasted</abbr> and <abbr>unnecessary</abbr>. However, I began to learn to think more before starting coding websites such as what kind of data structure to choose and what to use for storing data. 
+                Also, I understood more about HTML structure and CSS styling through this project. And I'm still updating this website until August 2019 when I gave up and wanted to start a completed new one(robingan.org).  
+            </p>
+
+            <p>View the entire website <a href="https://github.com/robingan7/robingan.ga">code</a></p>.
+
+             <h4>Compare <a href="/">robingan.org(new version)</a> with <a href="https://robinwebsite7.000webhostapp.com/">robingan.ga(old version)</a></h4>
+            <ul>
+                <li>Much more complicated css and js styling, I explained more on this in this <a href="/project/#robingan.org">project</a></li>
+                <li>I used xml to store story, blog and project instead of sending requests to <abbr>mysql</abbr> database.</li>
+                <li>Mysql database now is for couning views for each project, blogs and user entries. </li>
+                <li>I added resume, bio, media and music pages which were not on the old version</li>
+                <li>Self-coded mp3 player in <a href="/music">music page</a>, I explained more on this in this <a href="/project/#robingan.org">project</a>.</li>
+            </ul>
+
+            <h4 class="sectionBreaker">Some silly things I found on the old version, please don't laugh :)</h4>
+            <ul>
+                <li>In the old version, all the <abbr>div(elements containers)</abbr> were set absolute in display including the grids in <a href="https://robinwebsite7.000webhostapp.com/story">story</a> and 
+                <a href="https://robinwebsite7.000webhostapp.com/project">project page</a>. So it took me a long time to tune the top and left value. This was fixed in 2019.5</li>
+
+                <li>
+                I used <abbr>mysql</abbr> database to store story and project data, which I should use <abrr>JSON</abbr> or <abbr>XML</abbr>.
+                </li>
+
+                <li>There was <strong>NO</strong> folders in the whole project. I put all files in the same directory as <abbr>index.php</abbr>. This was not fixed 
+                until 2019.8, I started to realize that it became hard to find my stylesheets and javascript files. This mistake actually happen in all my website in 2018 like 
+                <a href="/project/#frcscouting.ga">frcscouting.ga</a>.</li>
+            </ul>
+            ]]>
+    </content>
+</table>

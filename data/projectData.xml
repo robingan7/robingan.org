@@ -69,6 +69,23 @@
         </content>
     </table>
     -->
+    <table name="project" id="robingan.org">
+        <column name="title">robingan.org</column>
+        <column name="li1">
+            <![CDATA[
+                <span class="devicons devicons-html5"></span>
+                <span class="devicons devicons-jquery"></span>
+                <span class="devicons devicons-css3_full"></span>
+            ]]>
+        </column>
+        <date>2020.7</date>
+        <column name="des">A website to inspire others by my creative design, stories and projects.</column>
+        <column name="img">robingan.org.png</column>
+        <column name="type">Website</column>
+        <column name="time">2020</column>
+        <column name="id">21</column>
+    </table>
+
     <table name="project" id="Pylar">
         <column name="title">Pylar</column>
         <column name="li1">
@@ -86,8 +103,8 @@
         <column name="id">20</column>
     </table>
 
-    <table name="project" id="Analysis_on_predicting_COVID-19_cases">
-        <column name="title">Analysis on predicting COVID-19 cases</column>
+    <table name="project" id="AI_Analysis_on_COVID-19">
+        <column name="title">AI Analysis on COVID-19</column>
         <column name="li1">
             <![CDATA[
                 <span class="devicons devicons-html5"></span>
@@ -96,7 +113,7 @@
             ]]>
         </column>
         <date>2020.6</date>
-        <column name="des">build graphs and model to compare and predict cases growth trends of different countries</column>
+        <column name="des">AI models to compare and predict cases growth trends</column>
         <column name="img">Analysis_on_predicting_COVID-19_cases.png</column>
         <column name="type">Website</column>
         <column name="time">2020</column>
@@ -215,7 +232,7 @@
             ]]>
         </column>
         <date>2019.11</date>
-        <column name="des">a website for teachers to plan their teaching schedule</column>
+        <column name="des">an app for teachers at my high school to plan and move their teaching schedules</column>
         <column name="img">course-planner.com.png</column>
         <column name="type">Website</column>
         <column name="time">2019</column>
@@ -235,7 +252,7 @@
             ]]>
         </column>
         <date>2019.10</date>
-        <column name="des">a website for students to check the block schedule</column>
+        <column name="des">real time app to check the schedules and lunch</column>
         <column name="img">seeyourschedule.com.png</column>
         <column name="type">Website</column>
         <column name="time">2019</column>
@@ -255,7 +272,7 @@
             ]]>
         </column>
         <date>2019.9</date>
-        <column name="des">a website for students to drop notes and media for me</column>
+        <column name="des">a website to drop and organize notes and other media</column>
         <column name="img">dropnotes.gq.png</column>
         <column name="type">Website</column>
         <column name="time">2019</column>

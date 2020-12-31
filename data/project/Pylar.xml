@@ -9,6 +9,9 @@
                     <li>
                         <a href="http://pylar.io">Website</a>
                     </li>
+                     <li>
+                        <a href="https://github.com/robingan7/Pylar">Code(Website)</a>
+                    </li>
                     
                 </ul>
             </li>
@@ -40,8 +43,8 @@
     </link>
     <content>
         <![CDATA[
-            <h3>Upcoming</h3>
-            <p>The project is an AI powered composting machine. This is my group project for a 2021 science fair. We're still working on this. Stay tuned!!</p>
+        <h3>I'm still writing this blog.... &#9997;</h3>
+        <p>The project is an AI powered composting machine. This is my group project for a 2021 science fair. We're still working on this. Stay tuned!!</p>
             ]]>
     </content>
 </table>
