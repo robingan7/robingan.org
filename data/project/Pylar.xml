@@ -6,7 +6,10 @@
             <li>
                 <a>Link</a>
                 <ul>
-
+                    <li>
+                        <a href="http://pylar.io">Website</a>
+                    </li>
+                    
                 </ul>
             </li>
             <li>
@@ -28,7 +31,9 @@
             <li>
                 <a>Gallery</a>
                 <ul>
-                    
+                    <li>
+                        <a href="https://www.instagram.com/pylar.io/">Instagram</a>
+                    </li>
                 </ul>
             </li>
             ]]>

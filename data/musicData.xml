@@ -12,11 +12,12 @@
         <uri>https://robingan.org</uri>
     </author>
     <!-- Table project -->
+
     <table name="music" id="dont_mess_with_rg">
         <cover>../images/music/dont_mess_withRG.png</cover>
         <title>Don't mess with Robin Gan</title>
         <type>Diss Track / Rap / English</type>
-        <isNew>true</isNew>
+        <isNew>false</isNew>
         <des>My first autotone rap. It’s not a serious diss. It is just my way to reply message like that.
             I respect Angela a lot. She supported the first rap I’ve ever made.
             Actually, nice job at the orientation
@@ -30,7 +31,7 @@
         <cover>../images/music/dissLiuXue.png</cover>
         <title>Diss Track to 带着爸爸去留学</title>
         <type>Diss Track / Rap / Chinese</type>
-        <isNew>true</isNew>
+        <isNew>false</isNew>
         <des>This diss track is to a Chinese TV Show that says wrong stuff about Chinese students
             who study aboard in the US. Feel my flow :)</des>
         <mp3>../mp3/diss_track_babaLiuXue.mp3</mp3>

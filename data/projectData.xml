@@ -242,8 +242,8 @@
         <column name="id">11</column>
     </table>
 
-    <table name="project" id="dropnotes.ga">
-        <column name="title">dropnotes.ga</column>
+    <table name="project" id="dropnotes.gq">
+        <column name="title">dropnotes.gq</column>
         <column name="li1">
             <![CDATA[
                 <span class="devicons devicons-javascript_badge"></span>
@@ -256,7 +256,7 @@
         </column>
         <date>2019.9</date>
         <column name="des">a website for students to drop notes and media for me</column>
-        <column name="img">dropnotes.ga.png</column>
+        <column name="img">dropnotes.gq.png</column>
         <column name="type">Website</column>
         <column name="time">2019</column>
         <column name="id">10</column>

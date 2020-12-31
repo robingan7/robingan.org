@@ -232,6 +232,13 @@ function loadMusic() {
                         new_ = '<span class="badge">New</span>';
                     }
 
+                    let youtubeOrSoundCloud = '';
+                    if (youtube.includes('youtu.be') || youtube.includes('youtube')) {
+                        youtubeOrSoundCloud = ` <a class="musicLink" href="` + youtube + `"><i class="fab fa-youtube"></i></a>`;
+                    } else {
+                        youtubeOrSoundCloud = ` <a class="musicLink" href="` + youtube + `"><i class="fab fa-soundcloud"></i></a>`;
+                    }
+
                     output += `
                     <div class="music_card">
                         <div class="card-head">
@@ -256,7 +263,7 @@ function loadMusic() {
 
                             <span class="music-rating">
                             <a onclick="downloadSong(this)" id="`+ id_ +`-download" class="musicLink" href="`+ mp3 + `" download><i class="fas fa-download"></i></a>
-                            <a class="musicLink" href="`+ youtube + `"><i class="fab fa-youtube"></i></a>
+                           `+ youtubeOrSoundCloud +`
                             </span>
 
                             <div onclick="playSong(this)" id="`+ id_ + `" class="btn playButton">
