@@ -68,6 +68,15 @@ function resetTitleAndDescription(){
         <p>Go back to <a href="/">home page</a> if this page doesn't show up in 30 seconds. </p>
         </div>`;
 }
+
+const formatView = n => { 
+    if (n < 1e3) return n; 
+    if (n >= 1e3 && n < 1e6) return +(n / 1e3).toFixed(1) + "K"; 
+    if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + "M"; 
+    if (n >= 1e9 && n < 1e12) return +(n / 1e9).toFixed(1) + "B"; 
+    if (n >= 1e12) return +(n / 1e12).toFixed(1) + "T"; 
+}; 
+
 function loadProjectDes(id){
     try{
         fetch('/data/project/' + id + '.xml?version' + version).then((res) => {
@@ -87,7 +96,7 @@ function loadProjectDes(id){
                         <span>&#10005;</span>
                     </a>
 
-                    <h2 id="projectDesPage-title" date="By Robin Gan * `+ date_ + ` * ` + currentView + ` views">` + title_ + `</h2>
+                    <h2 id="projectDesPage-title" date="By Robin Gan * `+ date_ + ` * ` + formatView(currentView) + ` views">` + title_ + `</h2>
                     <ul id="projectDesPage-menu" >
                         `+ link_ + `
                     </ul>
