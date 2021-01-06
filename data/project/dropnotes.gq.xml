@@ -32,16 +32,15 @@
         </link>
         <content>
             <![CDATA[
-            <h3>Intro</h3>
+            <h3>Why I made this project</h3>
             <p>As my junior year of <a href="https://www.smhs.org/">HS</a> goes, I realized that I can't focus on any of my classes, instead, I 
-            was coding the whole time. My friends in my classes were very generous as they shared their notes and power points 
-            with me. And they usually emailed or skyped me the notes and PPTs. I thought this way of sharing files was inefficient, so 
+            was coding the whole time. My friends in my classes were very generous as they shared their notes and power points with me. And they usually emailed or skyped me the notes and PPTs. I thought this way of sharing files was inefficient, so 
             I made this website from scratch for them to drop files.</p>
             <p><img src="/images/project/dropnotes.gq/cover.png" alt="cover" /></p>
-            <p>I finished the website in 3 weeks. All my friends need to do is that selecting or dropping the files from their tablets, then clicking the upload button. This is a 
+            <p>I finished the website in 3 weeks. All my friends need to do is selecting or dropping the files from their tablets, then clicking the upload button. This is a 
             way that I show respect to my friends who support my coding progress. Big shout out to them!!!!</p>
 ​
-            <h3>Website Highlight</h3>
+            <h3>Challenges</h3>
             <h4>Multi-files uploading</h4>
             <p>The website can upload multiple files in one click, and I think it's pretty cool (although it might seem easy for you). 
             It did take me some time to figure out. I was struggling to find a way to store the files in the website's temporary memory. </p>

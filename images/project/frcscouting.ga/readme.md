@@ -12,7 +12,7 @@ and can analyze data, rank teams, make charts from data user scout. It
 saved lots of time from putting data in excel then sorting data. It
 worked very well in 2019 season in my [team](https://smblyrequired.com).
 
-#### How did I start
+#### Why I made this project
 
 There was one night, my robotics mentors were talking about how nice it
 will be if we had a scouting app last year. I heard their talking so I

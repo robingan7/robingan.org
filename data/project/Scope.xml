@@ -36,24 +36,21 @@
     <content>
         <![CDATA[
             <h3>Intro</h3>
-            <p>Strongly recommend reading this <a href="/media/#Why_do_scouting_apps_matter?">blog</a>, where I talk about how scouting works in <a href="https://www.firstinspires.org/robotics/frc">FRC(First Robotics Competition)</a> events and the significance of a working scouting website or app for a team. </p>
+            <p>In this <a href="/media/#Why_do_scouting_apps_matter?">blog</a>, I talk about how scouting works in <a href="https://www.firstinspires.org/robotics/frc">FRC(First Robotics Competition)</a> events and the significance of a working scouting website or app for a team. </p>
 
-            <p>This is the biggest project I worked in high school, and it's the most worthyless for how much time I spent on 
-                it. It didn't turn out to work well but I did learn from the mistake. 
+            <p>This is the biggest project I worked on in high school, but it's not worthy for the hours and hours of time I spent on it because it didn't turn out to work well but I did learn from the mistake. 
             </p>
 
-            <h4>How did I start</h4>
+            <h4>Why I made this project</h4>
             <p>After I made <a href="/project/#frcscouting.ga">frcscouting.ga</a>, I was interesting in 
                 making websites and decided to learn <a href="https://angular.io/">Angular</a> to make the best scouting apps ever for all 
                 <a href="https://www.firstinspires.org/robotics/frc">FRC</a> teams. So I hoped that I could make a impact in the community. 
             </p>
 
 
-            <h3>Features</h3>
+            <h3>Challenges</h3>
             <h4>Scouts & Managers Role</h4>
-            <p>None of the scouting apps I know have this feature. One of the most convenient features of this website is that it has the Scouts & Managers roles, where
-                the managers can assign tasks to scouts. The managers can also view the progress of each scout. And each 
-                teams can only have one manager to make the process easier to organize.  
+            <p>None of the scouting apps I know have this feature. One of the most convenient features of this website is that it has the Scouts & Managers roles, where the managers can assign tasks to scouts. The managers can also view the progress of each scout. And each team can only have one manager to make the process easier to organize.  
             </p>
             <p><img src="/images/project/Scope/managerandscout.png" alt="managerandscout"/></p>
 
@@ -76,8 +73,7 @@
                 </li>
 
                 <li>
-                    <p><strong>Created and edit(manager only) form:</strong> the manager can edit pit and match scouting form, which is changing 
-                    the aspects they want their scout to look for during scouting. They can also edit the customized questions for his or her team. 
+                    <p><strong>Created and edit(manager only) form:</strong> the manager can edit pit and match scouting form, which is changing the aspects they want their scout to look for during scouting. They can also edit the customized questions for their team. 
                     </p>
                     <p><img src="/images/project/Scope/editform.png" alt="editform"/></p>
                 </li>
@@ -90,25 +86,22 @@
             <p><img src="/images/project/Scope/managermodal.png" alt="managermodal"/></p>
 
             <h4>History section</h4>
-            <p>Under this tab, the users can view and edit all the matches they scout. For manager, he or she can 
-                view and edit all the matches from his or her scouts. 
+            <p>Under this tab, the users can view and edit all the matches they scout. For the manager, he or she can view and edit all the matches from his or her scouts. 
             </p>
             <p><img src="/images/project/Scope/history.png" alt="history"/></p>
             <p><img src="/images/project/Scope/historypit.png" alt="historypit"/></p>
 
             <h4>Data section</h4>
-            <p>In this section, the users can view and rank teams from the data they scout with 100+ of filters. They can also save the team they like 
-                for alliance selection. 
+            <p>In this section, the users can view and rank teams from the data they scout with 100+ filters. They can also save the team they like for alliance selection. 
             </p>
             <p><img src="/images/project/Scope/data.png" alt="data"/></p>
 
             <h4>Teamlist section</h4>
-            <p>In this section, the users can rank the teams they liked for final adjustment or better decisions in alliance selection. They can also cross off the teams that are 
-                already picked. 
+            <p>In this section, the users can rank the teams they liked for final adjustment or better decisions in alliance selection. They can also cross off the teams that are already picked. 
             </p>
             <p><img src="/images/project/Scope/teamliked.png" alt="teamliked"/></p>
 
-            <h3>Bluealliance API</h3>
+            <h4>Bluealliance API</h4>
             <p>I used <a href="https://www.thebluealliance.com/apidocs/v3">thebluealliance api</a> a lot for this project. For examples, </p>
             <ul>
                 <li><p>In the task section, if the user click "add pit scout", the team numbers in their event will automatically show up. </p>
@@ -127,7 +120,9 @@
                 </li>
             </ul>
 
-            <h3>Mistake I made</h3>
+            
+            <h3>Conclusion</h3>
+            <h4>Mistake I made</h4>
             <p>After hours and hours of effort, this website's never used. Here are some mistakes that causes this:</p>
             <ul>
                 <li><strong>Impossible to update:</strong> when I coded this, I did NOT think about how I will update 

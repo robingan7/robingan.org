@@ -44,7 +44,7 @@
         <content>
             <![CDATA[
             <h3>Intro</h3>
-            <p>Me and Andrew created this project for 2019 FRC season. For more information on the season, check out this <a href="/media/#">blog</a>. This page will 
+            <p>Andrew and I coded the robot for 2019 FRC season. For more information on the season, check out this <a href="/media/#">blog</a>. This page will 
             focus on the some algorithms for 2019 robot. </p>
             <p>General info, </p>
             <ul>
@@ -52,7 +52,7 @@
                 <li>Type: <a href="https://wpilib.screenstepslive.com/s/currentCS/m/java/l/599732-what-is-command-based-programming">command base</a></li>
             </ul>
 
-            <h3>Highlights</h3>
+            <h3>Challenges</h3>
             <h4>Limelight auto steering</h4>
             <p>In <a href="https://www.youtube.com/watch?v=Mew6G_og-PI&t=1s">2019's FRC game</a>, there are reflective tapes on the hatch feeder, cargoship and rocket as shown below. And 
             they are there for teams to use camera to vision track them. </p>
@@ -97,7 +97,7 @@ public class VisionTurn extends PIDCommand {
             Our goal was that whenever the arm is in one of the three front positions <small><abbr>front level 1, 2 and 3</abbr></small>, the wrist should automatically faces front and vice versa. This is what it acts like, </p>
             <p><img src="/images/project/FRC_2019_Public/arm and wrist.gif" alt="arm and wrist"/></p>
 
-            <p>To achieve this, first we wrote a <code>willBeForward( )</code> method, which tells the wrist if the arm's going to be in a front or a back position. If the arm's position value is going to be greater than the vertex, we know that the wrist needs to face back. 
+            <p>To achieve this, first, we wrote a <code>willBeForward( )</code> method, which tells the wrist if the arm's going to be in a front or a back position. If the arm's position value is going to be greater than the vertex, we know that the wrist needs to face back. 
                 Here is the implementation, </p>
 <figure class="highlight"><pre><code>//This is in Manipulator.java
 public boolean willBeForward(){
@@ -142,16 +142,18 @@ public void periodic(){
 </code>
             </pre>
             </figure>   
-            <h3>Things we should improve</h3>    
+
+            <h3>Conclusion</h3>    
+            <h4>Where we can do better</h4>    
             <ul>
                 <li>I'm not satisfied with the coding style.</li>
-                <li>Autonomous is not working.</li>
+                <li>Autonomous was not working.</li>
                 <li>The robot design can fit the lime light more. The arm this year sometimes blocks lime light view. Also, because
                 the arm, the lime light camera can't be mounted in the center.</li>
-            </ul>  
-            <h3>Goal for next year</h3>
+            </ul>
+            <h4>Goals for next year</h4>
             <ul>
-                <li>The first fully autonomous robot in FRC history. </li>
+                <li>Code the best autonomous mode. </li>
                 <li>Some programming awards in regionals and championship. </li>
                 <li>Code for 2020 season, it will be available <a href="/project/#FRC_Public_2020">here</a>.</li>
             </ul>

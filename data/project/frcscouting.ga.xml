@@ -42,7 +42,7 @@
             <h3>Intro</h3>
             <p>Strongly recommend reading this <a href="/media/#Why_do_scouting_apps_matter?">blog</a>, where I talk about how scouting works in <a href="https://www.firstinspires.org/robotics/frc">FRC(First Robotics Competition)</a> events and the significance of a working scouting website or app for a team. </p>
             <p>It's the mother of <a href="/project/#Scope">Scope</a>. It has scouting forms that are specific for FRC competition <strong>2019</strong>. It is easy to use and can analyze data, rank teams, make charts from data user scout. It saved lots of time from putting data in excel then sorting data. It worked very well in 2019 season in my <a href="https://smblyrequired.com">team</a>.</p>
-            <h4>How did I start</h4>
+            <h4>Why I made this project</h4>
             <p>There was one night, my robotics mentors were talking about how nice it will be if we had a scouting app last year. I heard their talking so I jumped in and said I will make one. So that became my new project. I made it from scratch using multiple languages. It took me 4 months to finish it since I was the only web developer on the team.</p>
             <p>The domain <strong>frcscouting.ga</strong> was expired December 8, 2019. So the website is on its original domain - <strong><a href="https://frcscouting.000webhostapp.com">https://frcscouting.000webhostapp.com</a></strong>.</p>
             <h3>Frontend</h3>

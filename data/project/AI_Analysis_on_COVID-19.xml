@@ -38,7 +38,7 @@
             and if we can use machine learning to predict cases for future days. I used linear
             regression to model the relationship and found out that there is a correlation in
             these two aspects and AI did perform well on the number of cases in future days</p>
-            <h4>How did I start</h4>
+            <h4>Why I made this project</h4>
             <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> is impacting the world drastically and we are surprised how quickly it
             can spread globally. Different countries are experiencing different extend of the
             growing rate of the cases, and I’m curious to see if there’s any pattern between

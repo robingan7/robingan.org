@@ -44,8 +44,8 @@
             students to learn my school's blocks schedules which is kind of confusing sometimes. And 2019-2020 school year's schedule was 
             even more confusing because we were trying new block schedule upon the old block schedule. Moreover, because of the <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> 
             lockdown situation, my school added new online class schedules. But the website handled them all due to the data parsing format I made. </p>
-            <h4>How did I start</h4>
-            <p>This is the upgraded version of <a href="/project/#testsmlunch.cf">testsmlunch.cf</a>. You can read the "How did I start" part in that blog. </p>
+            <h4>Why I made this project</h4>
+            <p>This is the upgraded version of <a href="/project/#testsmlunch.cf">testsmlunch.cf</a>. You can read the "Why I made this project" part in that blog. </p>
 
             <h3>User Interface</h3>
             <p>I used <a href="https://getbootstrap.com/">bootstrap</a> for most of the frondend elements, so the page looks very clean and simple. The home page is just showing 

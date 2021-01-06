@@ -42,9 +42,9 @@
         </link>
         <content>
             <![CDATA[
-            <h3>Overview</h3>
+            <h3>Why I made this project</h3>
             <p>I, Robin, was born in China, where issues with trash classification are evident and became more apparent when I moved to America last year. My passion for computer science led me to solve this problem by using AI <a href="https://www.tensorflow.org/">tensorflow</a> convolutional neural network (written in Python) graph by <a href="https://www.tensorflow.org/guide/summaries_and_tensorboard">TensorBoard</a> which is perfect for image recognition. My friend <a href="http://alexlynd.com/">Alex</a> used electronics (node MUC, lamp, raspberry pi) to capture images of trash to be executed in the program for sorting types of trash. Carina helped revise the report.</p>
-            <h3>About the problem</h3>
+            <h4>More About the problem</h4>
             <p>
                 This problem is very conspicuous in our society because people are not aware of proper trash sorting. For example, I surveyed my classmates and sorted through the trash cans at my school and home. Here are some pictures
                 As you can see, many recyclables were placed in the trash bin designated for landfill.If the majority of the population’s trashcans resemble this, the problem is sure to multiply. In fact, about 28 billion recyclable bottles and jars end up in American landfills every year. This research shocked and encouraged me to solve this problem as it showed how prevalent and serious this is. My hypothesis is that my solution will classify 95% of the refuse and recyclables.
@@ -63,7 +63,6 @@
             <p>This system needs a platform that can support heavy proccessing, web hosting, image capturing, and digital IO.  The <a href="https://www.raspberrypi.org/magpi/pi-zero-w/">Raspberry Pi 0W (computer)</a> can handle all of this at the cost of $10.  Additionally, we will use Python language for coding since it has the most support and a lot of libraries/documentation.  We then delved 
                 into further research on the operation of Al and implementation. 
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8aGocIjT1l0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
             <h3>Code & Algorithm Explanation</h3>
             <h4>Code Structure</h4>
@@ -122,7 +121,6 @@ model.add(Dropout(0.2))</code>
                     <img src="/images/project/Google_Science_Fair_2018/81.png" alt="plastic_in_trash">
                     <img src="/images/project/Google_Science_Fair_2018/82.png" alt="plastic_in_trash">
                     <p>Although the accuracies are both lower than the first. But we can see the greater dropout and regularization. The validation accuracy is raising while testing accuracy is floating near 90%. From the behavior of testing accuracy, I conclude that the program has the underfitting problem. To solve this I lowered the dropout regularization and increased the number of neurons to balance the loss. I did not, however, change all these in one step.  </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cfVT8qjilFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </li>
 
                 <li>
@@ -155,6 +153,7 @@ model.add(Dropout(0.2))</code>
             
             <h3>Conclusion</h3>
             <p>I have a very successful training model with 98% accuracy as shown in the youtube video. It can distinguish most of the trash in our life. When I went to a dining hall, canteen or restaurant, I always take some pictures of the trash. And I will upload to program, it got them correct every time. Here is the video of testing the program.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7J08mPJNM-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/fyWvKE-A49Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>You might think about how this can be used in our real life. Alex uses image capturing, digital IO, and Raspberry Pi 0W (computer) to implement the AI program as an actual product. Here are a video and a sketch about the electronics design. </p>
             <img src="/images/project/Google_Science_Fair_2018/electronics.jpg" alt="plastic_in_trash"> 

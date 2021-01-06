@@ -73,8 +73,7 @@
             </figure>
 
             <h4>PHP Data Binding</h4>
-            <p>Although it is not a smart choice using PHP for data binding(should be javascript or xml). But I still want to mention this 
-                because it was the first time I realize the website needs to have the ability to iterate the projects and stories grids by itself. 
+            <p>Although it is not a smart choice using PHP for data binding(should be javascript or XML). But I still want to mention this because it was the first time I realize the website needs to have the ability to iterate the projects and stories grids by itself. 
                 <strong>Before I learned this, the all the grids of projects and story were in <abbr>absolute</abbr> position.</strong> I wasted lots of time tuning all the values. Sounds silly, but <strong>I did learn from my mistakes</strong>, so <a href="/">robingan.org</a> has a very neat data storage. 
                 Here is a <abbr>partial</abbr> code of this from <a href="https://robinwebsite7.000webhostapp.com/project.php">robingan.ga/project.php</a>,
             </p>
@@ -91,7 +90,7 @@ while($rows = mysqli_fetch_array($result)){
             </pre>
             </figure>
 
-            <p>However, <abbr>PHP</abbr> is still not the best for storing static data like project and story info because requests to database will reduce the website loading speed, and this effects the next feature.</p>
+            <p>However, <abbr>PHP</abbr> is still not the best for storing static data like project and story info because requests to the database will reduce the website loading speed, and this affects the next feature.</p>
 
             <h4>Searching & Sorting Project Grids</h4>
             <p>After adding the previous feature, I decided to add a searching ans sorting functions on <a href="https://robinwebsite7.000webhostapp.com/project.php">project</a> page in case that there will be more projects adding later (but that didn't happen).</p> 
@@ -117,7 +116,7 @@ while($rows = mysqli_fetch_array($result)){
                 <a href="https://www.000webhost.com/">000webhost</a> server I used is also a factor causing slow speed. </p>
 
             <h3>Summary</h3>
-            <p>It was a good for me start making websites. I did spend some time that it was kind of <abbr>wasted</abbr> and <abbr>unnecessary</abbr>. However, I began to learn to think more before starting coding websites such as what kind of data structure to choose and what to use for storing data. 
+            <p>It was good for me to start making websites. I did spend some time that it was kind of <abbr>wasted</abbr> and <abbr>unnecessary</abbr>. However, I began to learn to think more before starting coding websites such as what kind of data structure to choose and what to use for storing data. 
                 Also, I understood more about HTML structure and CSS styling through this project. And I'm still updating this website until August 2019 when I gave up and wanted to start a completed new one(robingan.org).  
             </p>
 
