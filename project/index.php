@@ -19,7 +19,7 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <meta property="og:description" content="Robin Gan's project --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
     <?php include '../component/headerInfo.php'?>
     <link rel="stylesheet" href="../styles/main.css"/>
-    <link rel="stylesheet" href="../styles/project.css"/>
+    <link rel="stylesheet" href="../styles/project.css?version=1"/>
     <link rel="stylesheet" href="../styles/newsAndCookie.css"/>
     <link rel="stylesheet" href="../styles/menu.css"/>
     <link rel="stylesheet" href="../devicons/css/devicons.min.css"/>

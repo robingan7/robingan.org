@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-row-gap: 50px;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
     z-index: 5;
 }
 .card-container {
@@ -19,7 +19,7 @@
     animation: animatop 0.3s ease-in-out forwards;
     display: grid;
     border: 2px solid black;
-    transform: skew(6deg);
+    transform: skew(6deg) scale(0.9);
     z-index: 5;
 }
 
@@ -84,7 +84,7 @@
     filter: brightness(65%);
 }
 .card-container:hover{
-    transform: skew(0deg) scale(1.05);
+    transform: skew(0deg) scale(1);
 }
 .card-container:hover img{
     filter: brightness(100%);
