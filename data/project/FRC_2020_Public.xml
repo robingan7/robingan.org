@@ -31,17 +31,26 @@
     <content>
         <![CDATA[
             <h3>Intro</h3>
-            <p>I will talk about my <a href="https://www.firstinspires.org/robotics/frc">FRC</a> 2020 season robotics code in this blog. 
+            <p>I'll talk about my <a href="https://www.firstinspires.org/robotics/frc">FRC</a> 2020 season robotics code in this blog. 
             I was the only programmer in that season. </p>
             <h3>Highlight</h3>
             <h4>Field-Relative Turret</h4>
-            <p>By using the <a href="https://www5.epsondevice.com/en/information/technical_info/gyro/#:~:text=Gyro%20sensors%2C%20also%20known%20as,EPSON%20Gyro%20products">gyro sensor</a>, the turret is able to maintain its position no matter what degree the robot turns as show on the video.  </p>
+            <p>By using the <a href="https://www5.epsondevice.com/en/information/technical_info/gyro/#:~:text=Gyro%20sensors%2C%20also%20known%20as,EPSON%20Gyro%20products">gyro sensor</a>, the turret is able to maintain its heading no matter what degree the robot turns as show on the video.  </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ANrAKqESiKs?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h4>Autonomous</h4>
             <p>I learned the <a href="https://www.mathworks.com/help/robotics/ug/pure-pursuit-controller.html#:~:text=Pure%20pursuit%20is%20a%20path,in%20front%20of%20the%20robot.&text=The%20algorithm%20then%20moves%20the,last%20point%20of%20the%20path.">pure pursuit algorithm</a> from a <a href="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf">paper</a> by <a href="https://www.cmu.edu">Carnegie Mellon University</a> 
                 and made an accurate path following autonomous as shown in the video. </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qOLjLaQlRws?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ReYujJ4UYuQ?start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>The paper from CMU that I got the inspiration, </p>
+            <iframe src="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf" width="100%" height="700px">
+            </iframe>
+
+            <h3>Conclusion</h3>
+            <p>I'm happy about my achievements. Since the season was cancelled because of COVID-19, we didn't get a chance to show off 
+                our complete product. But all in all, I'm happy that my autonomous was working well. 
+            </p>
             ]]>
     </content>
 </table>

@@ -44,27 +44,26 @@
             <h4>Why I made this project</h4>
             <p>This is the upgraded version of <a href="/project/#testsmlunch.cf">testsmlunch.cf</a>. You can read the "Why I made this project" part in that blog. </p>
 
-            <h3>User Interface</h3>
+            <h3>Challenges</h3>
+            <h4>User Interface</h4>
             <p>I used <a href="https://getbootstrap.com/">bootstrap</a> for most of the frondend elements, so the page looks very clean and simple. The home page is just showing 
             the block types, starting time and period of that day. </p>
             <p><img src="/images/project/seeyourschedule.com/frontend.png" alt="frontend" /></p>
 
             <h4>After logging in</h4>
-            <p>The users can also create accounts for more personal features. They will need to put in the buildings of all their classes. Then the website will show them how much time 
-                left of their current class on real time and which lunch they will have for the day. 
+            <p>The users can also create accounts for more personal features. They will need to put in the buildings of all their classes. Then the website will show them how much time left of their current class in real-time and which lunch they will have for the day. 
             </p>
             <p><img src="/images/project/seeyourschedule.com/class.png" alt="class" /></p>
             <p><img src="/images/project/seeyourschedule.com/realtime.png" alt="realtime" /></p>
 
-            <p>With the manual-current modes switcher on the <abbr>upper right-hand corner</abbr>, the users can see the schedule for any of the school day in the year. </p>
+            <p>With the manual-current modes switcher on the <abbr>upper right-hand corner</abbr>, the users can see the schedule for any of the school days in the year. </p>
 
             <h4>The this-week tab</h4>
             <p><abbr>This-week</abbr> tab enables the feature of previewing the schedule for the current week or any week the users select. </p>
             <p><img src="/images/project/seeyourschedule.com/thisweek.png" alt="thisweek" /></p>
 
-            <h3>Data parsing</h3>
-            <p>It took me one day to update 2019 schedule to 2020 schedule. I'm able to this because I designed a nice data 
-                parsing format for the website. 
+            <h4>Data parsing</h4>
+            <p>It took me one day to update the 2019 schedule to the 2020 schedule. I'm able to this because I designed a nice data parsing format for the website. 
             </p>
            
             <p><strong>Get data from my school website:</strong> my school usually sends everyone a <a href="https://smhsorg.finalsite.com/uploaded/2020-2021_Calendar_Items_from_Student_Services/2020-2021_Block_Schedule_Master_as_of_7-27-20.pdf?1595885747224">master calendar</a> 

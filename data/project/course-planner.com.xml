@@ -44,11 +44,11 @@
                 <a href="https://reactjs.org/">react</a>, <a href="https://www.mongodb.com/">mongodb</a> and <a href="https://nodejs.org/">nodejs</a>. I learned them by watching some youtube video. 
             </p>
             <h4>Why I made this project</h4>
-            <p>My physics teacher told me that they used to have classes planning website that binds with the textbooks. However, 
-                the app was stopped for some reasons, so he asked me if I can make a website with similar functions. Then I started making this. 
+            <p>My physics teacher told me that they used to have a course planning website that binds with the textbooks. However, 
+                the app was stopped for some reason, so he asked me if I can make a website with similar functions. Then I started making this. 
             </p>
 
-            <h3>Overview</h3>
+            <h3>Challenges</h3>
             <h4>Google Login</h4>
             <p>This was the first I dealed with <a href="https://developers.google.com/identity/sign-in/web/sign-in">google login api</a>, which allows users to sign up and login with 
             their google accounts. </p>
@@ -62,7 +62,7 @@
             <p><img src="/images/project/course-planner.com/calendar.png" alt="calendar" /></p>
 
             <h4>Importing textbook</h4>
-            <p>The leading feature of this website is that the teachers can import schedule by selecting the textbooks their are using. 
+            <p>The leading feature of this website is that the teachers can import schedule by selecting the textbooks they are using. 
                 To accomplish this feature, my friend <a href="https://www.instagram.com/yuhan525/">Yuhan</a> and I manually put in the textbook data into a <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> file, 
                 which looks like this. 
             </p>

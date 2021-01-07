@@ -19,9 +19,7 @@
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                   
                 </ul>
             </li>
             <li>
@@ -34,9 +32,17 @@
     </link>
     <content>
         <![CDATA[
-            <h3>Overview</h3>
-            <p>This is a website I built to store links of tutorials, documentations and links for <a href="http://team5805.robingan.org/">my robotics team</a> so 
+            <h3>Why I made this project</h3>
+            <p>This is a website I built initially to store links of tutorials, documentations and download links for <a href="http://team5805.robingan.org/">my robotics team</a> so 
                 that the programmers don not need to spend time searching for these links. There are also some tutorials I made for the new programmers. </p>
+                <p>Later, I shared this website with some other teams. And their programmers found it helpful as well. </p>
+
+            <h3>Challenges</h3>
+            <p>It's a simple website and I used <a href="https://materializecss.com/">Materialize</a> a lot. So the development process was 
+            quick and easy. </p>
+            <h4>Thing I learned</h4>
+            <p>I realized how much time libraries can save, so I stopped coding everything from scratch. </p>
+            <p>Some images of the website, </p>
             <img src="/images/project/5805docs/web1.png" alt="web1">
             <img src="/images/project/5805docs/web2.png" alt="web1">
             <img src="/images/project/5805docs/web3.png" alt="web1">

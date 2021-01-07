@@ -34,7 +34,9 @@
             <h3>Why I made this project</h3>
             <p>After finishing and learning from the project <a href="/project/#robingan.ga">robingan.ga</a>(which didn't look so good), I wanted to create a personal page that looks good to provide a cool way for friends, family, or employers to know more about me. After 3 months of coding, I created this website you're at right now includes
             my <a href="/story">stories</a>, <a href="/project">projects</a>, and <a href="/media">blogs</a>.  </p>
-
+            <p>
+                <img src="/images/project/robingan.org/cover.png" alt="cover">
+            </p>
             <h3>Challenges</h3>
             <h4>Responsive pages</h4>
             <p>One of my goals my this website was to make it look good on all devices. And this is the part where I spent most of my time on. 
@@ -61,7 +63,7 @@ blog_.style.height = windowInnerHeight - windowWidth_ * top_ / 100 - 20
             </p>
 
             <h4>Data storage</h4>
-            <p>As I learned from <a href="/project/#Scope">Scope</a> project, it's very important make a website easy to update. 
+            <p>I learned from <a href="/project/#Scope">Scope</a> project that it's very important make a website easy to update. 
             So for this project, I chose <abbr>XML</abbr> to store all the project and blogs writings. XML's human readable and compatible 
             with multiple languages. </p>
 
