@@ -187,16 +187,4 @@ const app = {
     }
 }
 document.addEventListener('DOMContentLoaded', app.init);
-
-function scrollFun() {
-    var ele = document.getElementById('projectDesPage');
-
-    if (ele.scrollTop > 120) {
-        //document.getElementById('projectDesPage-title').classList.add('h1Fixed');
-        //document.getElementById('projectDesPage-menu').classList.add('ulFixed');
-    } else {
-        //document.getElementById('projectDesPage-menu').classList.remove('ulFixed');
-        //document.getElementById('projectDesPage-title').classList.remove('h1Fixed');
-    }
-}
-document.getElementById('projectDesPage').addEventListener('scroll', scrollFun, false);
+document.getElementById('projectDesPage').addEventListener('scroll', onScroll, false);

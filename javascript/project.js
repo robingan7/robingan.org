@@ -49,6 +49,7 @@ function loadProject() {
         });
     });
 }
+
 function resetTitleAndDescription(){
     document.title = 'Project|Robin Gan';
     document.querySelector('[name="description"]').content = "Robin Gan's project --甘翔羽 " + headerOG;
@@ -77,7 +78,7 @@ const formatView = n => {
     if (n >= 1e12) return +(n / 1e12).toFixed(1) + "T"; 
 }; 
 
-function loadProjectDes(id){
+function loadProjectDes(id, scroll=true){
     try{
         fetch('/data/project/' + id + '.xml?version' + version).then((res) => {
             res.text().then((xml) => {
@@ -105,9 +106,15 @@ function loadProjectDes(id){
                     </div>
                     `;
 
-                    document.title = title_ + ' Project|Robin Gan';
-                    document.querySelector('[name="description"]').content = title_ + " - Robin Gan's project --甘翔羽 " + headerOG;
-                    document.getElementById('projectDesPage').innerHTML = output;
+                  
+                    (new Promise((res, rej)=> {
+                        document.title = title_ + ' Project|Robin Gan';
+                        document.querySelector('[name="description"]').content = title_ + " - Robin Gan's project --甘翔羽 " + headerOG;
+                        document.getElementById('projectDesPage').innerHTML = output;
+                        res();
+                    })).then(()=> {
+                        setScroll(scroll);
+                    });
                 });
             });
         });
@@ -196,7 +203,7 @@ const app = {
                setTimeout(() => {
                    document.getElementById('content').classList.add('contentDisappear');
                    document.getElementById('projectDesPage').classList.remove('projectPageAppear');
-                   loadProjectDes(globalSelectPage);
+                   loadProjectDes(globalSelectPage, false);
                    history.pushState({}, globalSelectPage, `#${globalSelectPage}`);
                }, timeOut);
            }
@@ -206,7 +213,6 @@ const app = {
     },
     pop: function(ev){
         let newhash = location.hash.replace('#', '');
-        console.log(newhash);
 
         if (globalXAM.querySelector('[id="' + newhash + '"]') == undefined || newhash == ""){
             closeDes();
@@ -216,7 +222,6 @@ const app = {
             loadProjectDes(globalSelectPage);
             document.getElementById('content').classList.add('contentDisappear');
             document.getElementById('projectDesPage').classList.remove('projectPageAppear');
-            despage.scrollTo(0, 0);
             despage.dispatchEvent(app.show);
         }               
     }
@@ -230,16 +235,4 @@ function project_nav(id){
     history.pushState({}, id, `#${id}`);
 }
 document.addEventListener('DOMContentLoaded', app.init);
-
-function scrollFun(){
-    var ele = document.getElementById('projectDesPage');
-    
-    if (ele.scrollTop > 120){
-        //document.getElementById('projectDesPage-title').classList.add('h1Fixed');
-        //document.getElementById('projectDesPage-menu').classList.add('ulFixed');
-    } else {
-        //document.getElementById('projectDesPage-menu').classList.remove('ulFixed');
-        //document.getElementById('projectDesPage-title').classList.remove('h1Fixed');
-    }
-}
-document.getElementById('projectDesPage').addEventListener('scroll', scrollFun, false);
+document.getElementById('projectDesPage').addEventListener('scroll', onScroll);

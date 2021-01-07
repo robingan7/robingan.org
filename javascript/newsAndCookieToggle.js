@@ -75,6 +75,41 @@ function addOneView(name, type) {
     }));
 }
 
+/** project and media functions */
+function setScroll(isScroll) {
+    if (typeof(Storage) !== "undefined") {
+        let despage = document.getElementById('projectDesPage');
+        if(location.hash.length > 0) {
+            if(isScroll) {
+                let scrollby = localStorage.getItem(location.hash + "_project");
+                const int = setInterval(()=> {
+                    despage.scrollTo(0, scrollby);
+                },10)
+    
+                setTimeout(()=> {
+                    clearInterval(int);
+                }, 200);
+            } else {
+                despage.scrollTo(0, 0);
+            }
+        }
+    } 
+}
+
+function onScroll(){
+    let scrollVal = document.getElementById('projectDesPage').scrollTop;
+    localStorage.setItem(location.hash+"_project", scrollVal);
+    //console.log(location.hash+"_project", scrollVal);
+    /*if (ele.scrollTop > 120){
+        //document.getElementById('projectDesPage-title').classList.add('h1Fixed');
+        //document.getElementById('projectDesPage-menu').classList.add('ulFixed');
+    } else {
+        //document.getElementById('projectDesPage-menu').classList.remove('ulFixed');
+        //document.getElementById('projectDesPage-title').classList.remove('h1Fixed');
+    }*/
+}
+/**------------------------------ */
+
 function closeNews() {
     let btnn = document.getElementById('news_subscribe_button');
     btnn.classList.remove('active');
