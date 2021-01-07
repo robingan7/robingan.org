@@ -7,9 +7,6 @@
                 <a>Link</a>
                 <ul>
                     <li>
-                        <a href="https://codein.withgoogle.com/organizations/wikimedia">Contest Page</a>
-                    </li>
-                    <li>
                         <a href="https://github.com/robingan7/google-code-in_2018">View Code</a>
                     </li>
                      <li>
@@ -20,9 +17,7 @@
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                 </ul>
             </li>
             <li>
@@ -125,8 +120,7 @@ end</code>
                 name of the name. Sounds simple, however, different countries has different ways of placing first name and last name 
                 Here are some interesting ones with <strong>partial</strong> code solution,
             </p>
-            <ul>
-                <li>In a Chinese name, the last name is placed before first name. So it's inverse of English name.</li>
+                <p>In a Chinese name, the last name is placed before first name. So it's inverse of English name.</p>
                 <figure class="highlight"><pre><code>strings = {}
 stringMatch = string.gmatch(name, "%C%P%S*")
 for stringss in  stringMatch do
@@ -141,13 +135,13 @@ end
             </pre>
             </figure>
 
-            <li>Dutch and Spanish names have last names that contain multiple words, such as <code>van den Broek</code> 
+            <p>Dutch and Spanish names have last names that contain multiple words, such as <code>van den Broek</code> 
                 which is a Dutch last name. Moreover, Spanish usually have two family names, see Spanish naming customs. However, it is also common to only see one family name such as
             <code>Penélope Cruz</code>
             <code>Penélope Cruz Sánchez</code>
             <code>Federico del Sagrado Corazón de Jesús García Lorca</code>. The hardest part is that sometimes I don't know type of name it is thus my 
             algrithm needs to be able to figure out the name type. 
-            </li>
+            </p>
             <figure class="highlight"><pre><code>--spanish
 if(formatname == "es") then 
 given = ""
@@ -184,7 +178,7 @@ end
             </pre>
             </figure>
 
-            <li>English names sometimes has suffix. </li>
+            <p>English names sometimes has suffix. </p>
             <figure class="highlight"><pre><code>if(formatname == "en") then
     suffix = {" Jr"," Sr"," III"," II"," I"}
     judge = false
@@ -213,7 +207,6 @@ end
 </code>        
             </pre>
             </figure>
-            </ul>
 
             <p>I was the first one to complete this task. I was pushing the mentor making new tasks by finishing this one in <abbr>two</abbr> days. 
                 And here is the entire <a href="https://github.com/robingan7/google-code-in_2018/blob/master/lua8.lua">code</a>.

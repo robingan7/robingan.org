@@ -19,9 +19,7 @@
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                     <li>
                         <a href="http://alexlynd.com/">Alex Lynd</a>
                     </li>
@@ -40,17 +38,66 @@
     </link>
     <content>
         <![CDATA[
-            <h3>Overview</h3>
+            <h3>Why we made this project</h3>
             <p>This website was made for viewing cases and trends of coronavirus in Orange County, CA with graphs, table and AI Prediction. 
                 My friend Alex was in charge of the <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end">frontend</a>. I did more <a href="https://en.wikipedia.org/wiki/Front_end_and_back_end">backend programming</a>.
                 Luke updated the website everyday with data from <a href="https://occovid19.ochealthinfo.com/coronavirus-in-oc">OC health</a>. 
             </p>
+
+            <h3>Challenges</h3>
+            <h4>Tables, Charts, Graphs</h4>
+            <p>After some Google searches, we decided to use <a href="https://materializecss.com/">Materialize</a> for table and <a href="https://www.chartjs.org/">Chart.js</a> for charts and graphs. </p>
             <img src="/images/project/coronaware.net/web1.png" alt="web1">
             <img src="/images/project/coronaware.net/web2.png" alt="web2">
             <img src="/images/project/coronaware.net/web3.png" alt="web3">
-
-            <h3>AI Prediction</h3>
-            <p>I used <a href="https://brain.js.org">brain.js</a> to build <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Network</a> model to predict total cases every week. 
+            <p>Code that uses Chart.js</p>
+<figure class="highlight"><pre><code>var ctx = document.getElementById('myChart3').getContext('2d');
+var aiPredictionLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dateLabelPrediction,
+        datasets: [
+            {
+                label: 'Actual Total Cases',
+                backgroundColor: 'transparent',
+                borderColor: '#ee6e73',
+                pointBackgroundColor: '#ee6e73',
+                pointRadius: 3,
+                pointHoverRadius: 4,
+                data: dateLabelActual,
+                order: 0
+            },
+            {
+                label: 'AI Prediction',
+                backgroundColor: 'transparent',
+                borderColor: '#00BFFF',
+                pointBackgroundColor: '#00BFFF',
+                pointRadius: 5,
+                pointHoverRadius: 6,
+                data: predictions,
+                order: 1
+            }
+        ]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    suggestedMin: 100,
+                    suggestedMax: 500
+                }
+            }]
+        },
+        maintainAspectRatio: false,
+        aspectRatio: 1.7
+    }
+});
+</code>
+            </pre>
+            </figure>
+            <h4>AI Prediction</h4>
+            <p>I compared some AI libaries and eventually chose <a href="https://brain.js.org">brain.js</a> to build <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network">Recurrent Neural Network</a> model to predict total cases every week. 
+                I chose it because it requires the least amount of coding to achieve what I want. 
             </p>
 <figure class="highlight"><pre><code>function printAIResult() {
     /*
@@ -71,9 +118,9 @@
 </code>
             </pre>
             </figure>
+            <p>It was pretty accurate according to the images, </p>
+            <img src="/images/project/coronaware.net/pred.png" alt="pred">
             <img src="/images/project/coronaware.net/ai.png" alt="ai">
-
-
             ]]>
     </content>
 </table>

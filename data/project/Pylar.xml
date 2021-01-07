@@ -10,7 +10,7 @@
                         <a href="http://pylar.io">Website</a>
                     </li>
                      <li>
-                        <a href="https://github.com/robingan7/Pylar">Code(Website)</a>
+                        <a href="https://github.com/robingan7/Pylar">View Code</a>
                     </li>
                     
                 </ul>
@@ -22,13 +22,7 @@
                         <a href="http://alexlynd.com">Alex Lynd</a>
                     </li>
 
-                    <li>
-                        <a href="https://www.instagram.com/car_in_a__">Carina Bachmann</a>
-                    </li>
-
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                 </ul>
             </li>
             <li>
@@ -43,8 +37,64 @@
     </link>
     <content>
         <![CDATA[
-        <h3>I'm still writing this blog.... &#9997;</h3>
-        <p>The project is an AI powered composting machine. This is my group project for a 2021 science fair. We're still working on this. Stay tuned!!</p>
+        <h3>Why we made this project</h3>
+        <p>Pylar is a project we're launching that seeks to automate composting with the integration of IOT and machine learning functionality. Since we know most people lead busy lives, maintaining a well kept compost pile can be time consuming: Pylar will offer a smooth platform that allows the clients to quickly monitor and gauge compost health at a glance, while also taking care of most of the process for our clients. </p>
+        <p><img src="/images/project/Pylar/logo.jpg" alt="logo"/></p>
+        <p>We initially created Pylar, since we were interested in finding ways to help the environment, such as  global warming, climate change, and pollution, and to promote sustainability through technology. 
+        </p>
+        <h4>My role</h4>
+        <ul>
+            <li>Co-Founder</li>
+            <li>Frontend Developer</li>
+            <li>Backend Developer</li>
+        </ul>
+        <h3>Challenges</h3>
+        <h4>Receiving data from hardware</h4>
+        <p>We need to find a way to send data from our hardware to the web app. Alex chose to use a <abbr>ESP8266 WIFI Microcontroller</abbr> 
+        to send requests to our server. And my job was to write code to receive the request and display the data on the website. After some searches on Google, 
+        I successfully used <abbr>PHP</abbr> to achieve the goal. </p>
+        <p><img src="/images/project/Pylar/hardware.jpg" alt="hardware"/></p>
+        <p>Code that receives and processes requests, </p>
+        <figure class="highlight"><pre><code>include 'database.php';
+
+if(isset($_GET['id'])){
+    $name = mysqli_real_escape_string($conn, $_GET["id"]);
+
+    $id = $_GET["id"];
+    $sql2 = "SELECT * FROM `user` WHERE `id` = $id;";
+    $result2 = mysqli_query($conn, $sql2);
+    $num = mysqli_num_rows($result2);
+
+    if($num == 0){
+        echo '{}';
+    }else{
+        $row = mysqli_fetch_array($result2);
+        $entries = array("temp", "humidity", "battery", 
+                    "airFlap", "tilt", "fill", "lastUpdate");
+        $output = '{';
+
+        foreach ($entries as &$value) {
+            if($value == 'lastUpdate') {
+                $output .= '"'.$value.'": "'.$row[$value].'",';
+            } else {
+                $output .= '"'.$value.'": '.$row[$value].',';
+            }
+        }
+
+        $output = substr($output, 0, -1);
+        $output .= '}';
+        echo $output;
+    }
+            </code>
+                        </pre>
+                        </figure>
+
+    <p>Photos of the websites,</p>
+    <p><img src="/images/project/Pylar/web1.png" alt="web1"/></p>
+    <p><img src="/images/project/Pylar/animation.gif" alt="animation"/></p>
+    <h3>Conclusion</h3>
+    <p>This project is still in progress. And we already had 6 people from <a href="https://www.instagram.com/pylar.io/">instagram</a> who want to invest in our project. 
+    I'm happy with what we've done so far. </p>
             ]]>
     </content>
 </table>

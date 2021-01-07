@@ -10,7 +10,7 @@
                         <a href="https://robingan.org">Website</a>
                     </li>
                      <li>
-                        <a href="https://github.com/robingan7/robingan.org">Code</a>
+                        <a href="https://github.com/robingan7/robingan.org">View Code</a>
                     </li>
                     
                 </ul>
@@ -18,9 +18,7 @@
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                 </ul>
             </li>
             <li>
@@ -33,8 +31,106 @@
     </link>
     <content>
         <![CDATA[
-            <h3></h3>
+            <h3>Why I made this project</h3>
+            <p>After finishing and learning from the project <a href="/project/#robingan.ga">robingan.ga</a>(which didn't look so good), I wanted to create a personal page that looks good to provide a cool way for friends, family, or employers to know more about me. After 3 months of coding, I created this website you're at right now includes
+            my <a href="/story">stories</a>, <a href="/project">projects</a>, and <a href="/media">blogs</a>.  </p>
+
+            <h3>Challenges</h3>
+            <h4>Responsive pages</h4>
+            <p>One of my goals my this website was to make it look good on all devices. And this is the part where I spent most of my time on. 
+            Especially in the <a href="/">home page</a>, there were so many moving parts that I had to use <abbr>JS</abbr> to do all the logic instead of some simple <abbr>CSS</abbr> media queries.</p>
+            <p>Here's a part of the JS code,</p>
+            <figure class="highlight"><pre><code> if (windowWidth_ > 1500) {
+    windowWidth_ = 1500;
+    blog_.style.top = "310px";
+    blog_.style.width = "1000px";
+} else {
+    blog_.style.width = windowWidth_ - left_ - 
+                        windowWidth_ * 0.1 - container_ - 
+                        container_left + 40 + "px";
+    blog_.style.top = "20vw";
+}
+
+blog_.style.height = windowInnerHeight - windowWidth_ * top_ / 100 - 20 
+                    + "px";</code>
+                        </pre>
+                        </figure>
+            <p>The home page responsive demonstration,</p>
+            <p>
+                <img src="/images/project/robingan.org/home_res.gif" alt="home_res">
+            </p>
+
+            <h4>Data storage</h4>
+            <p>As I learned from <a href="/project/#Scope">Scope</a> project, it's very important make a website easy to update. 
+            So for this project, I chose <abbr>XML</abbr> to store all the project and blogs writings. XML's human readable and compatible 
+            with multiple languages. </p>
+
+            <p>Code that pulls data from XML,</p>
+            <figure class="highlight"><pre><code>function loadProject() {
+    fetch('/data/projectData.xml?stopcaching' + version).then((res) => {
+        res.text().then((xml) => {
+            let parser = new DOMParser();
+            globalXAM = parser.parseFromString(xml, 'text/xml');
+
+            var eleList = globalXAM.getElementsByTagName('table');
+            var output = '';
+            for (let i = 0; i < eleList.length; i++) {
+                var title = eleList[i].querySelector('[name="title"]')
+                            .firstChild.nodeValue;
+                var img = eleList[i].querySelector('[name="img"]'
+                            .firstChild.nodeValue;
+                var des = eleList[i].querySelector('[name="des"]')
+                            .firstChild.nodeValue;
+                var date = eleList[i].getElementsByTagName('date')[0]
+                            .firstChild.nodeValue;
+                var lang = eleList[i].querySelector('[name="li1"]')
+                            .firstChild.wholeText;
+            }
+
+            /*Code.....*/
+        }
+    }
+}       </code>
+                                    </pre>
+                                    </figure>
+
+            <h4>3D animation</h4>
+            <p>I wanted to make the website unique and impressive, so I decided to add 3D animations. It took some time to tuning <abbr>CSS</abbr> to 
+                find the best values for timing and displacements. But I evetually figured it out and you can see them everywhere on this website. <p>
             
+            <h4>Single page website</h4>
+            <p>I decided to add this feature for more user-friendly experience and easier maintenance. You might notice that when you switch between project and another project page, the browser doesn't refresh. 
+                This is because I explored and used single page app for project, story, and media sections. I followed some Youtube videos when making this feature. 
+            </p>
+            <p>Code that handles the states of the single page,</p>
+            <figure class="highlight"><pre><code>const app = {
+    pages: [],
+    show: new Event('show'),
+    init: function () {
+        /*Code.....*/
+    },
+    nav: function (ev) {
+        /*Code.....*/
+    },
+    pop: function(ev){
+        /*Code.....*/        
+    }
+}
+document.addEventListener('DOMContentLoaded', app.init);</code>
+                                                </pre>
+                                                </figure>
+
+            <h3>Conclusion</h3>
+            <p>I'm happy with the product. This website's well organized and coded. Most importantly, it is 
+                very easy to maintain and add new stuff. 
+            </p>
+            <h4>Compare <a href="/">robingan.org(new version)</a> with <a href="https://robinwebsite7.000webhostapp.com/">robingan.ga(old version)</a></h4>
+            <ul>
+                <li>Much more complicated css and js styling, I explained more on this in this <a href="/project/#robingan.org">project</a></li>
+                <li>I used xml to store story, blog and project instead of sending requests to <abbr>mysql</abbr> database.</li>
+                <li>Mysql database now is for couning views for each project, blogs and user entries. </li>
+                <li>I added resume, bio, media and music pages which were not on the old version</li>
+            </ul>
             ]]>
     </content>
 </table>

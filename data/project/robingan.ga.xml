@@ -12,17 +12,12 @@
                     <li>
                         <a href="https://robingan.org/old/">Website</a>
                     </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCjCP4U38X4g9HG1onRKJxlA">Channel</a>
-                    </li>
                 </ul>
             </li>
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                 </ul>
             </li>
             <li>
@@ -128,7 +123,6 @@ while($rows = mysqli_fetch_array($result)){
                 <li>I used xml to store story, blog and project instead of sending requests to <abbr>mysql</abbr> database.</li>
                 <li>Mysql database now is for couning views for each project, blogs and user entries. </li>
                 <li>I added resume, bio, media and music pages which were not on the old version</li>
-                <li>Self-coded mp3 player in <a href="/music">music page</a>, I explained more on this in this <a href="/project/#robingan.org">project</a>.</li>
             </ul>
 
             <h4 class="sectionBreaker">Some silly things I found on the old version, please don't laugh :)</h4>

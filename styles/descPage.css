@@ -9,7 +9,7 @@ abbr {
     left:5px;
     width:calc(100% - 15px);
     height:calc(100% - 155px);
-    background-color: var(--mainWhite);
+    background-color: #fffefb;
     border-radius: 5px;
     border: 3px solid black;
     z-index:6;
@@ -31,11 +31,12 @@ abbr {
 #projectDesPage-title::after{
     content:attr(date);
     position: relative;
-    font-size:13px;
+    font-size:15px;
+    text-decoration: none;
     text-align: center;
     display: block;
     top:3px;
-    line-height: 13px;
+    line-height: 25px;
 }
 
 #projectDesPage-menu{
@@ -43,10 +44,11 @@ abbr {
     padding:0;
     list-style: none;
     width:400px;
-    height:40px;
+    height:auto;
     margin-left:calc((100% - 400px) / 2);
     background-color:var(--mainWhite);
     margin-top:3px;
+    z-index: 6;
 }
 
 #projectDesPage-menu > li{
@@ -57,7 +59,6 @@ abbr {
     text-align: center;
     list-style: none;
     line-height: 40px;
-    cursor: pointer;
     border:2px dashed black;
     font-size: 20px;
     margin-left:5px;
@@ -75,6 +76,7 @@ abbr {
     text-align: center!important;
     transform: translateX(-35px);
     margin: 8.5px 0;
+    cursor: pointer;
     margin-top:0;
 }
 #projectDesPage-menu li ul li{
@@ -89,7 +91,7 @@ abbr {
     margin-top:105px;
     left:calc((100% - 700px) / 2);
     z-index:5;
-    background-color: #dbd6d1;
+    /*background-color: #dbd6d1;*/
     padding-bottom: 1px;
     padding-top:1px;
 }
@@ -98,20 +100,21 @@ abbr {
     font-size: 32px;
     margin-block-start: 0;
     margin-block-end: 0;
-    border-bottom: 1px solid var(--mainWhite);
+    border-bottom: 1px solid var(--darkBackgroundGray);
     line-height: 25px;
-    margin: 15px 5px;
+    margin: 1.2em 0 .6em 0;
     font-weight: bold;
 }
 
 .desContentFormat h4{
-    font-size: 21.5px;
+    font-size: 23px;
     font-weight: bold;
     margin-left:5px;
     margin-block-start: 0;
     margin-block-end: 0;
+    margin: 1.2em 0 .6em 0;
     color:var(--darkBackgroundGray);
-    border-bottom: 1px solid var(--mainWhite);
+    border-bottom: 1px solid var(--darkBackgroundGray);
 }
 
 .desContentFormat p{
@@ -120,8 +123,8 @@ abbr {
     margin-block-end: 0;
     font-size:17px;
     word-spacing: 0px;
-    margin-bottom:8px;
-    margin-top:8px;
+    margin-bottom: 1em;
+    margin-top:1em;
     font-weight: 500;
 }
 #projectDesPage-menu li a{
@@ -157,7 +160,7 @@ abbr {
 
 .desContentFormat pre {
     padding: 10px;
-    background-color: var(--mainWhite);
+    background-color: #eee;
     border-radius: 10px;
     overflow: hidden;
     color: #333;
@@ -189,8 +192,8 @@ abbr {
 
 .desContentFormat img, iframe, object, embed, audio, video{
     display: block;
-    margin: 15px auto;
-    width:70%;
+    margin: 20px 10px;
+    width:calc(100% - 20px);
     max-width: 100%;
     box-shadow: 0 10px 12px 5px rgb(0,0,0, 0.5);
 }
@@ -325,7 +328,7 @@ ul li a:link, ul li a:visited{
 .thanksForReadingFormat > h4{
     font-size: 20.8px;
     color: var(--darkBackgroundGray);
-    border-bottom: 1px solid var(--mainWhite);
+    border-bottom: 1px solid var(--darkBackgroundGray);
     margin-right:5px;
 }
 

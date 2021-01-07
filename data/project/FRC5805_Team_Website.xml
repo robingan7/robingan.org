@@ -19,9 +19,7 @@
             <li>
                 <a>Team</a>
                 <ul>
-                    <li>
-                        <a href="https://robingan.org">Robin Gan</a>
-                    </li>
+                    
                      <li>
                         <a href="http://alexlynd.com/">Alex Lynd</a>
                     </li>
@@ -37,9 +35,16 @@
     </link>
     <content>
         <![CDATA[
-            <h3>Overview</h3>
-            <p>It's just a simple team website my friend Alex and I made during <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> lockdown because 
-                we were bored. I used <a href="https://developers.google.com/youtube/iframe_api_reference">YouTube API</a> to embed the video as backgorund so it looks cool on the <a href="http://team5805.robingan.org/">front page</a>. 
+            <h3>Why we made this project</h3>
+            <p>It's a simple team website my friend Alex and I made during <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">COVID-19</a> lockdown because 
+                we wanted to help our robotics team's business group a way to promote our team. We made also because every team has a website to present to the world and we thought
+            we need one as well. </p>
+                
+            <h3>Challenges</h3>
+            <h4>Video background</h4>
+            <p>I think it will be very cool and impressive if we can have a video as background.
+                So I used <a href="https://developers.google.com/youtube/iframe_api_reference">YouTube API</a> to embed the video as backgorund so it looks cool on the <a href="http://team5805.robingan.org/">front page</a>. 
+                The reason why I chose Youtuube API instead using <abbr>MP4</abbr> files is that MP4 takes time to load which is not good for user experience. 
             </p>
 <figure class="highlight"><pre><code>function onYouTubeIframeAPIReady() {
     if (window.innerWidth >= 650) {
@@ -58,7 +63,7 @@
             </pre>
             </figure>
 
-            <img src="/images/project/FRC5805_Team_Website/web1.png" alt="web1">
+            <img src="/images/project/FRC5805_Team_Website/animation.gif" alt="animation">
             <img src="/images/project/FRC5805_Team_Website/web2.png" alt="web2">
             <img src="/images/project/FRC5805_Team_Website/web3.png" alt="web3">
             <img src="/images/project/FRC5805_Team_Website/web4.png" alt="web4">

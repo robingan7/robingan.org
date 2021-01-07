@@ -1,5 +1,5 @@
 var globalXAM, globalSelectPage;
-var version = '5'
+var version = Date.now();
 function loadProject() {
     fetch('/data/projectData.xml?stopcaching' + version).then((res) => {
         res.text().then((xml) => {
@@ -96,7 +96,7 @@ function loadProjectDes(id){
                         <span>&#10005;</span>
                     </a>
 
-                    <h2 id="projectDesPage-title" date="By Robin Gan * `+ date_ + ` * ` + formatView(currentView) + ` views">` + title_ + `</h2>
+                    <h2 id="projectDesPage-title" date="By Robin Gan &nbsp;&bull; &nbsp;`+ date_ + `&nbsp; &bull; &nbsp;` + formatView(currentView) + ` views">` + title_ + `</h2>
                     <ul id="projectDesPage-menu" >
                         `+ link_ + `
                     </ul>
