@@ -6,7 +6,7 @@
             <span class="progress"></span>
         </span>
     </div>
-    
+
     <!--cookie asked-->
     <div id="cookie_asked" style="display:none;">
         <a onclick="replyCookie(false)" id="close_cross" class="btn checkCookie">
@@ -56,7 +56,7 @@
                 </p>
 
                 <p class="commonContent" style="margin-bottom:0; font-size:16px;">
-                    I'm a cool computer programmer and rapper,
+                    I'm a programmer and rapper,
                 </p>
                 <ul>
                     <li style="font-size:16px;">I make creative CS <a href="/project">projects</a>.</li>

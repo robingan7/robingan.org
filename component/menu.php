@@ -5,8 +5,8 @@
         <a href="mailto:gzt11111@gmail.com?Subject=Hello%20Robin">
             <i class="fas fa-envelope-open"></i>
         </a>   
-        <a href="https://twitter.com/XiangyuGan">
-            <i class="fab fa-twitter" aria-hidden="true"></i>
+        <a href="https://www.tiktok.com/@robingan_frc5805">
+            <i class="fab fa-tiktok"></i>
         </a>
 
         <a href="https://github.com/robingan7">
