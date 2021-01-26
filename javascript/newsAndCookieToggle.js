@@ -163,6 +163,99 @@ function openNew() {
     }
 }
 
+function filterLinks2(link) {
+    if(link == 'localhost' || link == '') {
+        return 'robingan.org';
+    }
+
+    if(link.split(':').includes('mailto')) {
+        return 'email';
+    }
+
+    return link;
+}
+
+function filterLinks(llink) {
+    if(llink.includes('https://')) {
+        llink = llink.substring(8, llink.length);
+        return filterLinks2(llink.split('/')[0]);
+    } 
+    
+    if(llink.includes('http://')) {
+        llink = llink.substring(7, llink.length);
+        return filterLinks2(llink.split('/')[0]);
+    }
+
+    return filterLinks2(llink);
+}
+
+function links() {
+
+    let links = document.getElementsByTagName('A');
+    
+    for(let i=0; i<links.length;i++) {
+        links[i].addEventListener('mousemove', (e)=> {
+            let back = hasLink(e.target);
+            let mit = document.getElementById('mit');
+
+            if(back[0]) {
+                mit.style.top = e.clientY-mit.clientHeight-1 + 'px';
+                mit.style.left = e.clientX+1 + 'px';
+                mit.innerText = filterLinks(back[1]);
+            }
+        });
+    }
+    
+    window.addEventListener('mouseover', (e)=> {
+        let mit = document.getElementById('mit');
+    
+        if(hasLink(e.target)[0]) {
+            mit.style.display = 'inline';
+        } else {
+            mit.style.display = 'none';
+        }
+    });
+}
+
+function hasLinkParent(ele) {
+    if((ele.tagName == 'A') && ele.href != undefined && ele.href != '') {
+        return [true, ele.href];
+    }
+    if(ele.parentNode == undefined) {
+        return [false, undefined];
+    }
+
+    return hasLink(ele.parentNode);
+}
+
+function hasLinkChild(ele) {
+    if((ele.tagName == 'A') && ele.href != undefined && ele.href != '') {
+        return [true, ele.href];
+    }
+    if(ele.childNode == undefined || ele.childNode.length == 0 || ele.childNode.length > 1 ) {
+        return [false, undefined];
+    }
+
+    return hasLink(ele.childNode[0]);
+}
+
+function hasLink(ele) {
+    let child = hasLinkChild(ele);
+
+    if(child[0]) {
+        return child;
+    } else {
+        let parent = hasLinkParent(ele);
+
+        if(parent[0]) {
+            return parent;
+        } else {
+            return [false, undefined];
+        }
+    }
+}
+
+
 /**
  * check if the user is on mobile or ipad
  */

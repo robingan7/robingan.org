@@ -7,6 +7,7 @@
         </span>
     </div>
 
+    <div id='mit'></div>
     <!--cookie asked-->
     <div id="cookie_asked" style="display:none;">
         <a onclick="replyCookie(false)" id="close_cross" class="btn checkCookie">

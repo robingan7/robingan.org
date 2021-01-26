@@ -82,6 +82,7 @@ function loadProjectDes(id) {
             document.title = title_ + ' Media|Robin Gan';
             document.querySelector('[name="description"]').content = title_ + " - Robin Gan's media --甘翔羽 " + headerOG;
             document.getElementById('projectDesPage').innerHTML = output;
+            links();
         });
     } catch{
         resetTitleAndDescription();

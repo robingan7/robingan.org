@@ -8,6 +8,18 @@
     }
 }
 
+#mit {
+    position: absolute;
+    padding: 0.4rem;
+    top: 0;
+    left: 0;
+    background: var(--mainGold);
+    z-index:19;
+    transition: 0s;
+    color: white;
+    display: none;
+}
+
 .progress-bar {
   overflow: hidden;
   width: 100%;

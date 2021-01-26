@@ -114,6 +114,7 @@ function loadProjectDes(id, scroll=true){
                         res();
                     })).then(()=> {
                         setScroll(scroll);
+                        links();
                     });
                 });
             });

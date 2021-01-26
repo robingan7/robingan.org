@@ -24,7 +24,7 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <link rel="stylesheet" href="styles/titleFoldedAnimation.css"/>
     <script src='javascript/js.cookie.js'></script>
     <script src="javascript/newsAndCookieToggle.js" defer></script>
-    <script src="javascript/index.js" defer></script>
+    <script src="javascript/index.js?version=1" defer></script>
     <script src="javascript/indexToggle.js" defer></script>
     <script src="javascript/indexResize.js" defer></script>
     <!--<script data-ad-client="ca-pub-8604882353540201" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
