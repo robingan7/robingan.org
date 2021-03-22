@@ -45,13 +45,13 @@
                 </div>
             </a>
 
-            <a href="/music">
+            <a href="https://www.tiktok.com/@robingan_frc5805">
                 <div class="items">
                     <div class="icon-wrapper">
-                    <i class="fas fa-compact-disc"></i>
+                        <i class="fab fa-tiktok"></i>
                     </div>
                     <div class="project-name">
-                    <p>Music</p>
+                    <p>TikTok</p>
                     </div>
                 </div> 
             </a>
@@ -62,7 +62,7 @@
                     <i class="fas fa-blog"></i>
                     </div>
                     <div class="project-name">
-                    <p>Media</p>
+                    <p>Blogs</p>
                     </div>
                 </div> 
             </a>
@@ -103,13 +103,13 @@
                 </div>
             </a>
 
-            <a href="/music">
+            <a href="https://www.tiktok.com/@robingan_frc5805">
                 <div class="items">
                     <div class="icon-wrapper">
-                    <i class="fas fa-compact-disc"></i>
+                        <i class="fab fa-tiktok"></i>
                     </div>
                     <div class="project-name">
-                    <p>Music</p>
+                    <p>TikTok</p>
                     </div>
                 </div> 
             </a>
@@ -120,7 +120,7 @@
                     <i class="fas fa-blog"></i>
                     </div>
                     <div class="project-name">
-                    <p>Media</p>
+                    <p>Blogs</p>
                     </div>
                 </div> 
             </a>
