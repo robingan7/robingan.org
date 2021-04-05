@@ -20,6 +20,10 @@
     display: none;
 }
 
+.tiktok-embed {
+    padding: 0!important;
+}
+
 .progress-bar {
   overflow: hidden;
   width: 100%;

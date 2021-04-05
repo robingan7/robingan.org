@@ -19,10 +19,10 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
     <meta property="og:description" content="Robin Gan's resume --甘翔羽 I'm a web developer, a robotics software director, a YouTuber, a guitar player, a singer, a cool rapper, and love to freestyle in different languages."/>
     <?php include( $_SERVER['DOCUMENT_ROOT'] . '/component/headerInfo.php' ); ?>
     <link rel="stylesheet" href="/styles/main.css"/>
-    <link rel="stylesheet" href="/styles/newsAndCookie.css"/>
+    <link rel="stylesheet" href="/styles/newsAndCookie.css?version=123"/>
     <link rel="stylesheet" href="/styles/menu.css"/>
     <link rel="stylesheet" href="/styles/descPage.css?<?php echo time(); ?>"/>
-    <link rel="stylesheet" href="/styles/resume.css"/>
+    <link rel="stylesheet" href="/styles/resume.css?version=123"/>
     <script src='/javascript/js.cookie.js'></script>
     <script src="/javascript/indexToggle.js" defer></script>
     <script src="/javascript/titleFolded.js" defer></script>
@@ -46,7 +46,7 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
         <h4><a href="https://www.smhs.org/">Santa Margarita Catholic HS</a><span>2018 - present</span></h4>
         <ul>
           <li>10th - 12th grade</li>
-          <li>Current GPA: 3.84 / 4.0</li>
+          <li>GPA: 3.84</li>
         </ul>
 
         <h4><a href="https://summer.stanford.edu/">UCSD MicroMasters Degree in Data Science</a><span>2020(still in progress)</span></h4>
@@ -60,8 +60,8 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
          <h4><a href="https://summer.stanford.edu/">Stanford Summer Session</a><span>2019</span></h4>
         <ul>
           <li>Intensive Studies in CS</li>
-          <li>193C: Client-Side Internet Technology (A)</li>
-          <li>106B: Programming Abstraction (B+)</li>
+          <li>193C: Client-Side Internet Technology</li>
+          <li>106B: Programming Abstraction</li>
           <li>Silicon Valley Innovation Academy</li>
         </ul>
 
@@ -204,13 +204,11 @@ Thanks for inspecting.|Github @robingan7|Youtube @robin gan
       <li>5171th/10300 place in <a href="https://codingcompetitions.withgoogle.com/codejam/round/000000000019fef2">Round 1B</a><span>2020</span></li>
     </ul>
 
-    <h3>Videos & Talks</h3>
-    <h4><a href="https://www.youtube.com/watch?v=RZJNbo-2GM4">Scouting APP Description</a><span>Mar 2019</span></h4>
-    <p><iframe width="350" height="180" src="https://www.youtube.com/embed/RZJNbo-2GM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-
-    <h4><a href="https://www.youtube.com/watch?v=7J08mPJNM-M">Testing AI Model</a><span>Nov 2018</span></h4>
-    <h4><a href="https://www.youtube.com/watch?v=qL1M6FNSRWc">5805 Progress Report</a><span>Feb 2019</span></h4>
-    <iframe width="360" height="255" src="https://www.youtube.com/embed/qL1M6FNSRWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Tiktok & YT</h3>
+    <h4><a href="https://www.youtube.com/watch?v=RZJNbo-2GM4">MIT Maker Portfolio</a><span>Jan 2021</span></h4>
+    <p><iframe width="350" height="180" src="https://www.youtube.com/embed/Sx0j0_zTTow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robingan_frc5805/video/6944099767672753414" data-video-id="6944099767672753414" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@robingan_frc5805" href="https://www.tiktok.com/@robingan_frc5805">@robingan_frc5805</a> <p>Part2 <a title="coding" target="_blank" href="https://www.tiktok.com/tag/coding">##coding</a>  <a title="codinglife" target="_blank" href="https://www.tiktok.com/tag/codinglife">##codinglife</a> <a title="programmer" target="_blank" href="https://www.tiktok.com/tag/programmer">##programmer</a> <a title="softwareengineer" target="_blank" href="https://www.tiktok.com/tag/softwareengineer">##softwareengineer</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a> <a title="remix" target="_blank" href="https://www.tiktok.com/tag/remix">##remix</a> <a title="sugarcrash" target="_blank" href="https://www.tiktok.com/tag/sugarcrash">##sugarcrash</a></p> <a target="_blank" title="♬ original sound - Robin Gan" href="https://www.tiktok.com/music/original-sound-6944099586084457222">♬ original sound - Robin Gan</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@robingan_frc5805/video/6947051179004153094" data-video-id="6947051179004153094" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@robingan_frc5805" href="https://www.tiktok.com/@robingan_frc5805">@robingan_frc5805</a> <p>Applying colleges 1960 vs 2021 <a title="collegeadmissions" target="_blank" href="https://www.tiktok.com/tag/collegeadmissions">##collegeadmissions</a> <a title="collegeapplications" target="_blank" href="https://www.tiktok.com/tag/collegeapplications">##collegeapplications</a> <a title="comdy" target="_blank" href="https://www.tiktok.com/tag/comdy">##comdy</a> <a title="rap" target="_blank" href="https://www.tiktok.com/tag/rap">##rap</a>  <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp">##fyp</a> <a title="foryoupage" target="_blank" href="https://www.tiktok.com/tag/foryoupage">##foryoupage</a></p> <a target="_blank" title="♬ original sound - Robin Gan" href="https://www.tiktok.com/music/original-sound-6947051072280087301">♬ original sound - Robin Gan</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
    
     <h3 class="sectionBreaker">Other Things I built<br/><small>(for fun and practice)</small></h3>
     <h4><a href="">Arduino LED Control</a><span>2019</span><span><a href="https://www.youtube.com/watch?v=kvAwRCbZrN4">video</a></span></h4>

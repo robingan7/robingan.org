@@ -68,6 +68,7 @@
     z-index:5;
     background-color: var(--mainWhite);
     border-radius: 5px;
+    padding: 0 10px;
 }
 
 #left {
@@ -93,7 +94,7 @@ small{
 @media (max-width:900px) {
     #content{
         left:10px;
-        width:calc(100% - 20px);
+        width:calc(100% - 40px);
     }
 }
 @media(max-width:800px){
